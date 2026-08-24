@@ -4,7 +4,7 @@ const isProd = process.env.NODE_ENV === "production";
 
 const nextConfig: NextConfig = {
   output: "export",  // Required for static export to GitHub Pages
-  basePath: isProd ? "/gitfolio" : "",  // Must match the GitHub Pages repository name
+  basePath: isProd ? "/polly-davidson" : "",  // Must match the GitHub Pages repository name
   images: {
     unoptimized: true, // Required for Next.js Image component on GitHub Pages
   },
