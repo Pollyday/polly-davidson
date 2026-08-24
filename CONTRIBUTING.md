@@ -1,4 +1,4 @@
-# Contributing to Gitfolio
+# Contributing to polly-davidson
 
 First off, thanks for taking the time to contribute! 🎉
 
@@ -9,8 +9,8 @@ The following is a set of guidelines for contributing to this project. These are
 1.  **Fork the repository** on GitHub.
 2.  **Clone your fork** locally:
     ```bash
-    git clone https://github.com/your-username/gfbs3-portfolio-demo.git
-    cd gfbs3-portfolio-demo
+    git clone https://github.com/your-username/polly-davidson.git
+    cd polly-davidson
     ```
 3.  **Install dependencies**:
     ```bash
