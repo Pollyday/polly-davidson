@@ -8,8 +8,9 @@ const monaSans = Mona_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "GitFolio - Developer Portfolio Template",
-  description: "Minimal and modern developer portfolio template built with Next.js and Tailwind CSS.",
+  title: "Polly Davidson - Brand Strategist & Marketing Leader at GitHub",
+  description:
+    "Portfolio for Polly Davidson, a senior brand strategist and marketing leader at GitHub working across brand, campaigns, content, social and experiences.",
 };
 
 export default function RootLayout({
