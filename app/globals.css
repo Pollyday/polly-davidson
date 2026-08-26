@@ -13,6 +13,13 @@
   --mint: #96bfe6;
   --card: #fbf6f3;
   --tag: #ffa6d9;
+  --type-caption: 0.618rem;
+  --type-body: 1rem;
+  --type-lede: clamp(1rem, 0.85rem + 0.8vw, 1.618rem);
+  --type-heading-sm: clamp(1.618rem, 1.18rem + 1.9vw, 2.618rem);
+  --type-heading-md: clamp(2.618rem, 1.75rem + 3.8vw, 4.236rem);
+  --type-heading-lg: clamp(4.236rem, 2.5rem + 7vw, 6.854rem);
+  --type-display: clamp(4.236rem, 2.2rem + 9vw, 6.854rem);
 }
 
 @theme inline {
