@@ -123,14 +123,17 @@ export default function Home() {
             <p className="mb-5 text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[#253122]">
               About me
             </p>
-            <div className="relative aspect-[4/5] overflow-hidden border border-[#253122] bg-[#b5d1cc]">
+            <div className="relative aspect-[4/5] overflow-hidden border border-[#253122] bg-[#fbf6f3]">
+              <div className="absolute inset-3 bg-[linear-gradient(rgba(233,235,116,0.58)_1px,transparent_1px),linear-gradient(90deg,rgba(233,235,116,0.58)_1px,transparent_1px)] bg-[#ffb852] bg-[size:1.35rem_1.35rem]" />
               <Image
                 src={`${basePath}/about-me-sketch.png`}
                 alt="Polly Davidson"
                 fill
-                className="object-cover grayscale transition duration-500 hover:grayscale-0"
+                className="object-cover mix-blend-multiply contrast-125"
                 sizes="(min-width: 768px) 33vw, 90vw"
               />
+              <div className="pointer-events-none absolute inset-0 bg-[#ff616b]/10" />
+              <div className="pointer-events-none absolute inset-3 border border-[#253122]" />
             </div>
           </div>
 
