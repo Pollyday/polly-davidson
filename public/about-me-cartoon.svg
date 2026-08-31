@@ -1,22 +1,31 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title desc">
   <title id="title">Minimal cartoon portrait of Polly Davidson</title>
-  <desc id="desc">A minimal cartoon portrait with wavy hair, round glasses and coral lips.</desc>
+  <desc id="desc">A minimal line cartoon portrait with wavy hair, glasses and coral lips.</desc>
   <rect width="800" height="1000" fill="#fbf6f3"/>
   <g opacity="0.45" stroke="#e9eb74" stroke-width="1">
     <path d="M0 80h800M0 160h800M0 240h800M0 320h800M0 400h800M0 480h800M0 560h800M0 640h800M0 720h800M0 800h800M0 880h800M80 0v1000M160 0v1000M240 0v1000M320 0v1000M400 0v1000M480 0v1000M560 0v1000M640 0v1000M720 0v1000"/>
   </g>
-  <path fill="#ffb852" stroke="#253122" stroke-linejoin="round" stroke-width="10" d="M217 732c14-92-46-183-33-298 17-148 94-249 220-253 130-4 223 94 238 243 12 119-46 209-30 308 12 72-48 120-142 120H359c-94 0-153-48-142-120Z"/>
-  <path fill="#fbf6f3" stroke="#253122" stroke-linejoin="round" stroke-width="10" d="M270 445c3-112 57-183 139-183 86 0 143 72 145 183 3 126-58 222-142 222-83 0-145-96-142-222Z"/>
-  <path fill="none" stroke="#253122" stroke-linecap="round" stroke-linejoin="round" stroke-width="14" d="M250 418c-32-28-35-74-6-104 33-34 82-11 100-70 10 60 62 48 92 24 4 48 65 42 91 88 22 39 9 82-26 107"/>
-  <path fill="none" stroke="#253122" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" d="M218 515c-35-89-12-187 63-244M597 515c37-90 11-188-65-245"/>
-  <path fill="#fbf6f3" stroke="#253122" stroke-width="9" d="M282 440c0-31 24-55 57-55s58 24 58 55-25 56-58 56-57-25-57-56ZM421 440c0-31 25-55 58-55s57 24 57 55-24 56-57 56-58-25-58-56Z"/>
-  <path fill="none" stroke="#253122" stroke-linecap="round" stroke-width="8" d="M397 441h24M278 423c-23-13-43-9-58 12M542 423c23-13 44-9 59 12"/>
-  <circle cx="341" cy="444" r="8" fill="#253122"/>
-  <circle cx="476" cy="444" r="8" fill="#253122"/>
-  <path fill="none" stroke="#253122" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" d="M408 462c-11 32-7 56 12 70"/>
-  <path fill="#ff616b" stroke="#253122" stroke-linecap="round" stroke-linejoin="round" stroke-width="7" d="M358 584c25-19 72-19 100 0-20 27-77 28-100 0Z"/>
-  <path fill="none" stroke="#253122" stroke-linecap="round" stroke-width="6" d="M374 583c25 8 48 8 69 0"/>
-  <path fill="#b5d1cc" stroke="#253122" stroke-linejoin="round" stroke-width="10" d="M282 691c35 29 76 45 128 45 51 0 92-16 127-45 72 40 118 105 128 192H155c10-87 56-152 127-192Z"/>
-  <path fill="none" stroke="#253122" stroke-linecap="round" stroke-width="9" d="M286 253c-62 40-95 99-96 176M535 254c62 43 94 103 91 179"/>
-  <path fill="none" stroke="#ff616b" stroke-linecap="round" stroke-width="7" d="M217 748c55 31 116 47 183 47s129-16 184-47"/>
+  <g fill="none" stroke="#253122" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="9" d="M260 416c7-111 63-178 151-178 87 0 145 69 151 178"/>
+    <path stroke-width="8" d="M273 450c4 121 58 205 137 205 80 0 134-84 138-205"/>
+    <path stroke-width="8" d="M289 655c28 48 67 73 121 73s94-25 123-73"/>
+    <path stroke-width="10" d="M190 814c33-74 86-116 158-135M610 814c-33-74-86-116-158-135"/>
+  </g>
+  <g fill="none" stroke="#253122" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="13" d="M238 558c-38-76-43-161-15-238 27-74 91-129 169-132 83-3 158 48 189 124 31 77 27 166-13 246"/>
+    <path stroke-width="10" d="M270 333c-38 45-42 114-24 182M530 333c38 45 42 114 24 182"/>
+    <path stroke-width="9" d="M306 252c-45 31-72 76-78 137M360 214c-50 49-71 94-66 151M420 201c-36 48-43 93-21 135M477 218c34 43 49 87 44 132M536 260c42 43 61 91 58 145"/>
+    <path stroke-width="7" d="M236 606c-36-41-54-99-43-153M563 606c36-41 54-99 43-153"/>
+  </g>
+  <g fill="none" stroke="#253122" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="8" d="M287 430c0-31 25-56 57-56s57 25 57 56-25 56-57 56-57-25-57-56ZM421 430c0-31 25-56 57-56s57 25 57 56-25 56-57 56-57-25-57-56Z"/>
+    <path stroke-width="7" d="M401 431h20M287 412c-19-10-37-9-55 6M535 412c19-10 37-9 55 6"/>
+    <path stroke-width="7" d="M407 462c-10 33-6 54 11 66"/>
+  </g>
+  <circle cx="344" cy="432" r="7" fill="#253122"/>
+  <circle cx="476" cy="432" r="7" fill="#253122"/>
+  <path fill="#ff616b" stroke="#253122" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" d="M358 581c28-17 75-17 103 0-20 25-82 25-103 0Z"/>
+  <path fill="none" stroke="#253122" stroke-linecap="round" stroke-width="5" d="M376 580c24 7 47 7 68 0"/>
+  <path fill="#b5d1cc" stroke="#253122" stroke-linejoin="round" stroke-width="8" d="M285 700c33 35 75 52 126 52s93-17 126-52c53 30 89 76 107 137H174c18-61 55-107 111-137Z"/>
+  <path fill="none" stroke="#ff616b" stroke-linecap="round" stroke-width="7" d="M226 835c112 39 235 39 347 0"/>
 </svg>
