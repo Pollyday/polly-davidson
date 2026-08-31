@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const basePath = process.env.NODE_ENV === "production" ? "/polly-davidson" : "";
@@ -122,13 +123,14 @@ export default function Home() {
             <p className="mb-5 text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[#253122]">
               About me
             </p>
-            <div className="relative aspect-[4/5] overflow-hidden border border-[#253122] bg-[#fbf6f3]">
-              <img
-                src={`${basePath}/about-me-cartoon.svg`}
+            <div className="relative aspect-[4/5] overflow-hidden border border-[#253122] bg-[#b5d1cc]">
+              <Image
+                src={`${basePath}/about-me.jpg`}
                 alt="Polly Davidson"
-                className="relative h-full w-full object-cover"
+                fill
+                className="object-cover grayscale transition duration-500 hover:grayscale-0"
+                sizes="(min-width: 768px) 33vw, 90vw"
               />
-              <div className="pointer-events-none absolute inset-3 border border-[#253122]" />
             </div>
           </div>
 
