@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 const basePath = process.env.NODE_ENV === "production" ? "/polly-davidson" : "";
@@ -125,12 +124,10 @@ export default function Home() {
             </p>
             <div className="relative aspect-[4/5] overflow-hidden border border-[#253122] bg-[#fbf6f3]">
               <div className="absolute inset-3 bg-[linear-gradient(rgba(233,235,116,0.58)_1px,transparent_1px),linear-gradient(90deg,rgba(233,235,116,0.58)_1px,transparent_1px)] bg-[#ffb852] bg-[size:1.35rem_1.35rem]" />
-              <Image
-                src={`${basePath}/about-me-sketch.png`}
+              <img
+                src={`${basePath}/about-me-cartoon.svg`}
                 alt="Polly Davidson"
-                fill
-                className="object-cover mix-blend-multiply contrast-125"
-                sizes="(min-width: 768px) 33vw, 90vw"
+                className="relative h-full w-full object-cover"
               />
               <div className="pointer-events-none absolute inset-0 bg-[#ff616b]/10" />
               <div className="pointer-events-none absolute inset-3 border border-[#253122]" />
