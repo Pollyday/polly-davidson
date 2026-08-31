@@ -125,7 +125,7 @@ export default function Home() {
             </p>
             <div className="relative aspect-[4/5] overflow-hidden border border-[#253122] bg-[#b5d1cc]">
               <Image
-                src={`${basePath}/about-me.jpg`}
+                src={`${basePath}/about-me-sketch.png`}
                 alt="Polly Davidson"
                 fill
                 className="object-cover grayscale transition duration-500 hover:grayscale-0"

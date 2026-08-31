@@ -104,7 +104,7 @@ export default function ConceptPage() {
           <div className="border border-[#253122] bg-[#ffb852] p-3">
             <div className="relative aspect-[4/5] overflow-hidden bg-[#b5d1cc]">
               <Image
-                src={`${basePath}/about-me.jpg`}
+                src={`${basePath}/about-me-sketch.png`}
                 alt="Polly Davidson"
                 fill
                 className="object-cover grayscale"
