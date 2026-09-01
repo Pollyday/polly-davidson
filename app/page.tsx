@@ -237,7 +237,7 @@ export default function Home() {
               <p className="mb-5 text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[#96bfe6]">
                 Contact
               </p>
-              <p className="max-w-3xl font-serif text-[clamp(2.8rem,8vw,5.8rem)] font-light uppercase leading-[0.84] tracking-[-0.055em] text-[#bfabcc]">
+              <p className="max-w-2xl font-sans text-xl font-semibold uppercase leading-tight tracking-[0.03em] text-[#bfabcc] md:text-3xl">
                 Want to talk about brand or campaign strategy? Let&apos;s connect.
               </p>
             </div>
