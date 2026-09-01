@@ -20,16 +20,16 @@ export default function Home() {
             <Link href="#work" className="transition-colors hover:text-[#ff616b]">
               Projects
             </Link>
-            <Link href="/blog" className="transition-colors hover:text-[#ff616b]">
+            <Link href="/blog" className="transition-colors hover:text-[#ffb852]">
               Blog
             </Link>
-            <Link href="/photos" className="transition-colors hover:text-[#ff616b]">
+            <Link href="/photos" className="transition-colors hover:text-[#96bfe6]">
               Photos
             </Link>
-            <Link href="#philosophy" className="transition-colors hover:text-[#ff616b]">
+            <Link href="#philosophy" className="transition-colors hover:text-[#bfabcc]">
               About
             </Link>
-            <Link href="#contact" className="transition-colors hover:text-[#ff616b]">
+            <Link href="#contact" className="transition-colors hover:text-[#ffa6d9]">
               Contact
             </Link>
           </div>

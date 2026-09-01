@@ -240,7 +240,7 @@ const playImages = [
 
 export default function PhotosPage() {
   return (
-    <div className="min-h-screen bg-[#fbf6f3] text-[#414141] selection:bg-[#ff616b]/25 selection:text-[#253122]">
+    <div className="min-h-screen bg-[#b5d1cc] text-[#414141] selection:bg-[#ff616b]/25 selection:text-[#253122]">
       <nav className="fixed inset-x-0 top-0 z-50 border-b border-[#253122] bg-[#fbf6f3]/92 backdrop-blur">
         <div className="mx-auto flex min-h-16 max-w-6xl items-center justify-between gap-4 px-5 py-3 sm:px-6">
           <Link
@@ -253,16 +253,16 @@ export default function PhotosPage() {
             <Link href="/#work" className="transition-colors hover:text-[#ff616b]">
               Projects
             </Link>
-            <Link href="/blog" className="transition-colors hover:text-[#ff616b]">
+            <Link href="/blog" className="transition-colors hover:text-[#ffb852]">
               Blog
             </Link>
-            <Link href="/photos" className="transition-colors hover:text-[#ff616b]">
+            <Link href="/photos" className="transition-colors hover:text-[#96bfe6]">
               Photos
             </Link>
-            <Link href="/#philosophy" className="transition-colors hover:text-[#ff616b]">
+            <Link href="/#philosophy" className="transition-colors hover:text-[#bfabcc]">
               About
             </Link>
-            <Link href="/#contact" className="transition-colors hover:text-[#ff616b]">
+            <Link href="/#contact" className="transition-colors hover:text-[#ffa6d9]">
               Contact
             </Link>
           </div>
@@ -295,12 +295,12 @@ function PhotoGrid({ images }: { images: PhotoImage[] }) {
     <section className="grid items-start gap-x-8 gap-y-12 md:grid-cols-12 md:gap-y-8">
       {images.map((photo) => (
         <div key={photo.src} className={photo.frameClass}>
-          <div className={`relative overflow-hidden bg-[#fbf6f3] ${photo.imageClass}`}>
+          <div className={`relative overflow-hidden bg-[#b5d1cc] ${photo.imageClass}`}>
             <Image
               src={`${basePath}${photo.src}`}
               alt={photo.alt}
               fill
-              className="object-cover"
+              className="object-contain"
               sizes="(min-width: 768px) 58vw, 90vw"
             />
           </div>
