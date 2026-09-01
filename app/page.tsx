@@ -237,11 +237,8 @@ export default function Home() {
               <p className="mb-5 text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[#96bfe6]">
                 Contact
               </p>
-              <h2 className="max-w-3xl font-sans text-4xl font-semibold uppercase leading-none tracking-[0.04em] text-[#bfabcc] md:text-6xl">
-                Want this brain on your brand?
-              </h2>
-              <p className="mt-6 max-w-2xl text-base leading-relaxed text-[#bfabcc]/80 md:text-lg">
-                Want to talk brand, content, or creative strategy? Let&apos;s connect.
+              <p className="max-w-3xl font-serif text-[clamp(2.8rem,8vw,5.8rem)] font-light uppercase leading-[0.84] tracking-[-0.055em] text-[#bfabcc]">
+                I make complicated things interesting.
               </p>
             </div>
             <div className="grid gap-0 border-t border-[#253122] bg-[#ffb852] md:min-w-80 md:border-t-0 md:border-l">

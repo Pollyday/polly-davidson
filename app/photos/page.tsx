@@ -279,7 +279,7 @@ export default function PhotosPage() {
         <PhotoGrid images={workImages} />
 
         <section className="pt-20 pb-8 md:pt-28 md:pb-12">
-          <h2 className="ml-auto max-w-3xl text-right font-serif text-[clamp(3.25rem,9vw,7rem)] font-light uppercase leading-[0.82] tracking-[-0.055em] text-[#ff616b]">
+          <h2 className="ml-auto max-w-3xl text-right font-serif text-[clamp(2.5rem,6vw,4.75rem)] font-light uppercase leading-[0.82] tracking-[-0.055em] text-[#ffa6d9]">
             Play
           </h2>
         </section>
