@@ -30,9 +30,6 @@ export default function BlogPage() {
             <Link href="/#work" className="transition-colors hover:text-[#ff616b]">
               Projects
             </Link>
-            <Link href="/blog" className="transition-colors hover:text-[#ffb852]">
-              Blog
-            </Link>
             <Link href="/photos" className="transition-colors hover:text-[#96bfe6]">
               Photos
             </Link>

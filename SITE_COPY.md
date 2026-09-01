@@ -12,7 +12,6 @@ Use this as the editable copy sheet for the portfolio. Copy changes back into th
 
 - Polly Davidson
 - Projects
-- Blog
 - Photos
 - About
 - Contact
@@ -226,7 +225,6 @@ Use this as the editable copy sheet for the portfolio. Copy changes back into th
 | --- | --- |
 | Polly Davidson logo/name | `/` |
 | Projects nav | `/#work` from other pages, `#work` on homepage |
-| Blog nav | `/blog` |
 | Photos nav | `/photos` |
 | About nav | `/#philosophy` from other pages, `#philosophy` on homepage |
 | Contact nav | `/#contact` from other pages, `#contact` on homepage |
