@@ -125,7 +125,7 @@ export default function Home() {
             </p>
             <div className="relative aspect-[4/5] overflow-hidden border border-[#253122] bg-[#fbf6f3]">
               <Image
-                src={`${basePath}/about-me-illustration.png`}
+                src={`${basePath}/about-me-illustration-lines.png`}
                 alt="Polly Davidson"
                 fill
                 className="scale-[1.75] object-cover object-[50%_45%]"
