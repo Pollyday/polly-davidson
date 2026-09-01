@@ -238,7 +238,7 @@ export default function Home() {
                 Contact
               </p>
               <p className="max-w-3xl font-serif text-[clamp(2.8rem,8vw,5.8rem)] font-light uppercase leading-[0.84] tracking-[-0.055em] text-[#bfabcc]">
-                I make complicated things interesting.
+                Want to talk about brand or campaign strategy? Let&apos;s connect.
               </p>
             </div>
             <div className="grid gap-0 border-t border-[#253122] bg-[#ffb852] md:min-w-80 md:border-t-0 md:border-l">
