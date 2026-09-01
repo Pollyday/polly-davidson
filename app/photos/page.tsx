@@ -3,6 +3,13 @@ import Link from "next/link";
 
 const basePath = process.env.NODE_ENV === "production" ? "/polly-davidson" : "";
 
+type PhotoImage = {
+  src: string;
+  alt: string;
+  frameClass: string;
+  imageClass: string;
+};
+
 const workImages = [
   {
     src: "/photos/work/github-for-beginners-sketching.jpg",
@@ -88,7 +95,148 @@ const workImages = [
     frameClass: "md:col-span-6 md:ml-16 rotate-[-0.7deg]",
     imageClass: "aspect-[4/5]",
   },
-];
+] satisfies PhotoImage[];
+
+const playImages = [
+  {
+    src: "/photos/play/garden-flamingo.jpg",
+    alt: "Garden table and chairs with a bright inflatable flamingo",
+    frameClass: "md:col-span-8 rotate-[-0.8deg]",
+    imageClass: "aspect-[16/9]",
+  },
+  {
+    src: "/photos/play/mountain-village.jpg",
+    alt: "Sunlit mountain village built into rocky cliffs",
+    frameClass: "md:col-span-4 md:mt-14 rotate-[1deg]",
+    imageClass: "aspect-[4/5]",
+  },
+  {
+    src: "/photos/play/lantern-shop.jpg",
+    alt: "Decorative lanterns hanging in a warm shop window",
+    frameClass: "md:col-span-5 md:-mt-2 rotate-[0.7deg]",
+    imageClass: "aspect-[4/5]",
+  },
+  {
+    src: "/photos/play/oman-flags.jpg",
+    alt: "Oman flags hanging above a shopfront",
+    frameClass: "md:col-span-7 md:mt-10 rotate-[-1.1deg]",
+    imageClass: "aspect-[16/10]",
+  },
+  {
+    src: "/photos/play/gallery-child.jpg",
+    alt: "Child walking through an art gallery",
+    frameClass: "md:col-span-7 rotate-[0.9deg]",
+    imageClass: "aspect-[16/10]",
+  },
+  {
+    src: "/photos/play/courtyard-stairs.jpg",
+    alt: "Large sunlit courtyard with stairs and a person in blue",
+    frameClass: "md:col-span-5 md:mt-16 rotate-[-0.6deg]",
+    imageClass: "aspect-[16/10]",
+  },
+  {
+    src: "/photos/play/barcelona-balconies.jpg",
+    alt: "Apartment balconies and flags on a tree-lined street",
+    frameClass: "md:col-span-4 md:mt-8 rotate-[-1deg]",
+    imageClass: "aspect-[4/5]",
+  },
+  {
+    src: "/photos/play/coconut-table.jpg",
+    alt: "Fresh coconut seen through wooden chair slats",
+    frameClass: "md:col-span-4 rotate-[1.1deg]",
+    imageClass: "aspect-square",
+  },
+  {
+    src: "/photos/play/heron-shadow.jpg",
+    alt: "Heron against a dark wall with its shadow",
+    frameClass: "md:col-span-4 md:mt-20 rotate-[-0.7deg]",
+    imageClass: "aspect-[4/5]",
+  },
+  {
+    src: "/photos/play/storm-window.jpg",
+    alt: "People sitting in front of stormy sea windows",
+    frameClass: "md:col-span-8 rotate-[0.6deg]",
+    imageClass: "aspect-[16/9]",
+  },
+  {
+    src: "/photos/play/london-street.jpg",
+    alt: "Wet cobbled London street at dusk",
+    frameClass: "md:col-span-4 md:mt-12 rotate-[-0.9deg]",
+    imageClass: "aspect-[4/5]",
+  },
+  {
+    src: "/photos/play/rain-umbrella.jpg",
+    alt: "Silhouetted person with an umbrella in misty rain",
+    frameClass: "md:col-span-6 rotate-[1deg]",
+    imageClass: "aspect-[16/10]",
+  },
+  {
+    src: "/photos/play/restaurant-window.jpg",
+    alt: "Restaurant window with wine bottles and a turn off phone sign",
+    frameClass: "md:col-span-6 md:mt-14 rotate-[-0.8deg]",
+    imageClass: "aspect-[16/10]",
+  },
+  {
+    src: "/photos/play/simpsons-shelf.jpg",
+    alt: "Colourful collection of toys on a shelf",
+    frameClass: "md:col-span-4 rotate-[0.8deg]",
+    imageClass: "aspect-[4/5]",
+  },
+  {
+    src: "/photos/play/archway-shadow.jpg",
+    alt: "Sunlit wall seen through a dark archway",
+    frameClass: "md:col-span-8 md:mt-10 rotate-[-1deg]",
+    imageClass: "aspect-[16/9]",
+  },
+  {
+    src: "/photos/play/coney-island.jpg",
+    alt: "Coney Island boardwalk and amusement park signs",
+    frameClass: "md:col-span-7 rotate-[1.1deg]",
+    imageClass: "aspect-[16/10]",
+  },
+  {
+    src: "/photos/play/snow-volleyball.jpg",
+    alt: "People playing volleyball in a snowy park",
+    frameClass: "md:col-span-5 md:mt-16 rotate-[-0.6deg]",
+    imageClass: "aspect-[16/10]",
+  },
+  {
+    src: "/photos/play/dogs-beach.jpg",
+    alt: "Dogs running along a quiet beach with a yellow boat",
+    frameClass: "md:col-span-8 rotate-[-0.7deg]",
+    imageClass: "aspect-[16/9]",
+  },
+  {
+    src: "/photos/play/black-window.jpg",
+    alt: "Dark restaurant window with glasses on a table",
+    frameClass: "md:col-span-4 md:mt-14 rotate-[0.8deg]",
+    imageClass: "aspect-[4/5]",
+  },
+  {
+    src: "/photos/play/lake-reflection.jpg",
+    alt: "Mountain reflected in a bright blue lake",
+    frameClass: "md:col-span-7 rotate-[0.9deg]",
+    imageClass: "aspect-[16/9]",
+  },
+  {
+    src: "/photos/play/snow-mountains.jpg",
+    alt: "Snowy mountains across a lake",
+    frameClass: "md:col-span-5 md:mt-12 rotate-[-0.8deg]",
+    imageClass: "aspect-[16/10]",
+  },
+  {
+    src: "/photos/play/colourful-chair.jpg",
+    alt: "Colourful woven chair on a wooden balcony",
+    frameClass: "md:col-span-5 rotate-[-1.1deg]",
+    imageClass: "aspect-[16/10]",
+  },
+  {
+    src: "/photos/play/work-hard-room.jpg",
+    alt: "Person relaxing in a dark room with a work hard and be nice poster",
+    frameClass: "md:col-span-7 md:mt-10 rotate-[0.7deg]",
+    imageClass: "aspect-[16/10]",
+  },
+] satisfies PhotoImage[];
 
 export default function PhotosPage() {
   return (
@@ -122,28 +270,42 @@ export default function PhotosPage() {
       </nav>
 
       <main className="mx-auto max-w-6xl px-5 pt-24 pb-24 sm:px-6 lg:pt-28">
-        <section className="py-8 md:py-14">
-          <h1 className="max-w-3xl font-serif text-[clamp(3.25rem,9vw,7rem)] font-light uppercase leading-[0.82] tracking-[-0.055em] text-[#1b3644]">
+        <section className="py-8 md:py-12">
+          <h1 className="max-w-3xl font-serif text-[clamp(2.5rem,6vw,4.75rem)] font-light uppercase leading-[0.82] tracking-[-0.055em] text-[#bfabcc]">
             Work
           </h1>
         </section>
 
-        <section className="grid items-start gap-x-8 gap-y-12 md:grid-cols-12 md:gap-y-8">
-          {workImages.map((photo) => (
-            <div key={photo.src} className={photo.frameClass}>
-              <div className={`relative overflow-hidden bg-[#fbf6f3] ${photo.imageClass}`}>
-                <Image
-                  src={`${basePath}${photo.src}`}
-                  alt={photo.alt}
-                  fill
-                  className="object-cover"
-                  sizes="(min-width: 768px) 58vw, 90vw"
-                />
-              </div>
-            </div>
-          ))}
+        <PhotoGrid images={workImages} />
+
+        <section className="pt-20 pb-8 md:pt-28 md:pb-12">
+          <h2 className="ml-auto max-w-3xl text-right font-serif text-[clamp(3.25rem,9vw,7rem)] font-light uppercase leading-[0.82] tracking-[-0.055em] text-[#ff616b]">
+            Play
+          </h2>
         </section>
+
+        <PhotoGrid images={playImages} />
       </main>
     </div>
+  );
+}
+
+function PhotoGrid({ images }: { images: PhotoImage[] }) {
+  return (
+    <section className="grid items-start gap-x-8 gap-y-12 md:grid-cols-12 md:gap-y-8">
+      {images.map((photo) => (
+        <div key={photo.src} className={photo.frameClass}>
+          <div className={`relative overflow-hidden bg-[#fbf6f3] ${photo.imageClass}`}>
+            <Image
+              src={`${basePath}${photo.src}`}
+              alt={photo.alt}
+              fill
+              className="object-cover"
+              sizes="(min-width: 768px) 58vw, 90vw"
+            />
+          </div>
+        </div>
+      ))}
+    </section>
   );
 }
