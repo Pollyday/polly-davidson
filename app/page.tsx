@@ -123,12 +123,12 @@ export default function Home() {
             <p className="mb-5 text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[#253122]">
               About me
             </p>
-            <div className="relative aspect-[4/5] overflow-hidden border border-[#253122] bg-[#b5d1cc]">
+            <div className="relative aspect-[4/5] overflow-hidden border border-[#253122] bg-[#fbf6f3]">
               <Image
-                src={`${basePath}/about-me.jpg`}
+                src={`${basePath}/about-me-illustration.png`}
                 alt="Polly Davidson"
                 fill
-                className="object-cover grayscale transition duration-500 hover:grayscale-0"
+                className="object-cover"
                 sizes="(min-width: 768px) 33vw, 90vw"
               />
             </div>
