@@ -1,132 +1,477 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const basePath = process.env.NODE_ENV === "production" ? "/gfbs3-portfolio-demo" : "";
+const basePath = process.env.NODE_ENV === "production" ? "/polly-davidson" : "";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#576A8F] text-[#FFF8DE] font-sans selection:bg-[#D91656]/30 selection:text-[#FFF8DE] overflow-x-hidden">
-      {/* Grid Background */}
-      <div className="fixed inset-0 z-0 pointer-events-none">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(183,189,247,0.12)_1px,transparent_1px),linear-gradient(to_bottom,rgba(183,189,247,0.12)_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-20" />
-        <div className="absolute inset-0 bg-[#576A8F]/20" />
-        <div className="absolute bottom-0 left-0 right-0 h-[50vh] bg-[#D91656]/15 opacity-40" />
-      </div>
+    <div className="min-h-screen bg-[#b5d1cc] text-[#414141] selection:bg-[#ff616b]/25 selection:text-[#253122]">
+      <div className="pointer-events-none fixed inset-0 z-0 bg-[radial-gradient(circle_at_top_left,rgba(255,184,82,0.28),transparent_34rem),radial-gradient(circle_at_bottom_right,rgba(255,166,217,0.22),transparent_32rem)]" />
 
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#576A8F]/90 backdrop-blur-md border-b border-[#B7BDF7]/20">
-        <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <nav className="fixed inset-x-0 top-0 z-50 border-b border-[#253122] bg-[#fbf6f3]/92 backdrop-blur">
+        <div className="mx-auto flex min-h-16 max-w-6xl items-center justify-between gap-4 px-5 py-3 sm:px-6">
           <Link
             href="/"
-            className="text-lg font-bold tracking-widest text-[#FFF8DE] hover:text-[#D91656] transition-all duration-300"
+            className="font-serif text-xl font-semibold uppercase leading-none tracking-[-0.04em] text-[#ff616b] transition-colors hover:text-[#253122]"
           >
             Polly Davidson
           </Link>
-          <div className="flex gap-8 text-xs font-bold tracking-widest uppercase text-[#FFF8DE]/75">
-            <Link href="#work" className="hover:text-[#B7BDF7] transition-all">
-              PROJECTS
+          <div className="flex flex-wrap justify-end gap-x-4 gap-y-2 text-[0.68rem] font-bold uppercase tracking-[0.2em] text-[#253122] sm:gap-x-8">
+            <Link href="#work" className="transition-colors hover:text-[#ff616b]">
+              Projects
             </Link>
-            <Link href="#philosophy" className="hover:text-[#D91656] transition-all">
-              ABOUT
+            <Link href="/photos" className="transition-colors hover:text-[#96bfe6]">
+              Photos
             </Link>
-            <Link href="#contact" className="hover:text-[#FFF8DE] transition-all">
-              CONTACT
+            <Link href="#philosophy" className="transition-colors hover:text-[#bfabcc]">
+              About
+            </Link>
+            <Link href="#contact" className="transition-colors hover:text-[#ffa6d9]">
+              Contact
             </Link>
           </div>
         </div>
       </nav>
 
-      <main className="relative z-10 max-w-6xl mx-auto px-6 pt-32 pb-20">
-        {/* Hero Section */}
-        <section className="py-20 md:py-32 space-y-8 relative">
-          <div className="space-y-2">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#B7BDF7]/30 bg-[#576A8F]/40 text-[#FFF8DE] text-xs font-bold tracking-widest uppercase">
-              <span className="w-2 h-2 rounded-full bg-[#D91656]" />
-              READY TO LAUNCH
-            </div>
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tighter text-[#FFF8DE] leading-[1.1]">
-              Hi, I&apos;m Polly. <br />
-              <span className="text-[#D91656]">
-                GET TO KNOW ME
+      <main className="relative z-10 mx-auto max-w-6xl px-5 pt-24 pb-16 sm:px-6 lg:pt-28">
+        <section className="overflow-hidden border border-[#253122] bg-[#ffb852]">
+          <div className="grid border-b border-[#253122] bg-[linear-gradient(rgba(233,235,116,0.58)_1px,transparent_1px),linear-gradient(90deg,rgba(233,235,116,0.58)_1px,transparent_1px)] bg-[size:2.35rem_2.35rem] px-5 py-8 sm:px-8 md:px-12 md:py-12">
+            <p className="mb-5 text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[#1b3644]">
+              Brand strategist / marketing leader / GitHub
+            </p>
+            <h1 className="max-w-4xl font-serif text-[clamp(2.8rem,8vw,5.8rem)] font-light uppercase leading-[0.84] tracking-[-0.055em] text-[#1b3644] [font-stretch:condensed]">
+              I make complicated things interesting
+              <span className="mt-5 block font-sans text-[0.48em] font-semibold leading-[0.9] tracking-[0.04em] text-[#ff616b] md:mt-8">
+                Hi, I&apos;m Polly
               </span>
             </h1>
           </div>
-          <p className="text-lg md:text-xl text-[#FFF8DE]/80 max-w-2xl leading-relaxed font-light border-l-2 border-[#D91656] pl-6">
-            I&apos;m a senior brand strategist for GitHub. Lover of words, images, and data.
-          </p>
-          <div className="pt-8 flex gap-6">
-            <Link
-              href="#work"
-              className="group relative px-8 py-3 bg-[#D91656] border border-[#D91656] text-[#FFF8DE] font-bold tracking-widest uppercase text-sm overflow-hidden transition-all hover:opacity-90"
-            >
-              <span className="relative z-10 flex items-center gap-2">
-                GET STARTED <ArrowRightIcon className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </span>
-            </Link>
+
+          <div className="bg-[#fbf6f3] p-5 md:p-8">
+            <p className="max-w-2xl text-lg leading-relaxed text-[#414141] md:text-xl">
+              I&apos;m a brand strategist and marketing leader. I&apos;m a big fan of words,
+              creative experiments, data, and really understanding the audience.
+            </p>
           </div>
         </section>
 
-        {/* Selected Work */}
-        <section id="work" className="py-20 space-y-12">
-          <div className="flex items-end justify-between border-b border-[#B7BDF7]/20 pb-4">
-            <h2 className="text-2xl font-bold tracking-widest text-[#D91656]">
-              // PROJECTS
-            </h2>
-            <span className="text-xs text-[#FFF8DE]/65">A small sample of what I&apos;m building and learning</span>
-          </div>
+        <section id="work" className="py-16 md:py-20">
+          <SectionHeader
+            eyebrow="Selected work"
+            title="Brand stories, launches and moments"
+          />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 gap-0 border-x border-t border-[#253122] md:grid-cols-2">
             <ProjectCard
-              title="Days of Deutsch"
-              description="Learning German, day by day, image by image."
-              tags={["LANGUAGE", "LEARNING", "STORYTELLING"]}
-              color="accent"
-              href="https://daysofdeutsch.com"
+              title="GitHub Universe"
+              eyebrow="Flagship work"
+              description="GitHub Universe is GitHub's flagship developer event, and I've worked on it for five years running, helping attract 3.7K attendees across brand, social, content, community and ticket sales."
+              href="https://githubuniverse.com"
+              imageSrc="/project-images/github-universe.jpg"
+              imageAlt="GitHub Universe event signage"
+              imageAspect="wide"
+              imagePosition="center top"
+              featured
+              fullWidth
+            />
+            <ProjectCard
+              title="The GitHub Shop"
+              eyebrow="Brand commerce"
+              description="The shop is loved by developers. It's a true brand play: creating swag that reflects their interests but also creating a playful site that ties back to developers with its collection names, fidget spinners and hidden easter eggs. I work closely with the shop team to launch their new collections, get campaigns featured in swag drops, and for influencer gifting."
+              href="https://thegithubshop.com"
+              imageSrc="/project-images/github-shop.jpeg"
+              imageAlt="GitHub Shop campaign image with summer-themed GitHub merchandise"
+              imageAspect="wide"
+              imagePosition="center"
+              rightBorder
+            />
+            <ProjectCard
+              title="GitHub for Beginners"
+              eyebrow="Audience understanding"
+              description="A YouTube series that turns intimidating developer tooling into useful, friendly lessons for people just getting started, hosted by Kedasha Kerr."
+              href="https://www.youtube.com/playlist?list=PL0lo9MOBetEFcp4SCWinBdpml9B2U25-f"
+              imageSrc="/project-images/github-for-beginners.jpg"
+              imageAlt="GitHub for Beginners video set with presenter and GitHub props"
+              imageAspect="wide"
+              imagePosition="center calc(50% - 0.6mm)"
+            />
+            <ProjectCard
+              title="The GitHub Podcast"
+              eyebrow="Developer stories"
+              description="The GitHub Podcast is a show dedicated to the topics, trends, stories and culture in and around the developer community on GitHub. Designed to bring a more behind the scenes view of GitHub and showcasing how we support open source maintainers."
+              href="https://www.youtube.com/playlist?list=PL0lo9MOBetEHmIDpT8KA-qt7Ebb2GhesV"
+              imageSrc="/project-images/github-podcast.png"
+              imageAlt="GitHub Podcast channel artwork with Mona and Hubot characters"
+              imageAspect="wide"
+              imagePosition="center"
+              rightBorder
+            />
+            <ProjectCard
+              title="Wunderlist | Microsoft To Do"
+              eyebrow="Launch storytelling"
+              description="Visual storytelling series designed to move users over from Wunderlist to Microsoft To Do."
+              href="https://youtube.com/playlist?list=PLbJ3LHaydIC1XzL1mM-Dcr1wdF2sg8q0V&si=-vpgayczJqT3S5yU"
+              imageSrc="/project-images/wunderlist.png"
+              imageAlt="Wunderlist visual with pink background and orange abstract shapes"
+              imageAspect="wide"
+              imagePosition="center"
+            />
+            <VideoStorytellingBucket
+              stories={[
+                {
+                  title: "Log4J",
+                  description:
+                    "Creating a campaign around the story of Log4J so that audiences have a full understanding of the dangers of security vulnerabilities.",
+                  href: "https://www.youtube.com/watch?v=t74ClffSUW0&t=11s",
+                },
+                {
+                  title: "Anders Hejlsberg",
+                  description:
+                    "Making sure the story of Anders Hejlsberg, creator of Typescript, C# and Turbo Pascal had a fully built out campaign in order to maximise views.",
+                  href: "https://www.youtube.com/watch?v=uMqx8NNT4xY&t=1s",
+                },
+              ]}
+              fullWidth
             />
           </div>
         </section>
 
-        {/* Philosophy / Approach */}
-        <section id="philosophy" className="py-20 grid md:grid-cols-12 gap-12 border-t border-[#B7BDF7]/20">
-          <div className="md:col-span-4 space-y-8">
-            <div className="flex items-center gap-4">
-              <h2 className="text-2xl font-bold tracking-widest text-[#B7BDF7]">
-                {"// ABOUT_ME"}
-              </h2>
-              <SquiggleLine />
-            </div>
-
-            <div className="relative w-full aspect-[4/5] border border-[#B7BDF7]/25 rounded-sm overflow-hidden bg-[#576A8F]/25 group">
-              <div className="absolute inset-0 bg-[#576A8F]/20 z-10" />
+        <section
+          id="philosophy"
+          className="grid overflow-hidden border border-[#253122] bg-[#fbf6f3] md:grid-cols-12"
+        >
+          <div className="border-b border-[#253122] bg-[linear-gradient(rgba(233,235,116,0.58)_1px,transparent_1px),linear-gradient(90deg,rgba(233,235,116,0.58)_1px,transparent_1px)] bg-[#ffb852] bg-[size:2.35rem_2.35rem] p-5 md:col-span-4 md:border-r md:border-b-0 md:p-8">
+            <p className="mb-5 text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[#253122]">
+              About me
+            </p>
+            <div className="relative aspect-[4/5] overflow-hidden border border-[#253122] bg-[#fbf6f3]">
               <Image
-                src={`${basePath}/me.png`}
+                src={`${basePath}/about-me-illustration-lines.png`}
                 alt="Polly Davidson"
                 fill
-                className="object-cover z-0 opacity-80 group-hover:opacity-100 transition-all duration-500 grayscale group-hover:grayscale-0"
+                className="-translate-x-[7mm] scale-[1.85] object-cover object-[50%_50%]"
+                sizes="(min-width: 768px) 33vw, 90vw"
               />
             </div>
           </div>
 
-          <div className="md:col-span-8 space-y-8 text-[#FFF8DE]/85 leading-relaxed font-light">
-            <p>
-              I&apos;m a senior brand strategist for GitHub, where I help shape how the world sees and understands the platform. I love working at the intersection of words, images, and data.
-            </p>
+          <div className="md:col-span-8">
+            <div className="border-b border-[#253122] p-5 md:p-8">
+              <h2 className="mb-5 font-sans text-4xl font-semibold uppercase leading-none tracking-[0.04em] text-[#ff616b] md:text-6xl">
+                Strategy, but make it interesting
+              </h2>
+              <p className="max-w-3xl text-base leading-relaxed text-[#414141] md:text-lg">
+                I&apos;ve spent the last 15+ years working in marketing and brand, mostly in
+                developer marketing, but also in TV, banking, and consumer productivity apps,
+                across smaller startups and larger corporates. These days I&apos;m at GitHub, where
+                I work collaboratively across brand, campaigns, social content and community
+                activations.
+              </p>
+              <p className="mt-5 max-w-3xl text-base leading-relaxed text-[#414141] md:text-lg">
+                I like big ideas, useful data, good writing and work that doesn&apos;t take itself
+                too seriously.
+              </p>
+            </div>
 
-            <div className="p-6 bg-[#576A8F]/25 border border-[#B7BDF7]/20 rounded-sm relative overflow-hidden">
-              <div className="absolute top-0 left-0 w-full h-1 bg-[#D91656]" />
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm">
-                <div>
-                  <h3 className="text-[#FFF8DE] mb-4 tracking-widest uppercase text-xs border-b border-[#B7BDF7]/20 pb-2">STACK_TRACE</h3>
-                  <ul className="space-y-2 text-[#FFF8DE]/75">
-                    <li className="flex items-center gap-2"><span className="text-[#D91656]">›</span> Strategy</li>
-                    <li className="flex items-center gap-2"><span className="text-[#D91656]">›</span> Social media</li>
-                    <li className="flex items-center gap-2"><span className="text-[#D91656]">›</span> Analytics</li>
-                    <li className="flex items-center gap-2"><span className="text-[#D91656]">›</span> Content creation</li>
-                  </ul>
-                </div>
-                <div>
-                  <h3 className="text-[#FFF8DE] mb-4 tracking-widest uppercase text-xs border-b border-[#B7BDF7]/20 pb-2">PROTOCOLS</h3>
-                  <ul className="space-y-2 text-[#FFF8DE]/75">
-                    <li className="flex items-center gap-2"><span className="text-[#D91656]">›</span> Clear, human-first communication</li>
-                    <li className="flex items-center gap-2"><span className="text-[#D91656]">›</span> Creative problem solving</li>
-                    <*
+            <div className="grid md:grid-cols-2">
+              <InfoList
+                title="What I do"
+                items={["Brand and campaign strategy", "Developer marketing", "Content and social", "Event go-to-market"]}
+              />
+              <InfoList
+                title="How I think"
+                items={["Understand your audience", "Use data without losing the essence of your brand", "Make it fun"]}
+              />
+            </div>
+          </div>
+        </section>
+
+        <section className="py-16 md:py-20">
+          <div className="grid border-x border-t border-[#253122] bg-[#fbf6f3] md:grid-cols-2">
+            <div className="relative aspect-square overflow-hidden border-b border-[#253122] bg-[#b5d1cc] md:border-r">
+              <Image
+                src={`${basePath}/project-images/days-of-deutsch.jpeg`}
+                alt="Franzbroetchen pastry with a handwritten Days of Deutsch label"
+                fill
+                className="object-cover"
+                sizes="(min-width: 768px) 33rem, 90vw"
+              />
+            </div>
+            <a
+              href="https://www.instagram.com/daysofdeutsch"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block border-b border-[#253122] p-5 transition-colors hover:bg-[#bfabcc] md:p-8"
+            >
+              <p className="mb-4 text-[0.68rem] font-bold uppercase tracking-[0.2em] text-[#ff616b]">
+                Personal project
+              </p>
+              <div className="mb-8 flex items-start justify-between gap-6">
+                <h3 className="font-sans text-3xl font-semibold uppercase leading-none tracking-[0.04em] text-[#253122] transition-colors group-hover:text-[#ff616b] md:text-5xl">
+                  Days of Deutsch
+                </h3>
+                <ArrowUpRightIcon className="mt-1 h-5 w-5 shrink-0 text-[#ff616b] transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+              </div>
+              <p className="max-w-xl text-sm leading-relaxed text-[#414141]">
+                A little passion project helping people learn German, one day at a time, with a
+                more playful kind of storytelling.
+              </p>
+            </a>
+          </div>
+        </section>
+
+        <section id="contact" className="py-16 md:py-20">
+          <div className="grid overflow-hidden border border-[#253122] bg-[#1b3644] md:grid-cols-[1fr_auto]">
+            <div className="p-6 md:p-10">
+              <p className="mb-5 text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[#96bfe6]">
+                Contact
+              </p>
+              <p className="max-w-2xl font-sans text-xl font-semibold uppercase leading-tight tracking-[0.03em] text-[#bfabcc] md:text-3xl">
+                Want to talk about brand or campaign strategy? Let&apos;s connect.
+              </p>
+            </div>
+            <div className="grid gap-0 border-t border-[#253122] bg-[#ffb852] md:min-w-80 md:border-t-0 md:border-l">
+              <SocialLink href="https://github.com/pollyday" label="GitHub" />
+              <SocialLink href="https://www.linkedin.com/in/polly-davidson/" label="LinkedIn" />
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer className="relative z-10 border-t border-[#253122] bg-[#fbf6f3] px-5 py-6 text-center text-[0.72rem] font-bold uppercase tracking-[0.18em] text-[#414141]">
+        <p>
+          Made by{" "}
+          <a
+            href="https://github.com/pollyday"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#ff616b] transition-colors hover:text-[#253122]"
+          >
+            Polly Davidson
+          </a>
+        </p>
+      </footer>
+    </div>
+  );
+}
+
+function SectionHeader({
+  eyebrow,
+  title,
+  description,
+}: {
+  eyebrow: string;
+  title: string;
+  description?: string;
+}) {
+  return (
+    <div className="mb-8 grid gap-4 border border-[#253122] bg-[#1b3644] p-5 md:grid-cols-[auto_1fr] md:items-end md:p-8">
+      <div>
+        <p className="mb-3 text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[#96bfe6]">
+          {eyebrow}
+        </p>
+        <h2 className="font-sans text-4xl font-semibold uppercase leading-none tracking-[0.04em] text-[#bfabcc] md:text-6xl">
+          {title}
+        </h2>
+      </div>
+      {description ? (
+        <p className="max-w-lg text-sm leading-relaxed text-[#bfabcc]/80 md:justify-self-end md:text-right">
+          {description}
+        </p>
+      ) : null}
+    </div>
+  );
+}
+
+function ProjectCard({
+  title,
+  eyebrow,
+  description,
+  result,
+  href,
+  imageSrc,
+  imageAlt,
+  imageAspect = "square",
+  imagePosition = "center",
+  featured = false,
+  fullWidth = false,
+  rightBorder = false,
+}: {
+  title: string;
+  eyebrow?: string;
+  description: string;
+  result?: string;
+  href: string;
+  imageSrc?: string;
+  imageAlt?: string;
+  imageAspect?: "square" | "wide";
+  imagePosition?: string;
+  featured?: boolean;
+  fullWidth?: boolean;
+  rightBorder?: boolean;
+}) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`group block border-b border-[#253122] bg-[#fbf6f3] transition-colors hover:bg-[#bfabcc] ${
+        fullWidth ? "md:col-span-2" : rightBorder ? "md:border-r" : ""
+      }`}
+    >
+      {imageSrc ? (
+        <div
+          className={`relative overflow-hidden border-b border-[#253122] bg-[#b5d1cc] ${
+            imageAspect === "wide" ? "aspect-[16/9]" : "aspect-square"
+          }`}
+        >
+          <Image
+            src={`${basePath}${imageSrc}`}
+            alt={imageAlt ?? title}
+            fill
+            className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+            sizes={featured ? "(min-width: 768px) 66rem, 90vw" : "(min-width: 768px) 33rem, 90vw"}
+            style={{ objectPosition: imagePosition }}
+          />
+        </div>
+      ) : null}
+      <div className="p-5 md:p-8">
+        {eyebrow ? (
+          <p className="mb-4 text-[0.68rem] font-bold uppercase tracking-[0.2em] text-[#ff616b]">
+            {eyebrow}
+          </p>
+        ) : null}
+        <div className="mb-8 flex items-start justify-between gap-6">
+          <h3
+            className={`font-sans font-semibold uppercase leading-none tracking-[0.04em] text-[#253122] transition-colors group-hover:text-[#ff616b] ${
+              featured ? "text-4xl md:text-7xl" : "text-3xl md:text-5xl"
+            }`}
+          >
+            {title}
+          </h3>
+          <ArrowUpRightIcon className="mt-1 h-5 w-5 shrink-0 text-[#ff616b] transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+        </div>
+        <p className={`${featured ? "max-w-3xl text-base" : "max-w-xl text-sm"} leading-relaxed text-[#414141]`}>
+          {description}
+        </p>
+        {result ? (
+          <p className="mt-5 max-w-2xl border border-[#253122] bg-[#ffb852] px-4 py-3 text-sm font-bold uppercase leading-relaxed tracking-[0.08em] text-[#253122]">
+            {result}
+          </p>
+        ) : null}
+      </div>
+    </a>
+  );
+}
+
+function VideoStorytellingBucket({
+  stories,
+  fullWidth = false,
+}: {
+  stories: { title: string; description: string; href: string }[];
+  fullWidth?: boolean;
+}) {
+  return (
+    <div className={`border-b border-[#253122] bg-[#1b3644] text-[#bfabcc] ${fullWidth ? "md:col-span-2" : ""}`}>
+      <div className="border-b border-[#253122] p-5 md:p-8">
+        <p className="mb-4 text-[0.68rem] font-bold uppercase tracking-[0.2em] text-[#96bfe6]">
+          Video storytelling
+        </p>
+        <h3 className="font-sans text-3xl font-semibold uppercase leading-none tracking-[0.04em] md:text-5xl">
+          Complex stories, made watchable
+        </h3>
+      </div>
+      <div className="grid md:grid-cols-2">
+        {stories.map((story, index) => (
+          <a
+            key={story.title}
+            href={story.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`group block p-5 transition-colors hover:bg-[#bfabcc] hover:text-[#253122] md:p-8 ${
+              index === 0 ? "border-b border-[#253122] md:border-r md:border-b-0" : ""
+            }`}
+          >
+            <div className="mb-8 flex items-start justify-between gap-6">
+              <h4 className="font-sans text-3xl font-semibold uppercase leading-none tracking-[0.04em] md:text-5xl">
+                {story.title}
+              </h4>
+              <ArrowUpRightIcon className="mt-1 h-5 w-5 shrink-0 text-[#ff616b] transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+            </div>
+            <p className="max-w-xl text-sm leading-relaxed">{story.description}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function InfoList({ title, items }: { title: string; items: string[] }) {
+  return (
+    <div className="border-b border-[#253122] p-5 last:border-b-0 md:border-r md:border-b-0 md:p-8 even:md:border-r-0">
+      <h3 className="mb-5 text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[#ff616b]">
+        {title}
+      </h3>
+      <ul className="space-y-3 text-sm leading-relaxed text-[#414141]">
+        {items.map((item) => (
+          <li key={item} className="flex gap-3">
+            <span className="mt-2 h-2 w-2 shrink-0 border border-[#253122] bg-[#ffa6d9]" />
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+function SocialLink({ href, label }: { href: string; label: string }) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center justify-between border-b border-[#253122] px-6 py-4 text-xs font-bold uppercase tracking-[0.18em] text-[#253122] transition-colors last:border-b-0 hover:bg-[#96bfe6] hover:text-[#1b3644]"
+    >
+      {label}
+      <ArrowUpRightIcon className="h-3.5 w-3.5" />
+    </a>
+  );
+}
+
+function ArrowRightIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+      aria-hidden="true"
+    >
+      <path d="M5 12h14" />
+      <path d="m12 5 7 7-7 7" />
+    </svg>
+  );
+}
+
+function ArrowUpRightIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+      aria-hidden="true"
+    >
+      <path d="M7 17 17 7" />
+      <path d="M7 7h10v10" />
+    </svg>
+  );
+}

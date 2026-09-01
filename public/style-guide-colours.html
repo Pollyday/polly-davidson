@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Polly Portfolio Colour Tiles</title>
+    <style>
+      :root {
+        --paper: #ffb852;
+        --page: #b5d1cc;
+        --ink: #414141;
+        --muted: #c0b490;
+        --coral: #ff616b;
+        --navy: #253122;
+        --blue: #1b3644;
+        --mint: #96bfe6;
+        --lavender: #bfabcc;
+        --card: #fbf6f3;
+        --tag: #ffa6d9;
+        --outline: #253122;
+      }
+
+      body {
+        margin: 0;
+        background: var(--page);
+        color: var(--ink);
+        font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif;
+      }
+
+      main {
+        width: min(72rem, calc(100vw - 2rem));
+        margin: 1rem auto 3rem;
+        border: 1px solid var(--outline);
+        background: var(--card);
+      }
+
+      header {
+        padding: clamp(1.5rem, 4vw, 3rem);
+        border-bottom: 1px solid var(--navy);
+        background:
+          linear-gradient(rgba(233, 235, 116, 0.58) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(233, 235, 116, 0.58) 1px, transparent 1px),
+          var(--paper);
+        background-size: 2.35rem 2.35rem;
+      }
+
+      .eyebrow {
+        margin: 0 0 1rem;
+        color: var(--blue);
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        color: var(--coral);
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: clamp(3rem, 8vw, 6rem);
+        font-weight: 300;
+        letter-spacing: -0.055em;
+        line-height: 0.85;
+        text-transform: uppercase;
+      }
+
+      .tiles {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+        gap: 0;
+        border-top: 1px solid var(--navy);
+      }
+
+      .tile {
+        min-height: 12rem;
+        display: grid;
+        align-content: end;
+        gap: 0.35rem;
+        padding: 1rem;
+        border-right: 1px solid var(--navy);
+        border-bottom: 1px solid var(--navy);
+      }
+
+      .tile strong,
+      .tile span {
+        display: block;
+        width: fit-content;
+        padding: 0.2rem 0.35rem;
+        border: 1px solid var(--navy);
+        background: var(--card);
+      }
+
+      .tile strong {
+        color: var(--navy);
+        font-size: 0.72rem;
+        font-weight: 800;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+      }
+
+      .tile span {
+        color: var(--muted);
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+      }
+
+      .dark strong,
+      .dark span {
+        border-color: var(--mint);
+        background: var(--blue);
+        color: var(--mint);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="eyebrow">Style guide / colour tiles</p>
+        <h1>Polly portfolio palette</h1>
+      </header>
+
+      <section class="tiles" aria-label="Colour palette">
+        <div class="tile" style="background: #ffb852">
+          <strong>Paper</strong>
+          <span>#ffb852</span>
+        </div>
+        <div class="tile" style="background: #b5d1cc">
+          <strong>Page</strong>
+          <span>#b5d1cc</span>
+        </div>
+        <div class="tile" style="background: #fbf6f3">
+          <strong>Card</strong>
+          <span>#fbf6f3</span>
+        </div>
+        <div class="tile dark" style="background: #1b3644">
+          <strong>Dark blue</strong>
+          <span>#1b3644</span>
+        </div>
+        <div class="tile dark" style="background: #253122">
+          <strong>Navy / line</strong>
+          <span>#253122</span>
+        </div>
+        <div class="tile" style="background: #ff616b">
+          <strong>Coral</strong>
+          <span>#ff616b</span>
+        </div>
+        <div class="tile" style="background: #96bfe6">
+          <strong>Light blue</strong>
+          <span>#96bfe6</span>
+        </div>
+        <div class="tile" style="background: #bfabcc">
+          <strong>Lavender hover</strong>
+          <span>#bfabcc</span>
+        </div>
+        <div class="tile" style="background: #ffa6d9">
+          <strong>Tag pink</strong>
+          <span>#ffa6d9</span>
+        </div>
+        <div class="tile" style="background: #414141">
+          <strong>Ink</strong>
+          <span>#414141</span>
+        </div>
+        <div class="tile" style="background: #c0b490">
+          <strong>Muted</strong>
+          <span>#c0b490</span>
+        </div>
+        <div class="tile" style="background: #c0b490">
+          <strong>Section outlines</strong>
+          <span>#253122</span>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
