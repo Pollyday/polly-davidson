@@ -128,7 +128,7 @@ export default function Home() {
                 src={`${basePath}/about-me-illustration-lines.png`}
                 alt="Polly Davidson"
                 fill
-                className="scale-[1.85] object-cover object-[50%_50%]"
+                className="-translate-x-[7mm] scale-[1.85] object-cover object-[50%_50%]"
                 sizes="(min-width: 768px) 33vw, 90vw"
               />
             </div>
