@@ -71,6 +71,9 @@ export default function Home() {
               description="How do you make thousands of developers want to spend two days talking about software? GitHub Universe is GitHub's flagship developer event, and I've worked on it for five years running, helping attract 3.5K attendees across brand, social, content, community and ticket sales."
               tags={["EVENTS", "DEVELOPER MARKETING", "TICKET SALES"]}
               href="https://githubuniverse.com"
+              imageSrc="/project-images/github-universe.jpg"
+              imageAlt="GitHub Universe event signage"
+              imagePosition="center"
               featured
               fullWidth
             />
@@ -80,6 +83,9 @@ export default function Home() {
               description="A brand and commercial proposition outside conventional B2B marketing, built around GitHub gear, community affection and things people actually want to own."
               tags={["BRAND", "COMMERCE", "COMMUNITY"]}
               href="https://thegithubshop.com"
+              imageSrc="/project-images/github-shop.jpeg"
+              imageAlt="GitHub Shop campaign image with summer-themed GitHub merchandise"
+              imagePosition="center"
               rightBorder
             />
             <ProjectCard
@@ -88,6 +94,9 @@ export default function Home() {
               description="A YouTube series that turns intimidating developer tooling into useful, friendly lessons for people just getting started."
               tags={["CONTENT STRATEGY", "EDUCATION", "VIDEO"]}
               href="https://www.youtube.com/playlist?list=PL0lo9MOBetEFcp4SCWinBdpml9B2U25-f"
+              imageSrc="/project-images/github-for-beginners.jpg"
+              imageAlt="GitHub for Beginners video set with presenter and GitHub props"
+              imagePosition="center"
             />
             <ProjectCard
               title="The GitHub Podcast"
@@ -95,6 +104,9 @@ export default function Home() {
               description="Conversations and narrative work designed to make the people behind software feel more human, more specific and more worth listening to."
               tags={["PODCAST", "CONTENT", "STORYTELLING"]}
               href="https://www.youtube.com/playlist?list=PL0lo9MOBetEHmIDpT8KA-qt7Ebb2GhesV"
+              imageSrc="/project-images/github-podcast.png"
+              imageAlt="GitHub Podcast channel artwork with Mona and Hubot characters"
+              imagePosition="center"
               rightBorder
             />
             <ProjectCard
@@ -260,6 +272,9 @@ function ProjectCard({
   result,
   tags,
   href,
+  imageSrc,
+  imageAlt,
+  imagePosition = "center",
   featured = false,
   fullWidth = false,
   rightBorder = false,
@@ -270,6 +285,9 @@ function ProjectCard({
   result?: string;
   tags: string[];
   href: string;
+  imageSrc?: string;
+  imageAlt?: string;
+  imagePosition?: string;
   featured?: boolean;
   fullWidth?: boolean;
   rightBorder?: boolean;
@@ -283,6 +301,22 @@ function ProjectCard({
         fullWidth ? "md:col-span-2" : rightBorder ? "md:border-r" : ""
       }`}
     >
+      {imageSrc ? (
+        <div
+          className={`relative mb-6 overflow-hidden border border-[#253122] bg-[#b5d1cc] ${
+            featured ? "aspect-[16/7]" : "aspect-[16/10]"
+          }`}
+        >
+          <Image
+            src={`${basePath}${imageSrc}`}
+            alt={imageAlt ?? title}
+            fill
+            className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+            sizes={featured ? "(min-width: 768px) 66rem, 90vw" : "(min-width: 768px) 33rem, 90vw"}
+            style={{ objectPosition: imagePosition }}
+          />
+        </div>
+      ) : null}
       {eyebrow ? (
         <p className="mb-4 text-[0.68rem] font-bold uppercase tracking-[0.2em] text-[#ff616b]">
           {eyebrow}
