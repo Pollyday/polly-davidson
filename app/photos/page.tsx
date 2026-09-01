@@ -3,27 +3,61 @@ import Link from "next/link";
 
 const basePath = process.env.NODE_ENV === "production" ? "/polly-davidson" : "";
 
-const featuredPhotos = [
+const journalImages = [
   {
-    src: "",
-    alt: "Replace this with a description of your first featured photo",
-    title: "Your first featured photo",
+    src: "/project-images/github-universe.jpg",
+    alt: "GitHub Universe event signage",
+    title: "Universe",
+    frameClass: "md:col-span-7 rotate-[-1.4deg]",
+    imageClass: "aspect-[16/10]",
   },
   {
-    src: "",
-    alt: "Replace this with a description of your second featured photo",
-    title: "Your second featured photo",
+    src: "/project-images/github-shop.jpeg",
+    alt: "GitHub Shop campaign image with summer-themed merchandise",
+    title: "Shop",
+    frameClass: "md:col-span-5 md:mt-16 rotate-[1.2deg]",
+    imageClass: "aspect-square",
   },
   {
-    src: "",
-    alt: "Replace this with a description of your third featured photo",
-    title: "Your third featured photo",
+    src: "/project-images/github-for-beginners.jpg",
+    alt: "GitHub for Beginners video set with presenter and GitHub props",
+    title: "GitHub for Beginners",
+    frameClass: "md:col-span-5 md:-mt-8 rotate-[0.8deg]",
+    imageClass: "aspect-[4/5]",
+  },
+  {
+    src: "/project-images/github-podcast.png",
+    alt: "GitHub Podcast channel artwork with Mona and Hubot characters",
+    title: "Podcast",
+    frameClass: "md:col-span-7 md:mt-10 rotate-[-0.9deg]",
+    imageClass: "aspect-[16/9]",
+  },
+  {
+    src: "/project-images/days-of-deutsch.jpeg",
+    alt: "Franzbroetchen pastry with a handwritten Days of Deutsch label",
+    title: "Days of Deutsch",
+    frameClass: "md:col-span-4 md:ml-12 rotate-[-1deg]",
+    imageClass: "aspect-square",
+  },
+  {
+    src: "/about-me-illustration-lines.png",
+    alt: "Line illustration portrait of Polly Davidson",
+    title: "Sketch",
+    frameClass: "md:col-span-4 md:mt-24 rotate-[1.5deg]",
+    imageClass: "aspect-[4/5]",
+  },
+  {
+    src: "/project-images/wunderlist.png",
+    alt: "Wunderlist visual with pink background and orange abstract shapes",
+    title: "Wunderlist",
+    frameClass: "md:col-span-4 md:mt-8 rotate-[-0.7deg]",
+    imageClass: "aspect-[4/3]",
   },
 ];
 
 export default function PhotosPage() {
   return (
-    <div className="min-h-screen bg-[#b5d1cc] text-[#414141] selection:bg-[#ff616b]/25 selection:text-[#253122]">
+    <div className="min-h-screen bg-[#fbf6f3] text-[#414141] selection:bg-[#ff616b]/25 selection:text-[#253122]">
       <nav className="fixed inset-x-0 top-0 z-50 border-b border-[#253122] bg-[#fbf6f3]/92 backdrop-blur">
         <div className="mx-auto flex min-h-16 max-w-6xl items-center justify-between gap-4 px-5 py-3 sm:px-6">
           <Link
@@ -52,57 +86,33 @@ export default function PhotosPage() {
         </div>
       </nav>
 
-      <main className="mx-auto max-w-6xl px-5 pt-24 pb-16 sm:px-6 lg:pt-28">
-        <section className="overflow-hidden border border-[#253122] bg-[#fbf6f3]">
-          <div className="border-b border-[#253122] bg-[linear-gradient(rgba(233,235,116,0.58)_1px,transparent_1px),linear-gradient(90deg,rgba(233,235,116,0.58)_1px,transparent_1px)] bg-[#ffb852] bg-[size:2.35rem_2.35rem] p-6 md:p-10">
-            <p className="mb-5 text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[#1b3644]">
-              Photos
-            </p>
-            <h1 className="max-w-4xl font-serif text-[clamp(3.5rem,9vw,7rem)] font-light uppercase leading-[0.82] tracking-[-0.055em] text-[#1b3644]">
-              Things worth looking at twice
-            </h1>
-          </div>
+      <main className="mx-auto max-w-6xl px-5 pt-24 pb-24 sm:px-6 lg:pt-28">
+        <section className="py-8 md:py-14">
+          <p className="mb-4 text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[#ff616b]">
+            Photos
+          </p>
+          <h1 className="max-w-3xl font-serif text-[clamp(3.25rem,9vw,7rem)] font-light uppercase leading-[0.82] tracking-[-0.055em] text-[#1b3644]">
+            A visual journal
+          </h1>
+        </section>
 
-          <div className="grid gap-0 md:grid-cols-3">
-            {featuredPhotos.map((photo) => (
-              <figure
-                key={photo.src}
-                className="border-b border-[#253122] bg-[#fbf6f3] p-4 md:border-r md:last:border-r-0"
-              >
-                <div className="relative aspect-[4/5] overflow-hidden border border-[#253122] bg-[#b5d1cc]">
-                  {photo.src ? (
-                    <Image
-                      src={`${basePath}${photo.src}`}
-                      alt={photo.alt}
-                      fill
-                      className="object-cover"
-                      sizes="(min-width: 768px) 30vw, 90vw"
-                    />
-                  ) : (
-                    <div className="grid h-full place-items-center bg-[linear-gradient(rgba(233,235,116,0.58)_1px,transparent_1px),linear-gradient(90deg,rgba(233,235,116,0.58)_1px,transparent_1px)] bg-[#ffb852] bg-[size:2.35rem_2.35rem] p-6 text-center">
-                      <p className="max-w-40 text-[0.72rem] font-bold uppercase tracking-[0.2em] text-[#253122]">
-                        Add a photo in public/photos
-                      </p>
-                    </div>
-                  )}
-                </div>
-                <figcaption className="mt-4 text-[0.68rem] font-bold uppercase tracking-[0.18em] text-[#253122]">
-                  {photo.title}
-                </figcaption>
-              </figure>
-            ))}
-          </div>
-
-          <div className="border-t border-[#253122] bg-[#1b3644] p-6 text-[#bfabcc] md:p-8">
-            <h2 className="font-sans text-3xl font-semibold uppercase leading-none tracking-[0.04em] md:text-5xl">
-              How to add your photos
-            </h2>
-            <ol className="mt-6 space-y-3 text-sm leading-relaxed text-[#bfabcc]/85">
-              <li>1. Put your image files in the repo folder: <code className="bg-[#fbf6f3] px-1 py-0.5 text-[#253122]">public/photos/</code>.</li>
-              <li>2. Name them simply, like <code className="bg-[#fbf6f3] px-1 py-0.5 text-[#253122]">universe-stage.jpg</code> or <code className="bg-[#fbf6f3] px-1 py-0.5 text-[#253122]">berlin-01.png</code>.</li>
-              <li>3. In <code className="bg-[#fbf6f3] px-1 py-0.5 text-[#253122]">app/photos/page.tsx</code>, replace the example filenames, titles and alt text in <code className="bg-[#fbf6f3] px-1 py-0.5 text-[#253122]">featuredPhotos</code>.</li>
-            </ol>
-          </div>
+        <section className="grid items-start gap-x-8 gap-y-12 md:grid-cols-12 md:gap-y-6">
+          {journalImages.map((photo) => (
+            <figure key={photo.src} className={photo.frameClass}>
+              <div className={`relative overflow-hidden bg-[#fbf6f3] ${photo.imageClass}`}>
+                <Image
+                  src={`${basePath}${photo.src}`}
+                  alt={photo.alt}
+                  fill
+                  className="object-cover"
+                  sizes="(min-width: 768px) 58vw, 90vw"
+                />
+              </div>
+              <figcaption className="mt-3 text-[0.68rem] font-bold uppercase tracking-[0.18em] text-[#253122]">
+                {photo.title}
+              </figcaption>
+            </figure>
+          ))}
         </section>
       </main>
     </div>

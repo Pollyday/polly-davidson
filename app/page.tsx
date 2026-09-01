@@ -38,11 +38,11 @@ export default function Home() {
 
       <main className="relative z-10 mx-auto max-w-6xl px-5 pt-24 pb-16 sm:px-6 lg:pt-28">
         <section className="overflow-hidden border border-[#253122] bg-[#ffb852]">
-          <div className="grid border-b border-[#253122] bg-[linear-gradient(rgba(233,235,116,0.58)_1px,transparent_1px),linear-gradient(90deg,rgba(233,235,116,0.58)_1px,transparent_1px)] bg-[size:2.35rem_2.35rem] px-5 py-12 sm:px-8 md:px-12 md:py-20">
-            <p className="mb-8 text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[#1b3644]">
+          <div className="grid border-b border-[#253122] bg-[linear-gradient(rgba(233,235,116,0.58)_1px,transparent_1px),linear-gradient(90deg,rgba(233,235,116,0.58)_1px,transparent_1px)] bg-[size:2.35rem_2.35rem] px-5 py-8 sm:px-8 md:px-12 md:py-12">
+            <p className="mb-5 text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[#1b3644]">
               Brand strategist / marketing leader / GitHub
             </p>
-            <h1 className="max-w-5xl font-serif text-[clamp(3.25rem,10vw,8rem)] font-light uppercase leading-[0.82] tracking-[-0.055em] text-[#1b3644] [font-stretch:condensed]">
+            <h1 className="max-w-4xl font-serif text-[clamp(2.8rem,8vw,5.8rem)] font-light uppercase leading-[0.84] tracking-[-0.055em] text-[#1b3644] [font-stretch:condensed]">
               I make complicated things interesting.
               <span className="mt-5 block font-sans text-[0.48em] font-semibold leading-[0.9] tracking-[0.04em] text-[#ff616b] md:mt-8">
                 Hi, I&apos;m Polly.
@@ -227,16 +227,6 @@ export default function Home() {
                 A little passion project helping people learn German, one day at a time, with a
                 more playful kind of storytelling.
               </p>
-              <div className="mt-6 flex flex-wrap gap-2">
-                {["LANGUAGE", "LEARNING", "STORYTELLING"].map((tag) => (
-                  <span
-                    key={tag}
-                    className="border border-[#253122] bg-[#ffa6d9] px-2.5 py-1 text-[0.64rem] font-bold uppercase tracking-[0.1em] text-[#253122]"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
             </a>
           </div>
         </section>
@@ -385,16 +375,6 @@ function ProjectCard({
             {result}
           </p>
         ) : null}
-        <div className="mt-6 flex flex-wrap gap-2">
-          {tags.map((tag) => (
-            <span
-              key={tag}
-              className="border border-[#253122] bg-[#ffa6d9] px-2.5 py-1 text-[0.64rem] font-bold uppercase tracking-[0.1em] text-[#253122]"
-            >
-              {tag}
-            </span>
-          ))}
-        </div>
       </div>
     </a>
   );
