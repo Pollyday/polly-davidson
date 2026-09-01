@@ -99,7 +99,7 @@ export default function Home() {
               imageSrc="/project-images/github-for-beginners.jpg"
               imageAlt="GitHub for Beginners video set with presenter and GitHub props"
               imageAspect="wide"
-              imagePosition="center"
+              imagePosition="center calc(50% - 0.6mm)"
             />
             <ProjectCard
               title="The GitHub Podcast"
@@ -198,21 +198,46 @@ export default function Home() {
         </section>
 
         <section className="py-16 md:py-20">
-          <SectionHeader
-            eyebrow="Side quest"
-            title="Off the clock"
-            description="Because not everything useful has to look like a case study."
-          />
-
-          <div className="border-x border-t border-[#253122]">
-            <ProjectCard
-              title="Days of Deutsch"
-              eyebrow="Personal project"
-              description="A little passion project helping people learn German, one day at a time, with a more playful kind of storytelling."
-              tags={["LANGUAGE", "LEARNING", "STORYTELLING"]}
+          <div className="grid border-x border-t border-[#253122] bg-[#fbf6f3] md:grid-cols-2">
+            <div className="relative aspect-square overflow-hidden border-b border-[#253122] bg-[#b5d1cc] md:border-r">
+              <Image
+                src={`${basePath}/project-images/days-of-deutsch.jpeg`}
+                alt="Franzbroetchen pastry with a handwritten Days of Deutsch label"
+                fill
+                className="object-cover"
+                sizes="(min-width: 768px) 33rem, 90vw"
+              />
+            </div>
+            <a
               href="https://daysofdeutsch.com"
-              fullWidth
-            />
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block border-b border-[#253122] p-5 transition-colors hover:bg-[#bfabcc] md:p-8"
+            >
+              <p className="mb-4 text-[0.68rem] font-bold uppercase tracking-[0.2em] text-[#ff616b]">
+                Personal project
+              </p>
+              <div className="mb-8 flex items-start justify-between gap-6">
+                <h3 className="font-sans text-3xl font-semibold uppercase leading-none tracking-[0.04em] text-[#253122] transition-colors group-hover:text-[#ff616b] md:text-5xl">
+                  Days of Deutsch
+                </h3>
+                <ArrowUpRightIcon className="mt-1 h-5 w-5 shrink-0 text-[#ff616b] transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+              </div>
+              <p className="max-w-xl text-sm leading-relaxed text-[#414141]">
+                A little passion project helping people learn German, one day at a time, with a
+                more playful kind of storytelling.
+              </p>
+              <div className="mt-6 flex flex-wrap gap-2">
+                {["LANGUAGE", "LEARNING", "STORYTELLING"].map((tag) => (
+                  <span
+                    key={tag}
+                    className="border border-[#253122] bg-[#ffa6d9] px-2.5 py-1 text-[0.64rem] font-bold uppercase tracking-[0.1em] text-[#253122]"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </a>
           </div>
         </section>
 
