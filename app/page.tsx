@@ -73,6 +73,7 @@ export default function Home() {
               href="https://githubuniverse.com"
               imageSrc="/project-images/github-universe.jpg"
               imageAlt="GitHub Universe event signage"
+              imageFit="contain"
               imagePosition="center"
               featured
               fullWidth
@@ -274,6 +275,7 @@ function ProjectCard({
   href,
   imageSrc,
   imageAlt,
+  imageFit = "cover",
   imagePosition = "center",
   featured = false,
   fullWidth = false,
@@ -287,6 +289,7 @@ function ProjectCard({
   href: string;
   imageSrc?: string;
   imageAlt?: string;
+  imageFit?: "cover" | "contain";
   imagePosition?: string;
   featured?: boolean;
   fullWidth?: boolean;
@@ -297,58 +300,64 @@ function ProjectCard({
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className={`group block border-b border-[#253122] bg-[#fbf6f3] p-5 transition-colors hover:bg-[#bfabcc] md:p-8 ${
+      className={`group block border-b border-[#253122] bg-[#fbf6f3] transition-colors hover:bg-[#bfabcc] ${
         fullWidth ? "md:col-span-2" : rightBorder ? "md:border-r" : ""
       }`}
     >
       {imageSrc ? (
         <div
-          className={`relative mb-6 overflow-hidden border border-[#253122] bg-[#b5d1cc] ${
-            featured ? "aspect-[16/7]" : "aspect-[16/10]"
-          }`}
+          className={`relative overflow-hidden border-b border-[#253122] ${
+            imageFit === "contain" ? "bg-[#fbf6f3]" : "bg-[#b5d1cc]"
+          } ${featured && imageFit === "contain" ? "aspect-[2000/1301]" : featured ? "aspect-[16/7]" : "aspect-square"}`}
         >
           <Image
             src={`${basePath}${imageSrc}`}
             alt={imageAlt ?? title}
             fill
-            className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+            className={`${
+              imageFit === "contain"
+                ? "object-contain"
+                : "object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+            }`}
             sizes={featured ? "(min-width: 768px) 66rem, 90vw" : "(min-width: 768px) 33rem, 90vw"}
             style={{ objectPosition: imagePosition }}
           />
         </div>
       ) : null}
-      {eyebrow ? (
-        <p className="mb-4 text-[0.68rem] font-bold uppercase tracking-[0.2em] text-[#ff616b]">
-          {eyebrow}
-        </p>
-      ) : null}
-      <div className="mb-8 flex items-start justify-between gap-6">
-        <h3
-          className={`font-sans font-semibold uppercase leading-none tracking-[0.04em] text-[#253122] transition-colors group-hover:text-[#ff616b] ${
-            featured ? "text-4xl md:text-7xl" : "text-3xl md:text-5xl"
-          }`}
-        >
-          {title}
-        </h3>
-        <ArrowUpRightIcon className="mt-1 h-5 w-5 shrink-0 text-[#ff616b] transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
-      </div>
-      <p className={`${featured ? "max-w-3xl text-base" : "max-w-xl text-sm"} leading-relaxed text-[#414141]`}>
-        {description}
-      </p>
-      {result ? (
-        <p className="mt-5 max-w-2xl border border-[#253122] bg-[#ffb852] px-4 py-3 text-sm font-bold uppercase leading-relaxed tracking-[0.08em] text-[#253122]">
-          {result}
-        </p>
-      ) : null}
-      <div className="mt-6 flex flex-wrap gap-2">
-        {tags.map((tag) => (
-          <span
-            key={tag}
-            className="border border-[#253122] bg-[#ffa6d9] px-2.5 py-1 text-[0.64rem] font-bold uppercase tracking-[0.1em] text-[#253122]"
+      <div className="p-5 md:p-8">
+        {eyebrow ? (
+          <p className="mb-4 text-[0.68rem] font-bold uppercase tracking-[0.2em] text-[#ff616b]">
+            {eyebrow}
+          </p>
+        ) : null}
+        <div className="mb-8 flex items-start justify-between gap-6">
+          <h3
+            className={`font-sans font-semibold uppercase leading-none tracking-[0.04em] text-[#253122] transition-colors group-hover:text-[#ff616b] ${
+              featured ? "text-4xl md:text-7xl" : "text-3xl md:text-5xl"
+            }`}
           >
-            {tag}
-          </span>
-        ))}
+            {title}
+          </h3>
+          <ArrowUpRightIcon className="mt-1 h-5 w-5 shrink-0 text-[#ff616b] transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+        </div>
+        <p className={`${featured ? "max-w-3xl text-base" : "max-w-xl text-sm"} leading-relaxed text-[#414141]`}>
+          {description}
+        </p>
+        {result ? (
+          <p className="mt-5 max-w-2xl border border-[#253122] bg-[#ffb852] px-4 py-3 text-sm font-bold uppercase leading-relaxed tracking-[0.08em] text-[#253122]">
+            {result}
+          </p>
+        ) : null}
+        <div className="mt-6 flex flex-wrap gap-2">
+          {tags.map((tag) => (
+            <span
+              key={tag}
+              className="border border-[#253122] bg-[#ffa6d9] px-2.5 py-1 text-[0.64rem] font-bold uppercase tracking-[0.1em] text-[#253122]"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
       </div>
     </a>
   );
