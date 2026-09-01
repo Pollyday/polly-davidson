@@ -3,55 +3,90 @@ import Link from "next/link";
 
 const basePath = process.env.NODE_ENV === "production" ? "/polly-davidson" : "";
 
-const journalImages = [
+const workImages = [
   {
-    src: "/project-images/github-universe.jpg",
-    alt: "GitHub Universe event signage",
-    title: "Universe",
-    frameClass: "md:col-span-7 rotate-[-1.4deg]",
+    src: "/photos/work/github-for-beginners-sketching.jpg",
+    alt: "Child sketching GitHub characters in a notebook",
+    frameClass: "md:col-span-5 rotate-[-1deg]",
+    imageClass: "aspect-square",
+  },
+  {
+    src: "/photos/work/github-for-beginners-mug.jpg",
+    alt: "GitHub for Beginners mug and drawing materials",
+    frameClass: "md:col-span-4 md:mt-14 rotate-[1.1deg]",
+    imageClass: "aspect-square",
+  },
+  {
+    src: "/photos/work/github-for-beginners-hoodie.jpg",
+    alt: "GitHub for Beginners hoodie",
+    frameClass: "md:col-span-3 md:mt-6 rotate-[-0.7deg]",
+    imageClass: "aspect-square",
+  },
+  {
+    src: "/photos/work/universe-cat-sculpture.jpg",
+    alt: "Person posing inside a large GitHub cat sculpture at Universe",
+    frameClass: "md:col-span-4 md:-mt-4 rotate-[1.3deg]",
+    imageClass: "aspect-[4/5]",
+  },
+  {
+    src: "/photos/work/universe-collaboration-wall.jpg",
+    alt: "GitHub Universe collaboration wall with attendees writing notes",
+    frameClass: "md:col-span-8 md:mt-10 rotate-[-0.8deg]",
     imageClass: "aspect-[16/10]",
   },
   {
-    src: "/project-images/github-shop.jpeg",
-    alt: "GitHub Shop campaign image with summer-themed merchandise",
-    title: "Shop",
-    frameClass: "md:col-span-5 md:mt-16 rotate-[1.2deg]",
-    imageClass: "aspect-square",
-  },
-  {
-    src: "/project-images/github-for-beginners.jpg",
-    alt: "GitHub for Beginners video set with presenter and GitHub props",
-    title: "GitHub for Beginners",
-    frameClass: "md:col-span-5 md:-mt-8 rotate-[0.8deg]",
+    src: "/photos/work/universe-rainbow-arch.jpg",
+    alt: "Colourful GitHub Universe arch installation",
+    frameClass: "md:col-span-4 rotate-[-1.1deg]",
     imageClass: "aspect-[4/5]",
   },
   {
-    src: "/project-images/github-podcast.png",
-    alt: "GitHub Podcast channel artwork with Mona and Hubot characters",
-    title: "Podcast",
-    frameClass: "md:col-span-7 md:mt-10 rotate-[-0.9deg]",
-    imageClass: "aspect-[16/9]",
-  },
-  {
-    src: "/project-images/days-of-deutsch.jpeg",
-    alt: "Franzbroetchen pastry with a handwritten Days of Deutsch label",
-    title: "Days of Deutsch",
-    frameClass: "md:col-span-4 md:ml-12 rotate-[-1deg]",
-    imageClass: "aspect-square",
-  },
-  {
-    src: "/about-me-illustration-lines.png",
-    alt: "Line illustration portrait of Polly Davidson",
-    title: "Sketch",
-    frameClass: "md:col-span-4 md:mt-24 rotate-[1.5deg]",
+    src: "/photos/work/universe-stage-signage.jpg",
+    alt: "GitHub Universe event signage",
+    frameClass: "md:col-span-4 md:mt-16 rotate-[0.8deg]",
     imageClass: "aspect-[4/5]",
   },
   {
-    src: "/project-images/wunderlist.png",
-    alt: "Wunderlist visual with pink background and orange abstract shapes",
-    title: "Wunderlist",
-    frameClass: "md:col-span-4 md:mt-8 rotate-[-0.7deg]",
-    imageClass: "aspect-[4/3]",
+    src: "/photos/work/universe-shop-display.jpg",
+    alt: "GitHub Shop merchandise display at an event",
+    frameClass: "md:col-span-4 md:mt-4 rotate-[-0.5deg]",
+    imageClass: "aspect-[16/10]",
+  },
+  {
+    src: "/photos/work/universe-furby-stage.jpg",
+    alt: "Furby-inspired GitHub Universe display",
+    frameClass: "md:col-span-5 md:mt-2 rotate-[1deg]",
+    imageClass: "aspect-[4/5]",
+  },
+  {
+    src: "/photos/work/universe-badge.jpg",
+    alt: "GitHub event badge with checklist",
+    frameClass: "md:col-span-7 md:mt-12 rotate-[-0.8deg]",
+    imageClass: "aspect-[16/10]",
+  },
+  {
+    src: "/photos/work/universe-shop-moment.jpg",
+    alt: "GitHub Shop event moment",
+    frameClass: "md:col-span-4 rotate-[0.6deg]",
+    imageClass: "aspect-[4/5]",
+  },
+  {
+    src: "/photos/work/universe-wall-detail.jpg",
+    alt: "GitHub Universe wall detail",
+    frameClass: "md:col-span-4 md:mt-16 rotate-[-1deg]",
+    imageClass: "aspect-[4/5]",
+  },
+  {
+    src: "/photos/work/universe-outdoor-moment.jpg",
+    alt: "GitHub Universe outdoor moment",
+    frameClass: "md:col-span-4 md:mt-6 rotate-[1.2deg]",
+    imageClass: "aspect-[4/5]",
+  },
+  {
+    src: "/photos/work/github-for-beginners-cards.jpg",
+    alt: "GitHub for Beginners printed cards",
+    frameClass: "md:col-span-6 md:ml-16 rotate-[-0.7deg]",
+    imageClass: "aspect-[4/5]",
   },
 ];
 
@@ -88,17 +123,14 @@ export default function PhotosPage() {
 
       <main className="mx-auto max-w-6xl px-5 pt-24 pb-24 sm:px-6 lg:pt-28">
         <section className="py-8 md:py-14">
-          <p className="mb-4 text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[#ff616b]">
-            Photos
-          </p>
           <h1 className="max-w-3xl font-serif text-[clamp(3.25rem,9vw,7rem)] font-light uppercase leading-[0.82] tracking-[-0.055em] text-[#1b3644]">
-            A visual journal
+            Work
           </h1>
         </section>
 
-        <section className="grid items-start gap-x-8 gap-y-12 md:grid-cols-12 md:gap-y-6">
-          {journalImages.map((photo) => (
-            <figure key={photo.src} className={photo.frameClass}>
+        <section className="grid items-start gap-x-8 gap-y-12 md:grid-cols-12 md:gap-y-8">
+          {workImages.map((photo) => (
+            <div key={photo.src} className={photo.frameClass}>
               <div className={`relative overflow-hidden bg-[#fbf6f3] ${photo.imageClass}`}>
                 <Image
                   src={`${basePath}${photo.src}`}
@@ -108,10 +140,7 @@ export default function PhotosPage() {
                   sizes="(min-width: 768px) 58vw, 90vw"
                 />
               </div>
-              <figcaption className="mt-3 text-[0.68rem] font-bold uppercase tracking-[0.18em] text-[#253122]">
-                {photo.title}
-              </figcaption>
-            </figure>
+            </div>
           ))}
         </section>
       </main>
