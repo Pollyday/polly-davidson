@@ -52,9 +52,6 @@ export default function BlogPage() {
             <p className="mb-5 text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[#96bfe6]">
               Blog
             </p>
-            <h1 className="max-w-4xl font-sans text-5xl font-semibold uppercase leading-none tracking-[0.04em] text-[#bfabcc] md:text-7xl">
-              Notes on making ideas easier to care about
-            </h1>
           </div>
 
           <div className="grid md:grid-cols-2">

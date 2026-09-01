@@ -23,11 +23,11 @@ Use this as the editable copy sheet for the portfolio. Copy changes back into th
 
 **Eyebrow:** Brand strategist / marketing leader / GitHub
 
-**Title:** I make complicated things interesting.
+**Title:** I make complicated things interesting
 
-**Intro line:** Hi, I'm Polly.
+**Intro line:** Hi, I'm Polly
 
-**Body:** Senior brand strategist and marketing leader at GitHub. I work somewhere between the big idea and the messy business of making it happen.
+**Body:** I'm a brand strategist and marketing leader. I'm a big fan of words, creative experiments, data, and really understanding the audience. 
 
 ### Selected work
 
@@ -41,9 +41,8 @@ Use this as the editable copy sheet for the portfolio. Copy changes back into th
 
 **Title:** GitHub Universe
 
-**Description:** How do you make thousands of developers want to spend two days talking about software? GitHub Universe is GitHub's flagship developer event, and I've worked on it for five years running, helping attract 3.5K attendees across brand, social, content, community and ticket sales.
+**Description:** How do you make thousands of developers want to spend two days talking about technology? GitHub Universe is GitHub's flagship developer event, and I've worked on it for five years running, helping attract 3.7K attendees across brand, social, content, community and ticket sales.
 
-**Tags:** Events, Developer marketing, Ticket sales
 
 #### The GitHub Shop
 
@@ -51,9 +50,9 @@ Use this as the editable copy sheet for the portfolio. Copy changes back into th
 
 **Title:** The GitHub Shop
 
-**Description:** A brand and commercial proposition outside conventional B2B marketing, built around GitHub gear, community affection and things people actually want to own.
+**Description:** The shop is loved by developers. It's a true brand play: creating swag that reflects their interests but also creating a playful site that ties back to developers with its collection names, fidget spinners and hidden easter eggs. I work closely with the shop team to launch their new collections, get campaigns featured in swag drops, and for influencer gifting. 
 
-**Tags:** Brand, Commerce, Community
+
 
 #### GitHub for Beginners
 
@@ -61,7 +60,7 @@ Use this as the editable copy sheet for the portfolio. Copy changes back into th
 
 **Title:** GitHub for Beginners
 
-**Description:** A YouTube series that turns intimidating developer tooling into useful, friendly lessons for people just getting started.
+**Description:** A YouTube series that turns intimidating developer tooling into useful, friendly lessons for people just getting started, hosted by Kedasha Kerr. 
 
 **Tags:** Content strategy, Education, Video
 
@@ -71,17 +70,15 @@ Use this as the editable copy sheet for the portfolio. Copy changes back into th
 
 **Title:** The GitHub Podcast
 
-**Description:** Conversations and narrative work designed to make the people behind software feel more human, more specific and more worth listening to.
-
-**Tags:** Podcast, Content, Storytelling
+**Description:** The GitHub Podcast is a show dedicated to the topics, trends, stories and culture in and around the developer community on GitHub. Designed to bring a more behind the scenes view of GitHub and showcasing how we support open source maintainers. 
 
 #### Wunderlist
 
 **Eyebrow:** Launch storytelling
 
-**Title:** Wunderlist
+**Title:** Wunderlist | Microsoft To Do
 
-**Description:** Visual storytelling around the ideas, shapes and momentum behind Wunderlist.
+**Description:** Visual storytelling series designed to move users over from Wunderlist to Microsoft To Do. 
 
 **Tags:** Brand, Product story, Visual identity
 
@@ -93,11 +90,11 @@ Use this as the editable copy sheet for the portfolio. Copy changes back into th
 
 ##### Log4J
 
-**Description:** A security story that needed to be important without being impenetrable, created with the video team for a developer audience.
+**Description:** Creating a campaign around the story of Log4J so that audiences have a full understanding of the dangers of security vulnerabilities.
 
 ##### Anders Hejlsberg
 
-**Description:** A story about the creator of Turbo Pascal, Delphi, C# and TypeScript, and the kind of technical legacy that deserves a better-than-average interview.
+**Description:** Making sure the story of Anders Hejlsberg, creator of Typescript, C# and Turbo Pascal had a fully built out campaign to it in order to maximise views. 
 
 ### About
 
@@ -105,9 +102,9 @@ Use this as the editable copy sheet for the portfolio. Copy changes back into th
 
 **Title:** Strategy, but make it interesting
 
-**Paragraph 1:** I make complicated things easier to understand, harder to ignore and occasionally more fun.
+**Paragraph 1:** I like creating campaigns that talk to people. 
 
-**Paragraph 2:** I've spent the last 15+ years working in marketing and brand, mostly in technology. These days I'm at GitHub, where I work across brand, campaigns, content and experiences: figuring out what we should say, how we should say it and, importantly, whether anyone will care.
+**Paragraph 2:** I've spent the last 15+ years working in marketing and brand, mostly in developer marketing, but also in TV, banking, and consumer productivity apps, across smaller startups and larger corporates.  These days I'm at GitHub, where I work collaboratively across brand, campaigns, social content and community activations. 
 
 **Paragraph 3:** I like big ideas, useful data, good writing and work that doesn't take itself too seriously.
 
@@ -116,13 +113,13 @@ Use this as the editable copy sheet for the portfolio. Copy changes back into th
 - Brand and campaign strategy
 - Developer marketing
 - Content and social
-- Events and experiences
+- Event go-to-market
 
 **How I think:**
 
-- Make the complicated clear
-- Use data without becoming boring
-- Find the human reason to care
+- Understand your audience
+- Use data without losing the essence of your brand
+- Make it fun
 
 ### Personal project
 
@@ -147,8 +144,6 @@ Use this as the editable copy sheet for the portfolio. Copy changes back into th
 ## Blog page
 
 **Eyebrow:** Blog
-
-**Title:** Notes on making ideas easier to care about
 
 ### Draft post 1
 
@@ -241,10 +236,10 @@ Use this as the editable copy sheet for the portfolio. Copy changes back into th
 | The GitHub Shop | `https://thegithubshop.com` |
 | GitHub for Beginners | `https://www.youtube.com/playlist?list=PL0lo9MOBetEFcp4SCWinBdpml9B2U25-f` |
 | The GitHub Podcast | `https://www.youtube.com/playlist?list=PL0lo9MOBetEHmIDpT8KA-qt7Ebb2GhesV` |
-| Wunderlist | `https://www.wunderlist.com/` |
+| Wunderlist | `https://youtube.com/playlist?list=PLbJ3LHaydIC1XzL1mM-Dcr1wdF2sg8q0V&si=-vpgayczJqT3S5yU` |
 | Log4J | `https://www.youtube.com/watch?v=t74ClffSUW0&t=11s` |
 | Anders Hejlsberg | `https://www.youtube.com/watch?v=uMqx8NNT4xY&t=1s` |
-| Days of Deutsch | `https://daysofdeutsch.com` |
+| Days of Deutsch | `https://www.instagram.com/daysofdeutsch` |
 | Contact GitHub | `https://github.com/pollyday` |
 | Contact LinkedIn | `https://www.linkedin.com/in/polly-davidson/` |
 | Footer Polly Davidson | `https://github.com/pollyday` |

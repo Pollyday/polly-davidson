@@ -43,17 +43,17 @@ export default function Home() {
               Brand strategist / marketing leader / GitHub
             </p>
             <h1 className="max-w-4xl font-serif text-[clamp(2.8rem,8vw,5.8rem)] font-light uppercase leading-[0.84] tracking-[-0.055em] text-[#1b3644] [font-stretch:condensed]">
-              I make complicated things interesting.
+              I make complicated things interesting
               <span className="mt-5 block font-sans text-[0.48em] font-semibold leading-[0.9] tracking-[0.04em] text-[#ff616b] md:mt-8">
-                Hi, I&apos;m Polly.
+                Hi, I&apos;m Polly
               </span>
             </h1>
           </div>
 
           <div className="bg-[#fbf6f3] p-5 md:p-8">
             <p className="max-w-2xl text-lg leading-relaxed text-[#414141] md:text-xl">
-              Senior brand strategist and marketing leader at GitHub. I work somewhere between
-              the big idea and the messy business of making it happen.
+              I&apos;m a brand strategist and marketing leader. I&apos;m a big fan of words,
+              creative experiments, data, and really understanding the audience.
             </p>
           </div>
         </section>
@@ -68,8 +68,7 @@ export default function Home() {
             <ProjectCard
               title="GitHub Universe"
               eyebrow="Flagship work"
-              description="How do you make thousands of developers want to spend two days talking about software? GitHub Universe is GitHub's flagship developer event, and I've worked on it for five years running, helping attract 3.5K attendees across brand, social, content, community and ticket sales."
-              tags={["EVENTS", "DEVELOPER MARKETING", "TICKET SALES"]}
+              description="How do you make thousands of developers want to spend two days talking about technology? GitHub Universe is GitHub's flagship developer event, and I've worked on it for five years running, helping attract 3.7K attendees across brand, social, content, community and ticket sales."
               href="https://githubuniverse.com"
               imageSrc="/project-images/github-universe.jpg"
               imageAlt="GitHub Universe event signage"
@@ -81,8 +80,7 @@ export default function Home() {
             <ProjectCard
               title="The GitHub Shop"
               eyebrow="Brand commerce"
-              description="A brand and commercial proposition outside conventional B2B marketing, built around GitHub gear, community affection and things people actually want to own."
-              tags={["BRAND", "COMMERCE", "COMMUNITY"]}
+              description="The shop is loved by developers. It's a true brand play: creating swag that reflects their interests but also creating a playful site that ties back to developers with its collection names, fidget spinners and hidden easter eggs. I work closely with the shop team to launch their new collections, get campaigns featured in swag drops, and for influencer gifting."
               href="https://thegithubshop.com"
               imageSrc="/project-images/github-shop.jpeg"
               imageAlt="GitHub Shop campaign image with summer-themed GitHub merchandise"
@@ -93,8 +91,7 @@ export default function Home() {
             <ProjectCard
               title="GitHub for Beginners"
               eyebrow="Audience understanding"
-              description="A YouTube series that turns intimidating developer tooling into useful, friendly lessons for people just getting started."
-              tags={["CONTENT STRATEGY", "EDUCATION", "VIDEO"]}
+              description="A YouTube series that turns intimidating developer tooling into useful, friendly lessons for people just getting started, hosted by Kedasha Kerr."
               href="https://www.youtube.com/playlist?list=PL0lo9MOBetEFcp4SCWinBdpml9B2U25-f"
               imageSrc="/project-images/github-for-beginners.jpg"
               imageAlt="GitHub for Beginners video set with presenter and GitHub props"
@@ -104,8 +101,7 @@ export default function Home() {
             <ProjectCard
               title="The GitHub Podcast"
               eyebrow="Developer stories"
-              description="Conversations and narrative work designed to make the people behind software feel more human, more specific and more worth listening to."
-              tags={["PODCAST", "CONTENT", "STORYTELLING"]}
+              description="The GitHub Podcast is a show dedicated to the topics, trends, stories and culture in and around the developer community on GitHub. Designed to bring a more behind the scenes view of GitHub and showcasing how we support open source maintainers."
               href="https://www.youtube.com/playlist?list=PL0lo9MOBetEHmIDpT8KA-qt7Ebb2GhesV"
               imageSrc="/project-images/github-podcast.png"
               imageAlt="GitHub Podcast channel artwork with Mona and Hubot characters"
@@ -114,11 +110,10 @@ export default function Home() {
               rightBorder
             />
             <ProjectCard
-              title="Wunderlist"
+              title="Wunderlist | Microsoft To Do"
               eyebrow="Launch storytelling"
-              description="Visual storytelling around the ideas, shapes and momentum behind Wunderlist."
-              tags={["BRAND", "PRODUCT STORY", "VISUAL IDENTITY"]}
-              href="https://www.wunderlist.com/"
+              description="Visual storytelling series designed to move users over from Wunderlist to Microsoft To Do."
+              href="https://youtube.com/playlist?list=PLbJ3LHaydIC1XzL1mM-Dcr1wdF2sg8q0V&si=-vpgayczJqT3S5yU"
               imageSrc="/project-images/wunderlist.png"
               imageAlt="Wunderlist visual with pink background and orange abstract shapes"
               imageAspect="wide"
@@ -129,13 +124,13 @@ export default function Home() {
                 {
                   title: "Log4J",
                   description:
-                    "A security story that needed to be important without being impenetrable, created with the video team for a developer audience.",
+                    "Creating a campaign around the story of Log4J so that audiences have a full understanding of the dangers of security vulnerabilities.",
                   href: "https://www.youtube.com/watch?v=t74ClffSUW0&t=11s",
                 },
                 {
                   title: "Anders Hejlsberg",
                   description:
-                    "A story about the creator of Turbo Pascal, Delphi, C# and TypeScript, and the kind of technical legacy that deserves a better-than-average interview.",
+                    "Making sure the story of Anders Hejlsberg, creator of Typescript, C# and Turbo Pascal had a fully built out campaign to it in order to maximise views.",
                   href: "https://www.youtube.com/watch?v=uMqx8NNT4xY&t=1s",
                 },
               ]}
@@ -169,14 +164,14 @@ export default function Home() {
                 Strategy, but make it interesting
               </h2>
               <p className="max-w-3xl text-base leading-relaxed text-[#414141] md:text-lg">
-                I make complicated things easier to understand, harder to ignore and occasionally
-                more fun.
+                I like creating campaigns that talk to people.
               </p>
               <p className="mt-5 max-w-3xl text-base leading-relaxed text-[#414141] md:text-lg">
                 I&apos;ve spent the last 15+ years working in marketing and brand, mostly in
-                technology. These days I&apos;m at GitHub, where I work across brand, campaigns,
-                content and experiences: figuring out what we should say, how we should say it
-                and, importantly, whether anyone will care.
+                developer marketing, but also in TV, banking, and consumer productivity apps,
+                across smaller startups and larger corporates. These days I&apos;m at GitHub, where
+                I work collaboratively across brand, campaigns, social content and community
+                activations.
               </p>
               <p className="mt-5 max-w-3xl text-base leading-relaxed text-[#414141] md:text-lg">
                 I like big ideas, useful data, good writing and work that doesn&apos;t take itself
@@ -187,11 +182,11 @@ export default function Home() {
             <div className="grid md:grid-cols-2">
               <InfoList
                 title="What I do"
-                items={["Brand and campaign strategy", "Developer marketing", "Content and social", "Events and experiences"]}
+                items={["Brand and campaign strategy", "Developer marketing", "Content and social", "Event go-to-market"]}
               />
               <InfoList
                 title="How I think"
-                items={["Make the complicated clear", "Use data without becoming boring", "Find the human reason to care"]}
+                items={["Understand your audience", "Use data without losing the essence of your brand", "Make it fun"]}
               />
             </div>
           </div>
@@ -209,7 +204,7 @@ export default function Home() {
               />
             </div>
             <a
-              href="https://daysofdeutsch.com"
+              href="https://www.instagram.com/daysofdeutsch"
               target="_blank"
               rel="noopener noreferrer"
               className="group block border-b border-[#253122] p-5 transition-colors hover:bg-[#bfabcc] md:p-8"
@@ -299,7 +294,6 @@ function ProjectCard({
   eyebrow,
   description,
   result,
-  tags,
   href,
   imageSrc,
   imageAlt,
@@ -313,7 +307,6 @@ function ProjectCard({
   eyebrow?: string;
   description: string;
   result?: string;
-  tags: string[];
   href: string;
   imageSrc?: string;
   imageAlt?: string;
