@@ -68,7 +68,7 @@ export default function Home() {
             <ProjectCard
               title="GitHub Universe"
               eyebrow="Flagship work"
-              description="How do you make thousands of developers want to spend two days talking about technology? GitHub Universe is GitHub's flagship developer event, and I've worked on it for five years running, helping attract 3.7K attendees across brand, social, content, community and ticket sales."
+              description="GitHub Universe is GitHub's flagship developer event, and I've worked on it for five years running, helping attract 3.7K attendees across brand, social, content, community and ticket sales."
               href="https://githubuniverse.com"
               imageSrc="/project-images/github-universe.jpg"
               imageAlt="GitHub Universe event signage"
@@ -130,7 +130,7 @@ export default function Home() {
                 {
                   title: "Anders Hejlsberg",
                   description:
-                    "Making sure the story of Anders Hejlsberg, creator of Typescript, C# and Turbo Pascal had a fully built out campaign to it in order to maximise views.",
+                    "Making sure the story of Anders Hejlsberg, creator of Typescript, C# and Turbo Pascal had a fully built out campaign in order to maximise views.",
                   href: "https://www.youtube.com/watch?v=uMqx8NNT4xY&t=1s",
                 },
               ]}
@@ -164,9 +164,6 @@ export default function Home() {
                 Strategy, but make it interesting
               </h2>
               <p className="max-w-3xl text-base leading-relaxed text-[#414141] md:text-lg">
-                I like creating campaigns that talk to people.
-              </p>
-              <p className="mt-5 max-w-3xl text-base leading-relaxed text-[#414141] md:text-lg">
                 I&apos;ve spent the last 15+ years working in marketing and brand, mostly in
                 developer marketing, but also in TV, banking, and consumer productivity apps,
                 across smaller startups and larger corporates. These days I&apos;m at GitHub, where
@@ -383,7 +380,7 @@ function VideoStorytellingBucket({
         <p className="mb-4 text-[0.68rem] font-bold uppercase tracking-[0.2em] text-[#96bfe6]">
           Video storytelling
         </p>
-        <h3 className="font-sans text-4xl font-semibold uppercase leading-none tracking-[0.04em] md:text-6xl">
+        <h3 className="font-sans text-3xl font-semibold uppercase leading-none tracking-[0.04em] md:text-5xl">
           Complex stories, made watchable
         </h3>
       </div>

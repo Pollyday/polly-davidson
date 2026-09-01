@@ -41,7 +41,7 @@ Use this as the editable copy sheet for the portfolio. Copy changes back into th
 
 **Title:** GitHub Universe
 
-**Description:** How do you make thousands of developers want to spend two days talking about technology? GitHub Universe is GitHub's flagship developer event, and I've worked on it for five years running, helping attract 3.7K attendees across brand, social, content, community and ticket sales.
+**Description:** GitHub Universe is GitHub's flagship developer event, and I've worked on it for five years running, helping attract 3.7K attendees across brand, social, content, community and ticket sales.
 
 
 #### The GitHub Shop
@@ -94,7 +94,7 @@ Use this as the editable copy sheet for the portfolio. Copy changes back into th
 
 ##### Anders Hejlsberg
 
-**Description:** Making sure the story of Anders Hejlsberg, creator of Typescript, C# and Turbo Pascal had a fully built out campaign to it in order to maximise views. 
+**Description:** Making sure the story of Anders Hejlsberg, creator of Typescript, C# and Turbo Pascal had a fully built out campaign in order to maximise views. 
 
 ### About
 
@@ -102,11 +102,9 @@ Use this as the editable copy sheet for the portfolio. Copy changes back into th
 
 **Title:** Strategy, but make it interesting
 
-**Paragraph 1:** I like creating campaigns that talk to people. 
+**Paragraph 1:** I've spent the last 15+ years working in marketing and brand, mostly in developer marketing, but also in TV, banking, and consumer productivity apps, across smaller startups and larger corporates. These days I'm at GitHub, where I work collaboratively across brand, campaigns, social content and community activations. 
 
-**Paragraph 2:** I've spent the last 15+ years working in marketing and brand, mostly in developer marketing, but also in TV, banking, and consumer productivity apps, across smaller startups and larger corporates.  These days I'm at GitHub, where I work collaboratively across brand, campaigns, social content and community activations. 
-
-**Paragraph 3:** I like big ideas, useful data, good writing and work that doesn't take itself too seriously.
+**Paragraph 2:** I like big ideas, useful data, good writing and work that doesn't take itself too seriously.
 
 **What I do:**
 
