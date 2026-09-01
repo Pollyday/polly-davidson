@@ -73,8 +73,8 @@ export default function Home() {
               href="https://githubuniverse.com"
               imageSrc="/project-images/github-universe.jpg"
               imageAlt="GitHub Universe event signage"
-              imageFit="contain"
-              imagePosition="center"
+              imageAspect="wide"
+              imagePosition="center top"
               featured
               fullWidth
             />
@@ -86,6 +86,7 @@ export default function Home() {
               href="https://thegithubshop.com"
               imageSrc="/project-images/github-shop.jpeg"
               imageAlt="GitHub Shop campaign image with summer-themed GitHub merchandise"
+              imageAspect="wide"
               imagePosition="center"
               rightBorder
             />
@@ -97,6 +98,7 @@ export default function Home() {
               href="https://www.youtube.com/playlist?list=PL0lo9MOBetEFcp4SCWinBdpml9B2U25-f"
               imageSrc="/project-images/github-for-beginners.jpg"
               imageAlt="GitHub for Beginners video set with presenter and GitHub props"
+              imageAspect="wide"
               imagePosition="center"
             />
             <ProjectCard
@@ -107,22 +109,36 @@ export default function Home() {
               href="https://www.youtube.com/playlist?list=PL0lo9MOBetEHmIDpT8KA-qt7Ebb2GhesV"
               imageSrc="/project-images/github-podcast.png"
               imageAlt="GitHub Podcast channel artwork with Mona and Hubot characters"
+              imageAspect="wide"
               imagePosition="center"
               rightBorder
             />
             <ProjectCard
-              title="Log4J"
-              eyebrow="Complexity made clear"
-              description="A security story that needed to be important without being impenetrable, created with the video team for a developer audience."
-              tags={["VIDEO", "SECURITY", "STORYTELLING"]}
-              href="https://www.youtube.com/watch?v=t74ClffSUW0&t=11s"
+              title="Wunderlist"
+              eyebrow="Launch storytelling"
+              description="Visual storytelling around the ideas, shapes and momentum behind Wunderlist."
+              tags={["BRAND", "PRODUCT STORY", "VISUAL IDENTITY"]}
+              href="https://www.wunderlist.com/"
+              imageSrc="/project-images/wunderlist.png"
+              imageAlt="Wunderlist visual with pink background and orange abstract shapes"
+              imageAspect="wide"
+              imagePosition="center"
             />
-            <ProjectCard
-              title="Anders Hejlsberg"
-              eyebrow="Profile"
-              description="A story about the creator of Turbo Pascal, Delphi, C# and TypeScript, and the kind of technical legacy that deserves a better-than-average interview."
-              tags={["VIDEO", "PROFILE", "DEVELOPER HISTORY"]}
-              href="https://www.youtube.com/watch?v=uMqx8NNT4xY&t=1s"
+            <VideoStorytellingBucket
+              stories={[
+                {
+                  title: "Log4J",
+                  description:
+                    "A security story that needed to be important without being impenetrable, created with the video team for a developer audience.",
+                  href: "https://www.youtube.com/watch?v=t74ClffSUW0&t=11s",
+                },
+                {
+                  title: "Anders Hejlsberg",
+                  description:
+                    "A story about the creator of Turbo Pascal, Delphi, C# and TypeScript, and the kind of technical legacy that deserves a better-than-average interview.",
+                  href: "https://www.youtube.com/watch?v=uMqx8NNT4xY&t=1s",
+                },
+              ]}
               fullWidth
             />
           </div>
@@ -275,7 +291,7 @@ function ProjectCard({
   href,
   imageSrc,
   imageAlt,
-  imageFit = "cover",
+  imageAspect = "square",
   imagePosition = "center",
   featured = false,
   fullWidth = false,
@@ -289,7 +305,7 @@ function ProjectCard({
   href: string;
   imageSrc?: string;
   imageAlt?: string;
-  imageFit?: "cover" | "contain";
+  imageAspect?: "square" | "wide";
   imagePosition?: string;
   featured?: boolean;
   fullWidth?: boolean;
@@ -306,19 +322,15 @@ function ProjectCard({
     >
       {imageSrc ? (
         <div
-          className={`relative overflow-hidden border-b border-[#253122] ${
-            imageFit === "contain" ? "bg-[#fbf6f3]" : "bg-[#b5d1cc]"
-          } ${featured && imageFit === "contain" ? "aspect-[2000/1301]" : featured ? "aspect-[16/7]" : "aspect-square"}`}
+          className={`relative overflow-hidden border-b border-[#253122] bg-[#b5d1cc] ${
+            imageAspect === "wide" ? "aspect-[16/9]" : "aspect-square"
+          }`}
         >
           <Image
             src={`${basePath}${imageSrc}`}
             alt={imageAlt ?? title}
             fill
-            className={`${
-              imageFit === "contain"
-                ? "object-contain"
-                : "object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-            }`}
+            className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
             sizes={featured ? "(min-width: 768px) 66rem, 90vw" : "(min-width: 768px) 33rem, 90vw"}
             style={{ objectPosition: imagePosition }}
           />
@@ -360,6 +372,48 @@ function ProjectCard({
         </div>
       </div>
     </a>
+  );
+}
+
+function VideoStorytellingBucket({
+  stories,
+  fullWidth = false,
+}: {
+  stories: { title: string; description: string; href: string }[];
+  fullWidth?: boolean;
+}) {
+  return (
+    <div className={`border-b border-[#253122] bg-[#1b3644] text-[#bfabcc] ${fullWidth ? "md:col-span-2" : ""}`}>
+      <div className="border-b border-[#253122] p-5 md:p-8">
+        <p className="mb-4 text-[0.68rem] font-bold uppercase tracking-[0.2em] text-[#96bfe6]">
+          Video storytelling
+        </p>
+        <h3 className="font-sans text-4xl font-semibold uppercase leading-none tracking-[0.04em] md:text-6xl">
+          Complex stories, made watchable
+        </h3>
+      </div>
+      <div className="grid md:grid-cols-2">
+        {stories.map((story, index) => (
+          <a
+            key={story.title}
+            href={story.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`group block p-5 transition-colors hover:bg-[#bfabcc] hover:text-[#253122] md:p-8 ${
+              index === 0 ? "border-b border-[#253122] md:border-r md:border-b-0" : ""
+            }`}
+          >
+            <div className="mb-8 flex items-start justify-between gap-6">
+              <h4 className="font-sans text-3xl font-semibold uppercase leading-none tracking-[0.04em] md:text-5xl">
+                {story.title}
+              </h4>
+              <ArrowUpRightIcon className="mt-1 h-5 w-5 shrink-0 text-[#ff616b] transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+            </div>
+            <p className="max-w-xl text-sm leading-relaxed">{story.description}</p>
+          </a>
+        ))}
+      </div>
+    </div>
   );
 }
 
