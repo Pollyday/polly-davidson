@@ -59,9 +59,7 @@ Use this as the editable copy sheet for the portfolio. Copy changes back into th
 
 **Title:** GitHub for Beginners
 
-**Description:** A YouTube series that turns intimidating developer tooling into useful, friendly lessons for people just getting started, hosted by Kedasha Kerr. 
-
-**Result:** Over 280k views across season three and strong product conversion.
+**Description:** A YouTube series that turns intimidating developer tooling into useful, friendly lessons for people just getting started, hosted by Kedasha Kerr. Over 280k views across season three and strong product conversion.
 
 **Tags:** Content strategy, Education, Video
 
@@ -71,9 +69,7 @@ Use this as the editable copy sheet for the portfolio. Copy changes back into th
 
 **Title:** The GitHub Podcast
 
-**Description:** The GitHub Podcast is a show dedicated to the topics, trends, stories and culture in and around the developer community on GitHub. Designed to bring a more behind the scenes view of GitHub and showcasing how we support open source maintainers. 
-
-**Result:** Over 120k downloads, and 500k views on some social cuts.
+**Description:** The GitHub Podcast is a show dedicated to the topics, trends, stories and culture in and around the developer community on GitHub. Designed to bring a more behind the scenes view of GitHub and showcasing how we support open source maintainers, with over 120k downloads, and 500k views on some social cuts.
 
 #### Wunderlist
 
@@ -109,15 +105,11 @@ Use this as the editable copy sheet for the portfolio. Copy changes back into th
 
 ##### Log4J
 
-**Description:** Creating a campaign around the story of Log4J so that audiences have a full understanding of the dangers of security vulnerabilities.
-
-**Result:** My campaign brought in 7m impressions from social alone.
+**Description:** Creating a campaign around the story of Log4J so that audiences have a full understanding of the dangers of security vulnerabilities. My campaign brought in 7m impressions from social alone.
 
 ##### Anders Hejlsberg
 
-**Description:** Making sure the story of Anders Hejlsberg, creator of Typescript, C# and Turbo Pascal had a fully built out campaign in order to maximise views. 
-
-**Result:** My campaign brought in 1.8m social impressions and 180k long-form video views.
+**Description:** Making sure the story of Anders Hejlsberg, creator of Typescript, C# and Turbo Pascal had a fully built out campaign in order to maximise views. My campaign brought in 1.8m social impressions and 180k long-form video views.
 
 ### About
 
@@ -148,9 +140,7 @@ Use this as the editable copy sheet for the portfolio. Copy changes back into th
 
 **Title:** Days of Deutsch
 
-**Description:** A little passion project helping people learn German, one day at a time, with a more playful kind of storytelling.
-
-**Result:** 34k followers on Instagram, plus more on other channels.
+**Description:** A little passion project helping people learn German, one day at a time, with a more playful kind of storytelling. 34k followers on Instagram, plus more on other channels.
 
 ### Contact
 

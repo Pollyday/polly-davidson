@@ -88,8 +88,7 @@ export default function Home() {
             <ProjectCard
               title="GitHub for Beginners"
               eyebrow="Audience understanding"
-              description="A YouTube series that turns intimidating developer tooling into useful, friendly lessons for people just getting started, hosted by Kedasha Kerr."
-              result="Over 280k views across season three and strong product conversion."
+              description="A YouTube series that turns intimidating developer tooling into useful, friendly lessons for people just getting started, hosted by Kedasha Kerr. Over 280k views across season three and strong product conversion."
               href="https://www.youtube.com/playlist?list=PL0lo9MOBetEFcp4SCWinBdpml9B2U25-f"
               imageSrc="/project-images/github-for-beginners.jpg"
               imageAlt="GitHub for Beginners video set with presenter and GitHub props"
@@ -99,8 +98,7 @@ export default function Home() {
             <ProjectCard
               title="The GitHub Podcast"
               eyebrow="Developer stories"
-              description="The GitHub Podcast is a show dedicated to the topics, trends, stories and culture in and around the developer community on GitHub. Designed to bring a more behind the scenes view of GitHub and showcasing how we support open source maintainers."
-              result="Over 120k downloads, and 500k views on some social cuts."
+              description="The GitHub Podcast is a show dedicated to the topics, trends, stories and culture in and around the developer community on GitHub. Designed to bring a more behind the scenes view of GitHub and showcasing how we support open source maintainers, with over 120k downloads, and 500k views on some social cuts."
               href="https://www.youtube.com/playlist?list=PL0lo9MOBetEHmIDpT8KA-qt7Ebb2GhesV"
               imageSrc="/project-images/github-podcast.png"
               imageAlt="GitHub Podcast channel artwork with Mona and Hubot characters"
@@ -143,16 +141,13 @@ export default function Home() {
                 {
                   title: "Log4J",
                   description:
-                    "Creating a campaign around the story of Log4J so that audiences have a full understanding of the dangers of security vulnerabilities.",
-                  result: "My campaign brought in 7m impressions from social alone.",
+                    "Creating a campaign around the story of Log4J so that audiences have a full understanding of the dangers of security vulnerabilities. My campaign brought in 7m impressions from social alone.",
                   href: "https://www.youtube.com/watch?v=t74ClffSUW0&t=11s",
                 },
                 {
                   title: "Anders Hejlsberg",
                   description:
-                    "Making sure the story of Anders Hejlsberg, creator of Typescript, C# and Turbo Pascal had a fully built out campaign in order to maximise views.",
-                  result:
-                    "My campaign brought in 1.8m social impressions and 180k long-form video views.",
+                    "Making sure the story of Anders Hejlsberg, creator of Typescript, C# and Turbo Pascal had a fully built out campaign in order to maximise views. My campaign brought in 1.8m social impressions and 180k long-form video views.",
                   href: "https://www.youtube.com/watch?v=uMqx8NNT4xY&t=1s",
                 },
               ]}
@@ -189,10 +184,8 @@ export default function Home() {
               </div>
               <p className="max-w-xl text-sm leading-relaxed text-[#414141]">
                 A little passion project helping people learn German, one day at a time, with a
-                more playful kind of storytelling.
-              </p>
-              <p className="mt-5 max-w-2xl border border-[#253122] bg-[#ffb852] px-4 py-3 text-sm font-bold uppercase leading-relaxed tracking-[0.08em] text-[#253122]">
-                34k followers on Instagram, plus more on other channels.
+                more playful kind of storytelling. 34k followers on Instagram, plus more on other
+                channels.
               </p>
             </a>
           </div>
@@ -409,7 +402,7 @@ function VideoStorytellingBucket({
   stories,
   fullWidth = false,
 }: {
-  stories: { title: string; description: string; result?: string; href: string }[];
+  stories: { title: string; description: string; href: string }[];
   fullWidth?: boolean;
 }) {
   return (
@@ -440,11 +433,6 @@ function VideoStorytellingBucket({
               <ArrowUpRightIcon className="mt-1 h-5 w-5 shrink-0 text-[#ff616b] transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
             </div>
             <p className="max-w-xl text-sm leading-relaxed">{story.description}</p>
-            {story.result ? (
-              <p className="mt-5 max-w-2xl border border-[#253122] bg-[#ffb852] px-4 py-3 text-sm font-bold uppercase leading-relaxed tracking-[0.08em] text-[#253122]">
-                {story.result}
-              </p>
-            ) : null}
           </a>
         ))}
       </div>
