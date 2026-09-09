@@ -49,8 +49,8 @@ export default function Home() {
 
           <div className="bg-[#fbf6f3] p-5 md:p-8">
             <p className="max-w-2xl text-lg leading-relaxed text-[#414141] md:text-xl">
-              I&apos;m a brand strategist and marketing leader. I&apos;m a big fan of words,
-              creative experiments, data, and really understanding the audience.
+              I&apos;m a creative, audience-led brand strategist who connects the dots between
+              what we want to say and what people actually want to hear.
             </p>
           </div>
         </section>
@@ -88,7 +88,7 @@ export default function Home() {
             <ProjectCard
               title="GitHub for Beginners"
               eyebrow="Audience understanding"
-              description="A YouTube series that turns intimidating developer tooling into useful, friendly lessons for people just getting started, hosted by Kedasha Kerr."
+              description="A YouTube series that turns intimidating developer tooling into useful, friendly lessons for people just getting started, hosted by Kedasha Kerr. Over 280k views across season three and strong product conversion."
               href="https://www.youtube.com/playlist?list=PL0lo9MOBetEFcp4SCWinBdpml9B2U25-f"
               imageSrc="/project-images/github-for-beginners.jpg"
               imageAlt="GitHub for Beginners video set with presenter and GitHub props"
@@ -98,7 +98,7 @@ export default function Home() {
             <ProjectCard
               title="The GitHub Podcast"
               eyebrow="Developer stories"
-              description="The GitHub Podcast is a show dedicated to the topics, trends, stories and culture in and around the developer community on GitHub. Designed to bring a more behind the scenes view of GitHub and showcasing how we support open source maintainers."
+              description="The GitHub Podcast is a show dedicated to the topics, trends, stories and culture in and around the developer community on GitHub. Designed to bring a more behind the scenes view of GitHub and showcasing how we support open source maintainers, with over 120k downloads, and 500k views on some social cuts."
               href="https://www.youtube.com/playlist?list=PL0lo9MOBetEHmIDpT8KA-qt7Ebb2GhesV"
               imageSrc="/project-images/github-podcast.png"
               imageAlt="GitHub Podcast channel artwork with Mona and Hubot characters"
@@ -116,23 +116,80 @@ export default function Home() {
               imageAspect="wide"
               imagePosition="center"
             />
+            <ProjectCard
+              title="Wunderlist Year in Review"
+              eyebrow="Launch storytelling"
+              description="Launched Wunderlist's year in review in collaboration with design and engineers. Saw a huge spike in engagement and sharing."
+              href="https://www.producthunt.com/products/wunderlist/launches/wunderlist-year-in-review"
+              imageSrc="/project-images/wunderlist-year-in-review.png"
+              imageAlt="Wunderlist Year in Review dashboard showing annual to-do statistics"
+              imageAspect="wide"
+              imagePosition="center"
+              rightBorder
+            />
+            <ProjectCard
+              title="Wunderlist swag"
+              eyebrow="Community"
+              description={`Created stickers, postcards, and other swag to send to the community that reflected the sentiments we heard from them, like the joy of ticking off that first thing in the morning, even if it's just "Drink a coffee".`}
+              imageSrc="/project-images/wunderlist-swag.png"
+              imageAlt="Wunderlist first thing sticker showing a steaming coffee cup"
+              imageAspect="wide"
+              imageBackground="#f3f3f3"
+              imageFit="contain"
+              imagePosition="center"
+            />
             <VideoStorytellingBucket
               stories={[
                 {
                   title: "Log4J",
                   description:
-                    "Creating a campaign around the story of Log4J so that audiences have a full understanding of the dangers of security vulnerabilities.",
+                    "Creating a campaign around the story of Log4J so that audiences have a full understanding of the dangers of security vulnerabilities. My campaign brought in 7m impressions from social alone.",
                   href: "https://www.youtube.com/watch?v=t74ClffSUW0&t=11s",
                 },
                 {
                   title: "Anders Hejlsberg",
                   description:
-                    "Making sure the story of Anders Hejlsberg, creator of Typescript, C# and Turbo Pascal had a fully built out campaign in order to maximise views.",
+                    "Making sure the story of Anders Hejlsberg, creator of Typescript, C# and Turbo Pascal had a fully built out campaign in order to maximise views. My campaign brought in 1.8m social impressions and 180k long-form video views.",
                   href: "https://www.youtube.com/watch?v=uMqx8NNT4xY&t=1s",
                 },
               ]}
               fullWidth
             />
+          </div>
+        </section>
+
+        <section className="py-16 md:py-20">
+          <div className="grid border-x border-t border-[#253122] bg-[#fbf6f3] md:grid-cols-2">
+            <div className="relative aspect-square overflow-hidden border-b border-[#253122] bg-[#b5d1cc] md:border-r">
+              <Image
+                src={`${basePath}/project-images/days-of-deutsch.jpeg`}
+                alt="Franzbroetchen pastry with a handwritten Days of Deutsch label"
+                fill
+                className="object-cover"
+                sizes="(min-width: 768px) 33rem, 90vw"
+              />
+            </div>
+            <a
+              href="https://www.instagram.com/daysofdeutsch"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block border-b border-[#253122] p-5 transition-colors hover:bg-[#bfabcc] md:p-8"
+            >
+              <p className="mb-4 text-[0.68rem] font-bold uppercase tracking-[0.2em] text-[#ff616b]">
+                Personal project
+              </p>
+              <div className="mb-8 flex items-start justify-between gap-6">
+                <h3 className="font-sans text-3xl font-semibold uppercase leading-none tracking-[0.04em] text-[#253122] transition-colors group-hover:text-[#ff616b] md:text-5xl">
+                  Days of Deutsch
+                </h3>
+                <ArrowUpRightIcon className="mt-1 h-5 w-5 shrink-0 text-[#ff616b] transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+              </div>
+              <p className="max-w-xl text-sm leading-relaxed text-[#414141]">
+                A little passion project helping people learn German, one day at a time, with a
+                more playful kind of storytelling. 34k followers on Instagram, plus more on other
+                channels.
+              </p>
+            </a>
           </div>
         </section>
 
@@ -168,6 +225,12 @@ export default function Home() {
                 activations.
               </p>
               <p className="mt-5 max-w-3xl text-base leading-relaxed text-[#414141] md:text-lg">
+                I&apos;ve worked across media planning, community managing, and larger brand
+                campaigns, so I know the importance of choosing the right channel, making sure
+                your community is right there with you, and building out campaigns that stand
+                out.
+              </p>
+              <p className="mt-5 max-w-3xl text-base leading-relaxed text-[#414141] md:text-lg">
                 I like big ideas, useful data, good writing and work that doesn&apos;t take itself
                 too seriously.
               </p>
@@ -183,40 +246,6 @@ export default function Home() {
                 items={["Understand your audience", "Use data without losing the essence of your brand", "Make it fun"]}
               />
             </div>
-          </div>
-        </section>
-
-        <section className="py-16 md:py-20">
-          <div className="grid border-x border-t border-[#253122] bg-[#fbf6f3] md:grid-cols-2">
-            <div className="relative aspect-square overflow-hidden border-b border-[#253122] bg-[#b5d1cc] md:border-r">
-              <Image
-                src={`${basePath}/project-images/days-of-deutsch.jpeg`}
-                alt="Franzbroetchen pastry with a handwritten Days of Deutsch label"
-                fill
-                className="object-cover"
-                sizes="(min-width: 768px) 33rem, 90vw"
-              />
-            </div>
-            <a
-              href="https://www.instagram.com/daysofdeutsch"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group block border-b border-[#253122] p-5 transition-colors hover:bg-[#bfabcc] md:p-8"
-            >
-              <p className="mb-4 text-[0.68rem] font-bold uppercase tracking-[0.2em] text-[#ff616b]">
-                Personal project
-              </p>
-              <div className="mb-8 flex items-start justify-between gap-6">
-                <h3 className="font-sans text-3xl font-semibold uppercase leading-none tracking-[0.04em] text-[#253122] transition-colors group-hover:text-[#ff616b] md:text-5xl">
-                  Days of Deutsch
-                </h3>
-                <ArrowUpRightIcon className="mt-1 h-5 w-5 shrink-0 text-[#ff616b] transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
-              </div>
-              <p className="max-w-xl text-sm leading-relaxed text-[#414141]">
-                A little passion project helping people learn German, one day at a time, with a
-                more playful kind of storytelling.
-              </p>
-            </a>
           </div>
         </section>
 
@@ -292,6 +321,8 @@ function ProjectCard({
   imageSrc,
   imageAlt,
   imageAspect = "square",
+  imageBackground = "#b5d1cc",
+  imageFit = "cover",
   imagePosition = "center",
   featured = false,
   fullWidth = false,
@@ -301,35 +332,33 @@ function ProjectCard({
   eyebrow?: string;
   description: string;
   result?: string;
-  href: string;
+  href?: string;
   imageSrc?: string;
   imageAlt?: string;
   imageAspect?: "square" | "wide";
+  imageBackground?: string;
+  imageFit?: "cover" | "contain";
   imagePosition?: string;
   featured?: boolean;
   fullWidth?: boolean;
   rightBorder?: boolean;
 }) {
-  return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={`group block border-b border-[#253122] bg-[#fbf6f3] transition-colors hover:bg-[#bfabcc] ${
-        fullWidth ? "md:col-span-2" : rightBorder ? "md:border-r" : ""
-      }`}
-    >
+  const content = (
+    <>
       {imageSrc ? (
         <div
-          className={`relative overflow-hidden border-b border-[#253122] bg-[#b5d1cc] ${
+          className={`relative overflow-hidden border-b border-[#253122] ${
             imageAspect === "wide" ? "aspect-[16/9]" : "aspect-square"
           }`}
+          style={{ backgroundColor: imageBackground }}
         >
           <Image
             src={`${basePath}${imageSrc}`}
             alt={imageAlt ?? title}
             fill
-            className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+            className={`transition-transform duration-500 group-hover:scale-[1.03] ${
+              imageFit === "contain" ? "object-contain" : "object-cover"
+            }`}
             sizes={featured ? "(min-width: 768px) 66rem, 90vw" : "(min-width: 768px) 33rem, 90vw"}
             style={{ objectPosition: imagePosition }}
           />
@@ -349,7 +378,9 @@ function ProjectCard({
           >
             {title}
           </h3>
-          <ArrowUpRightIcon className="mt-1 h-5 w-5 shrink-0 text-[#ff616b] transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+          {href ? (
+            <ArrowUpRightIcon className="mt-1 h-5 w-5 shrink-0 text-[#ff616b] transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+          ) : null}
         </div>
         <p className={`${featured ? "max-w-3xl text-base" : "max-w-xl text-sm"} leading-relaxed text-[#414141]`}>
           {description}
@@ -360,6 +391,24 @@ function ProjectCard({
           </p>
         ) : null}
       </div>
+    </>
+  );
+  const className = `group block border-b border-[#253122] bg-[#fbf6f3] transition-colors hover:bg-[#bfabcc] ${
+    fullWidth ? "md:col-span-2" : rightBorder ? "md:border-r" : ""
+  }`;
+
+  if (!href) {
+    return <article className={className}>{content}</article>;
+  }
+
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={className}
+    >
+      {content}
     </a>
   );
 }
@@ -378,7 +427,7 @@ function VideoStorytellingBucket({
           Video storytelling
         </p>
         <h3 className="font-sans text-3xl font-semibold uppercase leading-none tracking-[0.04em] md:text-5xl">
-          Complex stories, made watchable
+          Helping complex stories find their audience
         </h3>
       </div>
       <div className="grid md:grid-cols-2">

@@ -26,7 +26,7 @@ Use this as the editable copy sheet for the portfolio. Copy changes back into th
 
 **Intro line:** Hi, I'm Polly
 
-**Body:** I'm a brand strategist and marketing leader. I'm a big fan of words, creative experiments, data, and really understanding the audience. 
+**Body:** I'm a creative, audience-led brand strategist who connects the dots between what we want to say and what people actually want to hear.
 
 ### Selected work
 
@@ -59,7 +59,7 @@ Use this as the editable copy sheet for the portfolio. Copy changes back into th
 
 **Title:** GitHub for Beginners
 
-**Description:** A YouTube series that turns intimidating developer tooling into useful, friendly lessons for people just getting started, hosted by Kedasha Kerr. 
+**Description:** A YouTube series that turns intimidating developer tooling into useful, friendly lessons for people just getting started, hosted by Kedasha Kerr. Over 280k views across season three and strong product conversion.
 
 **Tags:** Content strategy, Education, Video
 
@@ -69,7 +69,7 @@ Use this as the editable copy sheet for the portfolio. Copy changes back into th
 
 **Title:** The GitHub Podcast
 
-**Description:** The GitHub Podcast is a show dedicated to the topics, trends, stories and culture in and around the developer community on GitHub. Designed to bring a more behind the scenes view of GitHub and showcasing how we support open source maintainers. 
+**Description:** The GitHub Podcast is a show dedicated to the topics, trends, stories and culture in and around the developer community on GitHub. Designed to bring a more behind the scenes view of GitHub and showcasing how we support open source maintainers, with over 120k downloads, and 500k views on some social cuts.
 
 #### Wunderlist
 
@@ -81,19 +81,35 @@ Use this as the editable copy sheet for the portfolio. Copy changes back into th
 
 **Tags:** Brand, Product story, Visual identity
 
+#### Wunderlist Year in Review
+
+**Eyebrow:** Launch storytelling
+
+**Title:** Wunderlist Year in Review
+
+**Description:** Launched Wunderlist's year in review in collaboration with design and engineers. Saw a huge spike in engagement and sharing.
+
+#### Wunderlist swag
+
+**Eyebrow:** Community
+
+**Title:** Wunderlist swag
+
+**Description:** Created stickers, postcards, and other swag to send to the community that reflected the sentiments we heard from them, like the joy of ticking off that first thing in the morning, even if it's just "Drink a coffee".
+
 #### Video storytelling
 
 **Eyebrow:** Video storytelling
 
-**Title:** Complex stories, made watchable
+**Title:** Helping complex stories find their audience
 
 ##### Log4J
 
-**Description:** Creating a campaign around the story of Log4J so that audiences have a full understanding of the dangers of security vulnerabilities.
+**Description:** Creating a campaign around the story of Log4J so that audiences have a full understanding of the dangers of security vulnerabilities. My campaign brought in 7m impressions from social alone.
 
 ##### Anders Hejlsberg
 
-**Description:** Making sure the story of Anders Hejlsberg, creator of Typescript, C# and Turbo Pascal had a fully built out campaign in order to maximise views. 
+**Description:** Making sure the story of Anders Hejlsberg, creator of Typescript, C# and Turbo Pascal had a fully built out campaign in order to maximise views. My campaign brought in 1.8m social impressions and 180k long-form video views.
 
 ### About
 
@@ -103,7 +119,9 @@ Use this as the editable copy sheet for the portfolio. Copy changes back into th
 
 **Paragraph 1:** I've spent the last 15+ years working in marketing and brand, mostly in developer marketing, but also in TV, banking, and consumer productivity apps, across smaller startups and larger corporates. These days I'm at GitHub, where I work collaboratively across brand, campaigns, social content and community activations. 
 
-**Paragraph 2:** I like big ideas, useful data, good writing and work that doesn't take itself too seriously.
+**Paragraph 2:** I've worked across media planning, community managing, and larger brand campaigns, so I know the importance of choosing the right channel, making sure your community is right there with you, and building out campaigns that stand out.
+
+**Paragraph 3:** I like big ideas, useful data, good writing and work that doesn't take itself too seriously.
 
 **What I do:**
 
@@ -124,7 +142,7 @@ Use this as the editable copy sheet for the portfolio. Copy changes back into th
 
 **Title:** Days of Deutsch
 
-**Description:** A little passion project helping people learn German, one day at a time, with a more playful kind of storytelling.
+**Description:** A little passion project helping people learn German, one day at a time, with a more playful kind of storytelling. 34k followers on Instagram, plus more on other channels.
 
 ### Contact
 
@@ -174,6 +192,8 @@ Use this as the editable copy sheet for the portfolio. Copy changes back into th
 - GitHub for Beginners: GitHub for Beginners video set with presenter and GitHub props
 - The GitHub Podcast: GitHub Podcast channel artwork with Mona and Hubot characters
 - Wunderlist: Wunderlist visual with pink background and orange abstract shapes
+- Wunderlist Year in Review: Wunderlist Year in Review dashboard showing annual to-do statistics
+- Wunderlist swag: Wunderlist first thing sticker showing a steaming coffee cup
 - Days of Deutsch: Franzbroetchen pastry with a handwritten Days of Deutsch label
 
 ### Photos: Work
@@ -233,6 +253,7 @@ Use this as the editable copy sheet for the portfolio. Copy changes back into th
 | GitHub for Beginners | `https://www.youtube.com/playlist?list=PL0lo9MOBetEFcp4SCWinBdpml9B2U25-f` |
 | The GitHub Podcast | `https://www.youtube.com/playlist?list=PL0lo9MOBetEHmIDpT8KA-qt7Ebb2GhesV` |
 | Wunderlist | `https://youtube.com/playlist?list=PLbJ3LHaydIC1XzL1mM-Dcr1wdF2sg8q0V&si=-vpgayczJqT3S5yU` |
+| Wunderlist Year in Review | `https://www.producthunt.com/products/wunderlist/launches/wunderlist-year-in-review` |
 | Log4J | `https://www.youtube.com/watch?v=t74ClffSUW0&t=11s` |
 | Anders Hejlsberg | `https://www.youtube.com/watch?v=uMqx8NNT4xY&t=1s` |
 | Days of Deutsch | `https://www.instagram.com/daysofdeutsch` |
