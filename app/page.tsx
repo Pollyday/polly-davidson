@@ -225,6 +225,12 @@ export default function Home() {
                 activations.
               </p>
               <p className="mt-5 max-w-3xl text-base leading-relaxed text-[#414141] md:text-lg">
+                I&apos;ve worked across media planning, community managing and larger brand
+                campaigns, so I know the importance of choosing the right channel, making sure
+                your community is right there with you, and building out campaigns that stand
+                out.
+              </p>
+              <p className="mt-5 max-w-3xl text-base leading-relaxed text-[#414141] md:text-lg">
                 I like big ideas, useful data, good writing and work that doesn&apos;t take itself
                 too seriously.
               </p>

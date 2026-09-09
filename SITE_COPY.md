@@ -119,7 +119,9 @@ Use this as the editable copy sheet for the portfolio. Copy changes back into th
 
 **Paragraph 1:** I've spent the last 15+ years working in marketing and brand, mostly in developer marketing, but also in TV, banking, and consumer productivity apps, across smaller startups and larger corporates. These days I'm at GitHub, where I work collaboratively across brand, campaigns, social content and community activations. 
 
-**Paragraph 2:** I like big ideas, useful data, good writing and work that doesn't take itself too seriously.
+**Paragraph 2:** I've worked across media planning, community managing and larger brand campaigns, so I know the importance of choosing the right channel, making sure your community is right there with you, and building out campaigns that stand out.
+
+**Paragraph 3:** I like big ideas, useful data, good writing and work that doesn't take itself too seriously.
 
 **What I do:**
 
