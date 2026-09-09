@@ -81,6 +81,22 @@ Use this as the editable copy sheet for the portfolio. Copy changes back into th
 
 **Tags:** Brand, Product story, Visual identity
 
+#### Wunderlist Year in Review
+
+**Eyebrow:** Launch storytelling
+
+**Title:** Wunderlist Year in Review
+
+**Description:** Launched Wunderlist's year in review in collaboration with design and engineers. Saw a huge spike in engagement and sharing.
+
+#### Wunderlist swag
+
+**Eyebrow:** Community
+
+**Title:** Wunderlist swag
+
+**Description:** Created stickers, postcards, and other swag to send to the community that reflected the sentiments we heard from them, like the joy of ticking off that first thing in the morning, even if it's just "Drink a coffee".
+
 #### Video storytelling
 
 **Eyebrow:** Video storytelling
@@ -174,6 +190,8 @@ Use this as the editable copy sheet for the portfolio. Copy changes back into th
 - GitHub for Beginners: GitHub for Beginners video set with presenter and GitHub props
 - The GitHub Podcast: GitHub Podcast channel artwork with Mona and Hubot characters
 - Wunderlist: Wunderlist visual with pink background and orange abstract shapes
+- Wunderlist Year in Review: Wunderlist Year in Review dashboard showing annual to-do statistics
+- Wunderlist swag: Wunderlist first thing sticker showing a steaming coffee cup
 - Days of Deutsch: Franzbroetchen pastry with a handwritten Days of Deutsch label
 
 ### Photos: Work
@@ -233,6 +251,7 @@ Use this as the editable copy sheet for the portfolio. Copy changes back into th
 | GitHub for Beginners | `https://www.youtube.com/playlist?list=PL0lo9MOBetEFcp4SCWinBdpml9B2U25-f` |
 | The GitHub Podcast | `https://www.youtube.com/playlist?list=PL0lo9MOBetEHmIDpT8KA-qt7Ebb2GhesV` |
 | Wunderlist | `https://youtube.com/playlist?list=PLbJ3LHaydIC1XzL1mM-Dcr1wdF2sg8q0V&si=-vpgayczJqT3S5yU` |
+| Wunderlist Year in Review | `https://www.producthunt.com/products/wunderlist/launches/wunderlist-year-in-review` |
 | Log4J | `https://www.youtube.com/watch?v=t74ClffSUW0&t=11s` |
 | Anders Hejlsberg | `https://www.youtube.com/watch?v=uMqx8NNT4xY&t=1s` |
 | Days of Deutsch | `https://www.instagram.com/daysofdeutsch` |
