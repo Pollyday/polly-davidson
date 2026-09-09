@@ -427,7 +427,7 @@ function VideoStorytellingBucket({
           Video storytelling
         </p>
         <h3 className="font-sans text-3xl font-semibold uppercase leading-none tracking-[0.04em] md:text-5xl">
-          Complex stories, made watchable
+          Helping complex stories find their audience
         </h3>
       </div>
       <div className="grid md:grid-cols-2">

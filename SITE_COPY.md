@@ -101,7 +101,7 @@ Use this as the editable copy sheet for the portfolio. Copy changes back into th
 
 **Eyebrow:** Video storytelling
 
-**Title:** Complex stories, made watchable
+**Title:** Helping complex stories find their audience
 
 ##### Log4J
 
