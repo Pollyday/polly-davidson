@@ -134,7 +134,7 @@ export default function Home() {
               imageSrc="/project-images/wunderlist-swag.png"
               imageAlt="Wunderlist first thing sticker showing a steaming coffee cup"
               imageAspect="wide"
-              imageBackground="#fafafa"
+              imageBackground="#f3f3f3"
               imageFit="contain"
               imagePosition="center"
             />
@@ -351,7 +351,7 @@ function ProjectCard({
             alt={imageAlt ?? title}
             fill
             className={`transition-transform duration-500 group-hover:scale-[1.03] ${
-              imageFit === "contain" ? "object-contain p-8 md:p-12" : "object-cover"
+              imageFit === "contain" ? "object-contain" : "object-cover"
             }`}
             sizes={featured ? "(min-width: 768px) 66rem, 90vw" : "(min-width: 768px) 33rem, 90vw"}
             style={{ objectPosition: imagePosition }}
