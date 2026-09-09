@@ -134,6 +134,8 @@ export default function Home() {
               imageSrc="/project-images/wunderlist-swag.png"
               imageAlt="Wunderlist first thing sticker showing a steaming coffee cup"
               imageAspect="wide"
+              imageBackground="#fafafa"
+              imageFit="contain"
               imagePosition="center"
             />
             <VideoStorytellingBucket
@@ -313,6 +315,8 @@ function ProjectCard({
   imageSrc,
   imageAlt,
   imageAspect = "square",
+  imageBackground = "#b5d1cc",
+  imageFit = "cover",
   imagePosition = "center",
   featured = false,
   fullWidth = false,
@@ -326,6 +330,8 @@ function ProjectCard({
   imageSrc?: string;
   imageAlt?: string;
   imageAspect?: "square" | "wide";
+  imageBackground?: string;
+  imageFit?: "cover" | "contain";
   imagePosition?: string;
   featured?: boolean;
   fullWidth?: boolean;
@@ -335,15 +341,18 @@ function ProjectCard({
     <>
       {imageSrc ? (
         <div
-          className={`relative overflow-hidden border-b border-[#253122] bg-[#b5d1cc] ${
+          className={`relative overflow-hidden border-b border-[#253122] ${
             imageAspect === "wide" ? "aspect-[16/9]" : "aspect-square"
           }`}
+          style={{ backgroundColor: imageBackground }}
         >
           <Image
             src={`${basePath}${imageSrc}`}
             alt={imageAlt ?? title}
             fill
-            className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+            className={`transition-transform duration-500 group-hover:scale-[1.03] ${
+              imageFit === "contain" ? "object-contain p-8 md:p-12" : "object-cover"
+            }`}
             sizes={featured ? "(min-width: 768px) 66rem, 90vw" : "(min-width: 768px) 33rem, 90vw"}
             style={{ objectPosition: imagePosition }}
           />
