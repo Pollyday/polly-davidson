@@ -49,8 +49,8 @@ export default function Home() {
 
           <div className="bg-[#fbf6f3] p-5 md:p-8">
             <p className="max-w-2xl text-lg leading-relaxed text-[#414141] md:text-xl">
-              I&apos;m a brand strategist and marketing leader. I&apos;m a big fan of words,
-              creative experiments, data, and really understanding the audience.
+              I&apos;m a creative, audience-led brand strategist who connects the dots between
+              what we want to say and what people actually want to hear.
             </p>
           </div>
         </section>

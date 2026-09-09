@@ -26,7 +26,7 @@ Use this as the editable copy sheet for the portfolio. Copy changes back into th
 
 **Intro line:** Hi, I'm Polly
 
-**Body:** I'm a brand strategist and marketing leader. I'm a big fan of words, creative experiments, data, and really understanding the audience. 
+**Body:** I'm a creative, audience-led brand strategist who connects the dots between what we want to say and what people actually want to hear.
 
 ### Selected work
 
