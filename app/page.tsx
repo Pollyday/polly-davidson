@@ -23,6 +23,9 @@ export default function Home() {
             <Link href="/photos" className="transition-colors hover:text-[#96bfe6]">
               Photos
             </Link>
+            <Link href="/blog" className="transition-colors hover:text-[#bfabcc]">
+              Blog
+            </Link>
             <Link href="#philosophy" className="transition-colors hover:text-[#bfabcc]">
               About
             </Link>
