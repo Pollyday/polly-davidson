@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+const basePath = process.env.NODE_ENV === "production" ? "/polly-davidson" : "";
+
 export const metadata: Metadata = {
   title: "Experiments with AI: Portfolio site | Polly Davidson",
   description:
@@ -48,9 +50,6 @@ export default function ExperimentsWithAiPortfolioSitePage() {
             >
               <span aria-hidden="true">←</span> All posts
             </Link>
-            <p className="mb-5 text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[#96bfe6]">
-              Experiments with AI
-            </p>
             <h1 className="font-serif text-5xl font-light uppercase leading-[0.9] tracking-[-0.055em] text-[#fbf6f3] md:text-7xl">
               Experiments with AI: Portfolio site
             </h1>
@@ -124,14 +123,14 @@ export default function ExperimentsWithAiPortfolioSitePage() {
               </p>
               <figure className="mt-8 grid grid-cols-2 gap-px border border-[#253122] bg-[#253122]">
                 <Image
-                  src="/portfolio-colour-jacket.jpeg"
+                  src={`${basePath}/portfolio-colour-jacket.jpeg`}
                   alt="Bright orange jacket against a pink and blue colour palette"
                   width={1500}
                   height={2000}
                   className="h-full w-full object-cover"
                 />
                 <Image
-                  src="/portfolio-colour-book.jpeg"
+                  src={`${basePath}/portfolio-colour-book.jpeg`}
                   alt="A book held at lunch, alongside a meal and orange jacket"
                   width={1500}
                   height={2000}
