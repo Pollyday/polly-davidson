@@ -5,31 +5,31 @@ const basePath = process.env.NODE_ENV === "production" ? "/polly-davidson" : "";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#b5d1cc] text-[#414141] selection:bg-[#ff616b]/25 selection:text-[#253122]">
-      <div className="pointer-events-none fixed inset-0 z-0 bg-[radial-gradient(circle_at_top_left,rgba(255,184,82,0.28),transparent_34rem),radial-gradient(circle_at_bottom_right,rgba(255,166,217,0.22),transparent_32rem)]" />
+    <div className="min-h-screen bg-[#b5d1cc] text-[#1b3644] selection:bg-[#ff616b]/25 selection:text-[#1b3644]">
+      <div className="pointer-events-none fixed inset-0 z-0 bg-[radial-gradient(circle_at_top_left,rgba(255,184,82,0.28),transparent_34rem),radial-gradient(circle_at_bottom_right,rgba(233,235,116,0.22),transparent_32rem)]" />
 
-      <nav className="fixed inset-x-0 top-0 z-50 border-b border-[#253122] bg-[#fbf6f3]/92 backdrop-blur">
-        <div className="mx-auto flex min-h-16 max-w-6xl items-center justify-between gap-4 px-5 py-3 sm:px-6">
+      <nav className="fixed inset-x-0 top-0 z-50 border-b border-[#253122] bg-[#6F7862]">
+        <div className="mx-auto flex min-h-[calc(4rem-5mm)] max-w-6xl items-center justify-between gap-4 px-5 py-[calc(0.75rem-2.5mm)] sm:px-6">
           <Link
             href="/"
-            className="font-serif text-xl font-semibold uppercase leading-none tracking-[-0.04em] text-[#ff616b] transition-colors hover:text-[#253122]"
+            className="nav-wordmark"
           >
-            Polly Davidson
+            Polly<span className="nav-wordmark-dot">.</span>
           </Link>
-          <div className="flex flex-wrap justify-end gap-x-4 gap-y-2 text-[0.68rem] font-bold uppercase tracking-[0.2em] text-[#253122] sm:gap-x-8">
+          <div className="heading-label flex flex-wrap justify-end gap-x-4 gap-y-2 text-[#1b3644] sm:gap-x-8">
             <Link href="#work" className="transition-colors hover:text-[#ff616b]">
               Projects
             </Link>
             <Link href="/photos" className="transition-colors hover:text-[#96bfe6]">
               Photos
             </Link>
-            <Link href="/blog" className="transition-colors hover:text-[#bfabcc]">
+            <Link href="/blog" className="transition-colors hover:text-[#ffb852]">
               Blog
             </Link>
             <Link href="#philosophy" className="transition-colors hover:text-[#bfabcc]">
               About
             </Link>
-            <Link href="#contact" className="transition-colors hover:text-[#ffa6d9]">
+            <Link href="#contact" className="transition-colors hover:text-[#e9eb74]">
               Contact
             </Link>
           </div>
@@ -39,19 +39,16 @@ export default function Home() {
       <main className="relative z-10 mx-auto max-w-6xl px-5 pt-24 pb-16 sm:px-6 lg:pt-28">
         <section className="overflow-hidden border border-[#253122] bg-[#ffb852]">
           <div className="grid border-b border-[#253122] bg-[linear-gradient(rgba(233,235,116,0.58)_1px,transparent_1px),linear-gradient(90deg,rgba(233,235,116,0.58)_1px,transparent_1px)] bg-[size:2.35rem_2.35rem] px-5 py-8 sm:px-8 md:px-12 md:py-12">
-            <p className="mb-5 text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[#1b3644]">
-              Brand strategist / marketing leader / GitHub
-            </p>
-            <h1 className="max-w-4xl font-serif text-[clamp(2.8rem,8vw,5.8rem)] font-light uppercase leading-[0.84] tracking-[-0.055em] text-[#1b3644] [font-stretch:condensed]">
+            <h1 className="heading-page text-[#1b3644]">
               I make complicated things interesting
-              <span className="mt-5 block font-sans text-[0.48em] font-semibold leading-[0.9] tracking-[0.04em] text-[#ff616b] md:mt-8">
-                Hi, I&apos;m Polly
+              <span className="hero-greeting mt-5 block text-[calc(0.55em+5pt)] font-normal not-italic normal-case leading-[0.9] tracking-normal text-[#ff616b] [font-stretch:normal] md:mt-8">
+                Hi, I&apos;m Polly<span className="text-[#e9eb74]">.</span>
               </span>
             </h1>
           </div>
 
           <div className="bg-[#fbf6f3] p-5 md:p-8">
-            <p className="max-w-2xl text-lg leading-relaxed text-[#414141] md:text-xl">
+            <p className="max-w-2xl text-lg leading-relaxed text-[#1b3644] md:text-xl">
               I&apos;m a creative, audience-led brand strategist who connects the dots between
               what we want to say and what people actually want to hear.
             </p>
@@ -64,10 +61,9 @@ export default function Home() {
             title="Brand stories, launches and moments"
           />
 
-          <div className="grid grid-cols-1 gap-0 border-x border-t border-[#253122] md:grid-cols-2">
+          <div className="mint-gridlines grid grid-cols-1 gap-0 border-x border-t border-[#253122] md:grid-cols-2">
             <ProjectCard
               title="GitHub Universe"
-              eyebrow="Flagship work"
               description="GitHub Universe is GitHub's flagship developer event, and I've worked on it for five years running, helping attract 3.7K attendees across brand, social, content, community and ticket sales."
               href="https://githubuniverse.com"
               imageSrc="/project-images/github-universe.jpg"
@@ -79,7 +75,6 @@ export default function Home() {
             />
             <ProjectCard
               title="The GitHub Shop"
-              eyebrow="Brand commerce"
               description="The shop is loved by developers. It's a true brand play: creating swag that reflects their interests but also creating a playful site that ties back to developers with its collection names, fidget spinners and hidden easter eggs. I work closely with the shop team to launch their new collections, get campaigns featured in swag drops, and for influencer gifting."
               href="https://thegithubshop.com"
               imageSrc="/project-images/github-shop.jpeg"
@@ -90,7 +85,6 @@ export default function Home() {
             />
             <ProjectCard
               title="GitHub for Beginners"
-              eyebrow="Audience understanding"
               description="A YouTube series that turns intimidating developer tooling into useful, friendly lessons for people just getting started, hosted by Kedasha Kerr. Over 280k views across season three and strong product conversion."
               href="https://www.youtube.com/playlist?list=PL0lo9MOBetEFcp4SCWinBdpml9B2U25-f"
               imageSrc="/project-images/github-for-beginners.jpg"
@@ -100,7 +94,6 @@ export default function Home() {
             />
             <ProjectCard
               title="The GitHub Podcast"
-              eyebrow="Developer stories"
               description="The GitHub Podcast is a show dedicated to the topics, trends, stories and culture in and around the developer community on GitHub. Designed to bring a more behind the scenes view of GitHub and showcasing how we support open source maintainers, with over 120k downloads, and 500k views on some social cuts."
               href="https://www.youtube.com/playlist?list=PL0lo9MOBetEHmIDpT8KA-qt7Ebb2GhesV"
               imageSrc="/project-images/github-podcast.png"
@@ -111,7 +104,6 @@ export default function Home() {
             />
             <ProjectCard
               title="Wunderlist | Microsoft To Do"
-              eyebrow="Launch storytelling"
               description="Visual storytelling series designed to move users over from Wunderlist to Microsoft To Do."
               href="https://youtube.com/playlist?list=PLbJ3LHaydIC1XzL1mM-Dcr1wdF2sg8q0V&si=-vpgayczJqT3S5yU"
               imageSrc="/project-images/wunderlist.png"
@@ -121,7 +113,6 @@ export default function Home() {
             />
             <ProjectCard
               title="Wunderlist Year in Review"
-              eyebrow="Launch storytelling"
               description="Launched Wunderlist's year in review in collaboration with design and engineers. Saw a huge spike in engagement and sharing."
               href="https://www.producthunt.com/products/wunderlist/launches/wunderlist-year-in-review"
               imageSrc="/project-images/wunderlist-year-in-review.png"
@@ -132,7 +123,6 @@ export default function Home() {
             />
             <ProjectCard
               title="Wunderlist swag"
-              eyebrow="Community"
               description={`Created stickers, postcards, and other swag to send to the community that reflected the sentiments we heard from them, like the joy of ticking off that first thing in the morning, even if it's just "Drink a coffee".`}
               imageSrc="/project-images/wunderlist-swag.png"
               imageAlt="Wunderlist first thing sticker showing a steaming coffee cup"
@@ -162,7 +152,7 @@ export default function Home() {
         </section>
 
         <section className="py-16 md:py-20">
-          <div className="grid border-x border-t border-[#253122] bg-[#fbf6f3] md:grid-cols-2">
+          <div className="mint-gridlines grid border-x border-t border-[#253122] bg-[#fbf6f3] md:grid-cols-2">
             <div className="relative aspect-square overflow-hidden border-b border-[#253122] bg-[#b5d1cc] md:border-r">
               <Image
                 src={`${basePath}/project-images/days-of-deutsch.jpeg`}
@@ -178,16 +168,13 @@ export default function Home() {
               rel="noopener noreferrer"
               className="group block border-b border-[#253122] p-5 transition-colors hover:bg-[#bfabcc] md:p-8"
             >
-              <p className="mb-4 text-[0.68rem] font-bold uppercase tracking-[0.2em] text-[#ff616b]">
-                Personal project
-              </p>
               <div className="mb-8 flex items-start justify-between gap-6">
-                <h3 className="font-sans text-3xl font-semibold uppercase leading-none tracking-[0.04em] text-[#253122] transition-colors group-hover:text-[#ff616b] md:text-5xl">
+                <h3 className="heading-project text-[#1b3644] transition-colors group-hover:text-[#ff616b]">
                   Days of Deutsch
                 </h3>
                 <ArrowUpRightIcon className="mt-1 h-5 w-5 shrink-0 text-[#ff616b] transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
               </div>
-              <p className="max-w-xl text-sm leading-relaxed text-[#414141]">
+              <p className="max-w-xl text-base leading-relaxed text-[#1b3644]">
                 A little passion project helping people learn German, one day at a time, with a
                 more playful kind of storytelling. 34k followers on Instagram, plus more on other
                 channels.
@@ -201,7 +188,7 @@ export default function Home() {
           className="grid overflow-hidden border border-[#253122] bg-[#fbf6f3] md:grid-cols-12"
         >
           <div className="border-b border-[#253122] bg-[linear-gradient(rgba(233,235,116,0.58)_1px,transparent_1px),linear-gradient(90deg,rgba(233,235,116,0.58)_1px,transparent_1px)] bg-[#ffb852] bg-[size:2.35rem_2.35rem] p-5 md:col-span-4 md:border-r md:border-b-0 md:p-8">
-            <p className="mb-5 text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[#253122]">
+            <p className="heading-label mb-5 text-[#1b3644]">
               About me
             </p>
             <div className="relative aspect-[4/5] overflow-hidden border border-[#253122] bg-[#fbf6f3]">
@@ -217,29 +204,29 @@ export default function Home() {
 
           <div className="md:col-span-8">
             <div className="border-b border-[#253122] p-5 md:p-8">
-              <h2 className="mb-5 font-sans text-4xl font-semibold uppercase leading-none tracking-[0.04em] text-[#ff616b] md:text-6xl">
+              <h2 className="heading-section mb-5 text-[#ff616b]">
                 Strategy, but make it interesting
               </h2>
-              <p className="max-w-3xl text-base leading-relaxed text-[#414141] md:text-lg">
+              <p className="max-w-3xl text-base leading-relaxed text-[#1b3644] md:text-lg">
                 I&apos;ve spent the last 15+ years working in marketing and brand, mostly in
                 developer marketing, but also in TV, banking, and consumer productivity apps,
                 across smaller startups and larger corporates. These days I&apos;m at GitHub, where
                 I work collaboratively across brand, campaigns, social content and community
                 activations.
               </p>
-              <p className="mt-5 max-w-3xl text-base leading-relaxed text-[#414141] md:text-lg">
+              <p className="mt-5 max-w-3xl text-base leading-relaxed text-[#1b3644] md:text-lg">
                 I&apos;ve worked across media planning, community managing, and larger brand
                 campaigns, so I know the importance of choosing the right channel, making sure
                 your community is right there with you, and building out campaigns that stand
                 out.
               </p>
-              <p className="mt-5 max-w-3xl text-base leading-relaxed text-[#414141] md:text-lg">
+              <p className="mt-5 max-w-3xl text-base leading-relaxed text-[#1b3644] md:text-lg">
                 I like big ideas, useful data, good writing and work that doesn&apos;t take itself
                 too seriously.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2">
+            <div className="yellow-gridlines grid border border-[#253122] md:grid-cols-2">
               <InfoList
                 title="What I do"
                 items={["Brand and campaign strategy", "Developer marketing", "Content and social", "Event go-to-market"]}
@@ -255,14 +242,15 @@ export default function Home() {
         <section id="contact" className="py-16 md:py-20">
           <div className="grid overflow-hidden border border-[#253122] bg-[#1b3644] md:grid-cols-[1fr_auto]">
             <div className="p-6 md:p-10">
-              <p className="mb-5 text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[#96bfe6]">
+              <p className="heading-label mb-5 text-[#96bfe6]">
                 Contact
               </p>
-              <p className="max-w-2xl font-sans text-xl font-semibold uppercase leading-tight tracking-[0.03em] text-[#bfabcc] md:text-3xl">
-                Want to talk about brand or campaign strategy? Let&apos;s connect.
-              </p>
+              <h2 className="heading-subsection max-w-2xl text-[#bfabcc]">
+                Want to talk about brand or campaign strategy?
+                <span className="block whitespace-nowrap">Let&apos;s connect.</span>
+              </h2>
             </div>
-            <div className="grid gap-0 border-t border-[#253122] bg-[#ffb852] md:min-w-80 md:border-t-0 md:border-l">
+            <div className="mint-gridlines grid gap-0 border border-[#253122] bg-[#ffb852] md:min-w-80">
               <SocialLink href="https://github.com/pollyday" label="GitHub" />
               <SocialLink href="https://www.linkedin.com/in/polly-davidson/" label="LinkedIn" />
             </div>
@@ -270,14 +258,14 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="relative z-10 border-t border-[#253122] bg-[#fbf6f3] px-5 py-6 text-center text-[0.72rem] font-bold uppercase tracking-[0.18em] text-[#414141]">
+      <footer className="heading-label relative z-10 border-t border-[#253122] bg-[#fbf6f3] px-5 py-6 text-center text-[#1b3644]">
         <p>
           Made by{" "}
           <a
             href="https://github.com/pollyday"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#ff616b] transition-colors hover:text-[#253122]"
+            className="text-[#ff616b] transition-colors hover:text-[#1b3644]"
           >
             Polly Davidson
           </a>
@@ -299,10 +287,10 @@ function SectionHeader({
   return (
     <div className="mb-8 grid gap-4 border border-[#253122] bg-[#1b3644] p-5 md:grid-cols-[auto_1fr] md:items-end md:p-8">
       <div>
-        <p className="mb-3 text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[#96bfe6]">
+        <p className="heading-label mb-3 text-[#96bfe6]">
           {eyebrow}
         </p>
-        <h2 className="font-sans text-4xl font-semibold uppercase leading-none tracking-[0.04em] text-[#bfabcc] md:text-6xl">
+        <h2 className="heading-section text-[#bfabcc]">
           {title}
         </h2>
       </div>
@@ -317,7 +305,6 @@ function SectionHeader({
 
 function ProjectCard({
   title,
-  eyebrow,
   description,
   result,
   href,
@@ -332,7 +319,6 @@ function ProjectCard({
   rightBorder = false,
 }: {
   title: string;
-  eyebrow?: string;
   description: string;
   result?: string;
   href?: string;
@@ -350,7 +336,7 @@ function ProjectCard({
     <>
       {imageSrc ? (
         <div
-          className={`relative overflow-hidden border-b border-[#253122] ${
+          className={`relative shrink-0 overflow-hidden border-b border-[#253122] ${
             imageAspect === "wide" ? "aspect-[16/9]" : "aspect-square"
           }`}
           style={{ backgroundColor: imageBackground }}
@@ -367,17 +353,9 @@ function ProjectCard({
           />
         </div>
       ) : null}
-      <div className="p-5 md:p-8">
-        {eyebrow ? (
-          <p className="mb-4 text-[0.68rem] font-bold uppercase tracking-[0.2em] text-[#ff616b]">
-            {eyebrow}
-          </p>
-        ) : null}
+      <div className="flex-1 p-5 md:p-8">
         <div className="mb-8 flex items-start justify-between gap-6">
-          <h3
-            className={`font-sans font-semibold uppercase leading-none tracking-[0.04em] text-[#253122] transition-colors group-hover:text-[#ff616b] ${
-              featured ? "text-4xl md:text-7xl" : "text-3xl md:text-5xl"
-            }`}
+          <h3 className="heading-project text-[#1b3644] transition-colors group-hover:text-[#ff616b]"
           >
             {title}
           </h3>
@@ -385,18 +363,18 @@ function ProjectCard({
             <ArrowUpRightIcon className="mt-1 h-5 w-5 shrink-0 text-[#ff616b] transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
           ) : null}
         </div>
-        <p className={`${featured ? "max-w-3xl text-base" : "max-w-xl text-sm"} leading-relaxed text-[#414141]`}>
+        <p className={`${fullWidth ? "max-w-3xl" : "max-w-xl"} text-base leading-relaxed text-[#1b3644]`}>
           {description}
         </p>
         {result ? (
-          <p className="mt-5 max-w-2xl border border-[#253122] bg-[#ffb852] px-4 py-3 text-sm font-bold uppercase leading-relaxed tracking-[0.08em] text-[#253122]">
+          <p className="mt-5 max-w-2xl border border-[#253122] bg-[#ffb852] px-4 py-3 text-sm font-bold uppercase leading-relaxed tracking-[0.08em] text-[#1b3644]">
             {result}
           </p>
         ) : null}
       </div>
     </>
   );
-  const className = `group block border-b border-[#253122] bg-[#fbf6f3] transition-colors hover:bg-[#bfabcc] ${
+  const className = `group flex h-full flex-col border-b border-[#253122] bg-[#fbf6f3] transition-colors hover:bg-[#bfabcc] ${
     fullWidth ? "md:col-span-2" : rightBorder ? "md:border-r" : ""
   }`;
 
@@ -426,10 +404,10 @@ function VideoStorytellingBucket({
   return (
     <div className={`border-b border-[#253122] bg-[#1b3644] text-[#bfabcc] ${fullWidth ? "md:col-span-2" : ""}`}>
       <div className="border-b border-[#253122] p-5 md:p-8">
-        <p className="mb-4 text-[0.68rem] font-bold uppercase tracking-[0.2em] text-[#96bfe6]">
+        <p className="heading-label mb-4 text-[#96bfe6]">
           Video storytelling
         </p>
-        <h3 className="font-sans text-3xl font-semibold uppercase leading-none tracking-[0.04em] md:text-5xl">
+        <h3 className="heading-project ">
           Helping complex stories find their audience
         </h3>
       </div>
@@ -440,17 +418,17 @@ function VideoStorytellingBucket({
             href={story.href}
             target="_blank"
             rel="noopener noreferrer"
-            className={`group block p-5 transition-colors hover:bg-[#bfabcc] hover:text-[#253122] md:p-8 ${
+            className={`group block p-5 transition-colors hover:bg-[#bfabcc] hover:text-[#1b3644] md:p-8 ${
               index === 0 ? "border-b border-[#253122] md:border-r md:border-b-0" : ""
             }`}
           >
             <div className="mb-8 flex items-start justify-between gap-6">
-              <h4 className="font-sans text-3xl font-semibold uppercase leading-none tracking-[0.04em] md:text-5xl">
+              <h4 className="heading-project ">
                 {story.title}
               </h4>
               <ArrowUpRightIcon className="mt-1 h-5 w-5 shrink-0 text-[#ff616b] transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
             </div>
-            <p className="max-w-xl text-sm leading-relaxed">{story.description}</p>
+            <p className="max-w-xl text-base leading-relaxed">{story.description}</p>
           </a>
         ))}
       </div>
@@ -461,13 +439,18 @@ function VideoStorytellingBucket({
 function InfoList({ title, items }: { title: string; items: string[] }) {
   return (
     <div className="border-b border-[#253122] p-5 last:border-b-0 md:border-r md:border-b-0 md:p-8 even:md:border-r-0">
-      <h3 className="mb-5 text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[#ff616b]">
+      <h3 className="heading-subsection mb-5 text-[#ff616b]">
         {title}
       </h3>
-      <ul className="space-y-3 text-sm leading-relaxed text-[#414141]">
+      <ul className="space-y-1 text-sm leading-relaxed text-[#1b3644]">
         {items.map((item) => (
-          <li key={item} className="flex gap-3">
-            <span className="mt-2 h-2 w-2 shrink-0 border border-[#253122] bg-[#ffa6d9]" />
+          <li key={item} className="relative pl-5">
+            <span
+              aria-hidden="true"
+              className="absolute top-[-0.186em] left-0 font-['pd-everyday'] text-[39pt] leading-[1.5rem] text-[#e9eb74]"
+            >
+              .
+            </span>
             <span>{item}</span>
           </li>
         ))}
@@ -482,7 +465,7 @@ function SocialLink({ href, label }: { href: string; label: string }) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex items-center justify-between border-b border-[#253122] px-6 py-4 text-xs font-bold uppercase tracking-[0.18em] text-[#253122] transition-colors last:border-b-0 hover:bg-[#96bfe6] hover:text-[#1b3644]"
+      className="heading-label flex items-center justify-between border-b border-[#253122] px-6 py-4 text-[#1b3644] transition-colors last:border-b-0 hover:bg-[#96bfe6] hover:text-[#1b3644]"
     >
       {label}
       <ArrowUpRightIcon className="h-3.5 w-3.5" />

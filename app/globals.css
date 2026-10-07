@@ -2,31 +2,145 @@
 
 :root {
   --background: #b5d1cc;
-  --foreground: #414141;
+  --foreground: #1b3644;
   --paper: #ffb852;
   --page: #b5d1cc;
-  --ink: #414141;
+  --ink: #1b3644;
   --muted: #c0b490;
   --coral: #ff616b;
-  --navy: #253122;
+  --navy: #1b3644;
   --blue: #1b3644;
   --mint: #96bfe6;
   --card: #fbf6f3;
-  --tag: #ffa6d9;
+  --tag: #e9eb74;
+  --font-body: "futura-pt", Futura, "Futura PT", "Century Gothic", "Avenir Next", Arial, sans-serif;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-mona-sans);
+  --font-sans: var(--font-body);
+  --font-serif: var(--font-body);
+  --text-sm: calc(0.875rem + 3pt);
+  --text-base: calc(1rem + 3pt);
+  --text-lg: calc(1.125rem + 3pt);
+  --text-xl: calc(1.25rem + 3pt);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  font-family: var(--font-body);
+}
+
+.font-sans,
+.font-serif {
+  font-family: var(--font-body);
+}
+
+@font-face {
+  font-family: "Local Futura PT Cond Medium";
+  src: local("Futura PT Cond Medium"), local("FuturaPTCond-Medium");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+.heading-page,
+.heading-section,
+.heading-project,
+.heading-subsection,
+.hero-greeting {
+  font-family: "pd-everyday", var(--font-body);
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  text-transform: none;
+  letter-spacing: normal;
+  line-height: 1.1;
+}
+
+.heading-page {
+  font-size: calc(3rem + 4pt);
+}
+
+.heading-section {
+  font-size: calc(2.25rem + 4pt);
+}
+
+.heading-project {
+  font-size: calc(1.875rem + 4pt);
+}
+
+.heading-subsection {
+  font-size: calc(1.5rem + 4pt);
+}
+
+.heading-label {
+  font-family: "futura-pt-condensed", "Local Futura PT Cond Medium", var(--font-body);
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  line-height: 1.1;
+  font-size: calc(0.72rem + 5pt);
+  letter-spacing: 0.22em;
+}
+
+.blog-heading {
+  font-family: "futura-pt-condensed", var(--font-body);
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .heading-page {
+    font-size: calc(4.5rem + 4pt);
+  }
+
+  .heading-section {
+    font-size: calc(3.75rem + 4pt);
+  }
+
+  .heading-project {
+    font-size: calc(3rem + 4pt);
+  }
+
+  .heading-subsection {
+    font-size: calc(1.875rem + 4pt);
+  }
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+.nav-wordmark {
+  flex-shrink: 0;
+  white-space: nowrap;
+  font-family: "pd-everyday", var(--font-body);
+  font-size: 39pt;
+  font-weight: 400;
+  line-height: 1;
+  color: #b5d1cc;
+}
+
+.nav-wordmark-dot {
+  font-size: 44pt;
+  color: #e9eb74;
+}
+
+[class*="border-"],
+[class*="divide-"] > * {
+  border-style: none;
+}
+
+.mint-gridlines,
+.mint-gridlines [class*="border-"] {
+  border-style: solid;
+  border-color: #b5d1cc;
+}
+
+.yellow-gridlines,
+.yellow-gridlines > [class*="border-"] {
+  border-style: solid;
+  border-color: #e9eb74;
 }

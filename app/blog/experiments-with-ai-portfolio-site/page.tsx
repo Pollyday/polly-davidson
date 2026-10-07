@@ -12,16 +12,16 @@ export const metadata: Metadata = {
 
 export default function ExperimentsWithAiPortfolioSitePage() {
   return (
-    <div className="min-h-screen bg-[#b5d1cc] text-[#414141] selection:bg-[#ff616b]/25 selection:text-[#253122]">
-      <nav className="fixed inset-x-0 top-0 z-50 border-b border-[#253122] bg-[#fbf6f3]/92 backdrop-blur">
-        <div className="mx-auto flex min-h-16 max-w-6xl items-center justify-between gap-4 px-5 py-3 sm:px-6">
+    <div className="min-h-screen bg-[#b5d1cc] text-[#1b3644] selection:bg-[#ff616b]/25 selection:text-[#1b3644]">
+      <nav className="fixed inset-x-0 top-0 z-50 border-b border-[#253122] bg-[#6F7862]">
+        <div className="mx-auto flex min-h-[calc(4rem-5mm)] max-w-6xl items-center justify-between gap-4 px-5 py-[calc(0.75rem-2.5mm)] sm:px-6">
           <Link
             href="/"
-            className="font-serif text-xl font-semibold uppercase leading-none tracking-[-0.04em] text-[#ff616b] transition-colors hover:text-[#253122]"
+            className="nav-wordmark"
           >
-            Polly Davidson
+            Polly<span className="nav-wordmark-dot">.</span>
           </Link>
-          <div className="flex flex-wrap justify-end gap-x-4 gap-y-2 text-[0.68rem] font-bold uppercase tracking-[0.2em] text-[#253122] sm:gap-x-8">
+          <div className="heading-label flex flex-wrap justify-end gap-x-4 gap-y-2 text-[#1b3644] sm:gap-x-8">
             <Link href="/#work" className="transition-colors hover:text-[#ff616b]">
               Projects
             </Link>
@@ -34,7 +34,7 @@ export default function ExperimentsWithAiPortfolioSitePage() {
             <Link href="/#philosophy" className="transition-colors hover:text-[#bfabcc]">
               About
             </Link>
-            <Link href="/#contact" className="transition-colors hover:text-[#ffa6d9]">
+            <Link href="/#contact" className="transition-colors hover:text-[#e9eb74]">
               Contact
             </Link>
           </div>
@@ -46,16 +46,16 @@ export default function ExperimentsWithAiPortfolioSitePage() {
           <header className="border-b border-[#253122] bg-[#1b3644] p-6 md:p-10">
             <Link
               href="/blog"
-              className="mb-8 inline-flex items-center gap-2 text-[0.68rem] font-bold uppercase tracking-[0.2em] text-[#96bfe6] transition-colors hover:text-[#fbf6f3]"
+              className="heading-label mb-8 inline-flex items-center gap-2 text-[#96bfe6] transition-colors hover:text-[#fbf6f3]"
             >
               <span aria-hidden="true">←</span> All posts
             </Link>
-            <h1 className="font-serif text-5xl font-light uppercase leading-[0.9] tracking-[-0.055em] text-[#fbf6f3] md:text-7xl">
+            <h1 className="heading-page blog-heading text-[#fbf6f3]">
               Experiments with AI: Portfolio site
             </h1>
           </header>
 
-          <div className="space-y-10 p-6 text-base leading-relaxed text-[#414141] md:p-10 md:text-lg">
+          <div className="space-y-10 p-6 text-base leading-relaxed text-[#1b3644] md:p-10 md:text-lg">
             <p>
               You know that feeling when you start off on a small side project,
               and five hours later you emerge a little bleary-eyed, hair somewhat
@@ -65,14 +65,14 @@ export default function ExperimentsWithAiPortfolioSitePage() {
             </p>
 
             <section>
-              <h2 className="mb-5 font-sans text-2xl font-semibold uppercase leading-tight tracking-[0.04em] text-[#253122] md:text-3xl">
+              <h2 className="heading-subsection blog-heading mb-5 text-[#1b3644]">
                 Starting at the beginning
               </h2>
               <p>
                 At the beginning of this year I worked on{" "}
                 <a
                   href="https://youtube.com/playlist?list=PL0lo9MOBetEFcp4SCWinBdpml9B2U25-f&si=qqG9WJhC8LzN9Eej"
-                  className="text-[#1b7180] underline decoration-[#ff616b] underline-offset-4 hover:text-[#ff616b]"
+                  className="text-[#1b3644] underline decoration-[#ff616b] underline-offset-4 transition-colors hover:text-[#b5d1cc] focus-visible:text-[#b5d1cc]"
                 >
                   GitHub for Beginners
                 </a>
@@ -83,7 +83,7 @@ export default function ExperimentsWithAiPortfolioSitePage() {
                 by following along{" "}
                 <a
                   href="https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-github-pages/"
-                  className="text-[#1b7180] underline decoration-[#ff616b] underline-offset-4 hover:text-[#ff616b]"
+                  className="text-[#1b3644] underline decoration-[#ff616b] underline-offset-4 transition-colors hover:text-[#b5d1cc] focus-visible:text-[#b5d1cc]"
                 >
                   here
                 </a>
@@ -102,14 +102,14 @@ export default function ExperimentsWithAiPortfolioSitePage() {
             </section>
 
             <section>
-              <h2 className="mb-5 font-sans text-2xl font-semibold uppercase leading-tight tracking-[0.04em] text-[#253122] md:text-3xl">
+              <h2 className="heading-subsection blog-heading mb-5 text-[#1b3644]">
                 Annoying AI with a flood of colours
               </h2>
               <p>
                 Using a few design references I liked and my new favourite book,{" "}
                 <a
                   href="https://www.kojoart.com/en/blogs/art-techniques/sanzo-wada-dictionary-of-color-combinations?srsltid=AU7gw4XRAzw3IFONBkPbSJFVkOBwmPlAgqzeFBXCklUVX_GNKhzOFem_"
-                  className="text-[#1b7180] underline decoration-[#ff616b] underline-offset-4 hover:text-[#ff616b]"
+                  className="text-[#1b3644] underline decoration-[#ff616b] underline-offset-4 transition-colors hover:text-[#b5d1cc] focus-visible:text-[#b5d1cc]"
                 >
                   A Dictionary of Color Combinations
                 </a>{" "}
@@ -121,7 +121,7 @@ export default function ExperimentsWithAiPortfolioSitePage() {
                 against the background colours, and went back to Copilot to tweak
                 the look again.
               </p>
-              <figure className="mt-8 grid grid-cols-2 gap-px border border-[#253122] bg-[#253122]">
+              <figure className="mt-8 grid grid-cols-2">
                 <Image
                   src={`${basePath}/portfolio-colour-jacket.jpeg`}
                   alt="Bright orange jacket against a pink and blue colour palette"
@@ -140,7 +140,7 @@ export default function ExperimentsWithAiPortfolioSitePage() {
             </section>
 
             <section>
-              <h2 className="mb-5 font-sans text-2xl font-semibold uppercase leading-tight tracking-[0.04em] text-[#253122] md:text-3xl">
+              <h2 className="heading-subsection blog-heading mb-5 text-[#1b3644]">
                 Reining in AI’s enthusiasm
               </h2>
               <p>
@@ -159,14 +159,14 @@ export default function ExperimentsWithAiPortfolioSitePage() {
             </section>
 
             <section>
-              <h2 className="mb-5 font-sans text-2xl font-semibold uppercase leading-tight tracking-[0.04em] text-[#253122] md:text-3xl">
+              <h2 className="heading-subsection blog-heading mb-5 text-[#1b3644]">
                 When to retain the joy for yourself
               </h2>
               <p>
                 I read an article by my namesake{" "}
                 <a
                   href="https://graziadaily.co.uk/author/polly-vernon/"
-                  className="text-[#1b7180] underline decoration-[#ff616b] underline-offset-4 hover:text-[#ff616b]"
+                  className="text-[#1b3644] underline decoration-[#ff616b] underline-offset-4 transition-colors hover:text-[#b5d1cc] focus-visible:text-[#b5d1cc]"
                 >
                   Polly Vernon
                 </a>{" "}
