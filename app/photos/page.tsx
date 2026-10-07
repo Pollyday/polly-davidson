@@ -240,26 +240,29 @@ const playImages = [
 
 export default function PhotosPage() {
   return (
-    <div className="min-h-screen bg-[#b5d1cc] text-[#414141] selection:bg-[#ff616b]/25 selection:text-[#253122]">
-      <nav className="fixed inset-x-0 top-0 z-50 border-b border-[#253122] bg-[#fbf6f3]/92 backdrop-blur">
-        <div className="mx-auto flex min-h-16 max-w-6xl items-center justify-between gap-4 px-5 py-3 sm:px-6">
+    <div className="min-h-screen bg-[#b5d1cc] text-[#1b3644] selection:bg-[#ff616b]/25 selection:text-[#1b3644]">
+      <nav className="fixed inset-x-0 top-0 z-50 border-b border-[#253122] bg-[#6F7862]">
+        <div className="mx-auto flex min-h-[calc(4rem-5mm)] max-w-6xl items-center justify-between gap-4 px-5 py-[calc(0.75rem-2.5mm)] sm:px-6">
           <Link
             href="/"
-            className="font-serif text-xl font-semibold uppercase leading-none tracking-[-0.04em] text-[#ff616b] transition-colors hover:text-[#253122]"
+            className="nav-wordmark"
           >
-            Polly Davidson
+            Polly<span className="nav-wordmark-dot">.</span>
           </Link>
-          <div className="flex flex-wrap justify-end gap-x-4 gap-y-2 text-[0.68rem] font-bold uppercase tracking-[0.2em] text-[#253122] sm:gap-x-8">
+          <div className="heading-label flex flex-wrap justify-end gap-x-4 gap-y-2 text-[#1b3644] sm:gap-x-8">
             <Link href="/#work" className="transition-colors hover:text-[#ff616b]">
               Projects
             </Link>
             <Link href="/photos" className="transition-colors hover:text-[#96bfe6]">
               Photos
             </Link>
+            <Link href="/blog" className="transition-colors hover:text-[#ffb852]">
+              Blog
+            </Link>
             <Link href="/#philosophy" className="transition-colors hover:text-[#bfabcc]">
               About
             </Link>
-            <Link href="/#contact" className="transition-colors hover:text-[#ffa6d9]">
+            <Link href="/#contact" className="transition-colors hover:text-[#e9eb74]">
               Contact
             </Link>
           </div>
@@ -268,7 +271,7 @@ export default function PhotosPage() {
 
       <main className="mx-auto max-w-6xl px-5 pt-24 pb-24 sm:px-6 lg:pt-28">
         <section className="py-8 md:py-12">
-          <h1 className="max-w-3xl font-serif text-[clamp(2.5rem,6vw,4.75rem)] font-light uppercase leading-[0.82] tracking-[-0.055em] text-[#bfabcc]">
+          <h1 className="heading-page max-w-3xl text-[#bfabcc]">
             Work
           </h1>
         </section>
@@ -276,7 +279,7 @@ export default function PhotosPage() {
         <PhotoGrid images={workImages} />
 
         <section className="pt-20 pb-8 md:pt-28 md:pb-12">
-          <h2 className="ml-auto max-w-3xl text-right font-serif text-[clamp(2.5rem,6vw,4.75rem)] font-light uppercase leading-[0.82] tracking-[-0.055em] text-[#ffa6d9]">
+          <h2 className="heading-page ml-auto max-w-3xl text-right text-[#e9eb74]">
             Play
           </h2>
         </section>

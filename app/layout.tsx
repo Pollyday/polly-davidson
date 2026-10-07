@@ -1,11 +1,5 @@
 import type { Metadata } from "next";
-import { Mona_Sans } from "next/font/google";
 import "./globals.css";
-
-const monaSans = Mona_Sans({
-  variable: "--font-mona-sans",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Polly Davidson - Brand Strategist & Marketing Leader at GitHub",
@@ -20,7 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${monaSans.variable} font-sans antialiased`}>
+      <head>
+        <link rel="stylesheet" href="https://use.typekit.net/fse4qel.css?v=20261007094851" />
+      </head>
+      <body className="font-sans antialiased">
         {children}
       </body>
     </html>
