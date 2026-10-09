@@ -51,8 +51,8 @@ body {
 .heading-project,
 .heading-subsection,
 .hero-greeting {
-  font-family: "pd-everyday", var(--font-body);
-  font-weight: 400;
+  font-family: "crayonize", var(--font-body);
+  font-weight: 700;
   font-style: normal;
   font-stretch: normal;
   text-transform: none;
@@ -87,8 +87,8 @@ body {
 }
 
 .blog-heading {
-  font-family: "futura-pt-condensed", var(--font-body);
-  font-weight: 500;
+  font-family: "crayonize", var(--font-body);
+  font-weight: 700;
 }
 
 @media (min-width: 768px) {
@@ -116,15 +116,16 @@ html {
 .nav-wordmark {
   flex-shrink: 0;
   white-space: nowrap;
-  font-family: "pd-everyday", var(--font-body);
+  font-family: "crayonize", var(--font-body);
   font-size: 39pt;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1;
-  color: #b5d1cc;
+  color: #fbf6f3;
 }
 
 .nav-wordmark-dot {
-  font-size: 44pt;
+  font-size: 60pt;
+  line-height: 0;
   color: #e9eb74;
 }
 

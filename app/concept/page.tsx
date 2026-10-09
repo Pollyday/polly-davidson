@@ -1,5 +1,5 @@
+import SiteNav from "../site-nav";
 import Image from "next/image";
-import Link from "next/link";
 
 const basePath = process.env.NODE_ENV === "production" ? "/polly-davidson" : "";
 
@@ -65,30 +65,7 @@ const visualReferences = [
 export default function ConceptPage() {
   return (
     <div className="min-h-screen bg-[#fbf6f3] text-[#1b3644] selection:bg-[#ff616b]/25 selection:text-[#1b3644]">
-      <nav className="sticky top-0 z-50 border-b border-[#253122] bg-[#6F7862]">
-        <div className="mx-auto flex min-h-[calc(4rem-5mm)] max-w-5xl items-center justify-between gap-5 px-5 py-[calc(0.75rem-2.5mm)] sm:px-6">
-          <Link
-            href="/"
-            className="nav-wordmark"
-          >
-            Polly<span className="nav-wordmark-dot">.</span>
-          </Link>
-          <div className="heading-label flex flex-wrap justify-end gap-x-4 gap-y-2 sm:gap-x-8">
-            <a href="#work" className="transition-colors hover:text-[#ff616b]">
-              Work
-            </a>
-            <a href="#about" className="transition-colors hover:text-[#ff616b]">
-              About
-            </a>
-            <Link href="/blog" className="transition-colors hover:text-[#ffb852]">
-              Blog
-            </Link>
-            <Link href="/photos" className="transition-colors hover:text-[#ff616b]">
-              Photos
-            </Link>
-          </div>
-        </div>
-      </nav>
+      <SiteNav concept />
 
       <main className="mx-auto max-w-5xl px-5 py-12 sm:px-6 md:py-20">
         <section className="grid gap-10 border-b border-[#253122] pb-14 md:grid-cols-[1.25fr_0.75fr] md:items-end md:pb-20">
@@ -223,9 +200,6 @@ export default function ConceptPage() {
           className="grid gap-8 border-y border-[#253122] bg-[#1b3644] p-6 text-[#bfabcc] md:grid-cols-3 md:p-8"
         >
           <div>
-            <p className="heading-label mb-4 text-[#96bfe6]">
-              How I think
-            </p>
             <h2 className="heading-section ">
               Clear beats clever.
             </h2>
@@ -250,7 +224,7 @@ export default function ConceptPage() {
                 href="https://github.com/pollyday"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border border-[#253122] bg-[#fbf6f3] px-5 py-3 transition-colors hover:bg-[#96bfe6]"
+                className="border border-[#253122] bg-[#fbf6f3] px-5 py-3 transition-colors hover:bg-[#6f7862] hover:text-[#e9eb74] focus-visible:bg-[#6f7862] focus-visible:text-[#e9eb74]"
               >
                 GitHub
               </a>
@@ -258,7 +232,7 @@ export default function ConceptPage() {
                 href="https://www.linkedin.com/in/polly-davidson/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border border-[#253122] bg-[#fbf6f3] px-5 py-3 transition-colors hover:bg-[#96bfe6]"
+                className="border border-[#253122] bg-[#fbf6f3] px-5 py-3 transition-colors hover:bg-[#6f7862] hover:text-[#e9eb74] focus-visible:bg-[#6f7862] focus-visible:text-[#e9eb74]"
               >
                 LinkedIn
               </a>
