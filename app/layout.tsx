@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="stylesheet" href="https://use.typekit.net/fse4qel.css?v=20261007094851" />
+        <link rel="stylesheet" href="https://use.typekit.net/niz2dui.css?v=20261009103951" />
       </head>
       <body className="font-sans antialiased">
         {children}

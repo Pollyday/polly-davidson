@@ -1,5 +1,5 @@
+import SiteNav from "../site-nav";
 import Image from "next/image";
-import Link from "next/link";
 
 const basePath = process.env.NODE_ENV === "production" ? "/polly-davidson" : "";
 
@@ -241,33 +241,7 @@ const playImages = [
 export default function PhotosPage() {
   return (
     <div className="min-h-screen bg-[#b5d1cc] text-[#1b3644] selection:bg-[#ff616b]/25 selection:text-[#1b3644]">
-      <nav className="fixed inset-x-0 top-0 z-50 border-b border-[#253122] bg-[#6F7862]">
-        <div className="mx-auto flex min-h-[calc(4rem-5mm)] max-w-6xl items-center justify-between gap-4 px-5 py-[calc(0.75rem-2.5mm)] sm:px-6">
-          <Link
-            href="/"
-            className="nav-wordmark"
-          >
-            Polly<span className="nav-wordmark-dot">.</span>
-          </Link>
-          <div className="heading-label flex flex-wrap justify-end gap-x-4 gap-y-2 text-[#1b3644] sm:gap-x-8">
-            <Link href="/#work" className="transition-colors hover:text-[#ff616b]">
-              Projects
-            </Link>
-            <Link href="/photos" className="transition-colors hover:text-[#96bfe6]">
-              Photos
-            </Link>
-            <Link href="/blog" className="transition-colors hover:text-[#ffb852]">
-              Blog
-            </Link>
-            <Link href="/#philosophy" className="transition-colors hover:text-[#bfabcc]">
-              About
-            </Link>
-            <Link href="/#contact" className="transition-colors hover:text-[#e9eb74]">
-              Contact
-            </Link>
-          </div>
-        </div>
-      </nav>
+      <SiteNav />
 
       <main className="mx-auto max-w-6xl px-5 pt-24 pb-24 sm:px-6 lg:pt-28">
         <section className="py-8 md:py-12">

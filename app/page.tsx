@@ -1,5 +1,5 @@
+import SiteNav from "./site-nav";
 import Image from "next/image";
-import Link from "next/link";
 
 const basePath = process.env.NODE_ENV === "production" ? "/polly-davidson" : "";
 
@@ -8,41 +8,15 @@ export default function Home() {
     <div className="min-h-screen bg-[#b5d1cc] text-[#1b3644] selection:bg-[#ff616b]/25 selection:text-[#1b3644]">
       <div className="pointer-events-none fixed inset-0 z-0 bg-[radial-gradient(circle_at_top_left,rgba(255,184,82,0.28),transparent_34rem),radial-gradient(circle_at_bottom_right,rgba(233,235,116,0.22),transparent_32rem)]" />
 
-      <nav className="fixed inset-x-0 top-0 z-50 border-b border-[#253122] bg-[#6F7862]">
-        <div className="mx-auto flex min-h-[calc(4rem-5mm)] max-w-6xl items-center justify-between gap-4 px-5 py-[calc(0.75rem-2.5mm)] sm:px-6">
-          <Link
-            href="/"
-            className="nav-wordmark"
-          >
-            Polly<span className="nav-wordmark-dot">.</span>
-          </Link>
-          <div className="heading-label flex flex-wrap justify-end gap-x-4 gap-y-2 text-[#1b3644] sm:gap-x-8">
-            <Link href="#work" className="transition-colors hover:text-[#ff616b]">
-              Projects
-            </Link>
-            <Link href="/photos" className="transition-colors hover:text-[#96bfe6]">
-              Photos
-            </Link>
-            <Link href="/blog" className="transition-colors hover:text-[#ffb852]">
-              Blog
-            </Link>
-            <Link href="#philosophy" className="transition-colors hover:text-[#bfabcc]">
-              About
-            </Link>
-            <Link href="#contact" className="transition-colors hover:text-[#e9eb74]">
-              Contact
-            </Link>
-          </div>
-        </div>
-      </nav>
+      <SiteNav />
 
       <main className="relative z-10 mx-auto max-w-6xl px-5 pt-24 pb-16 sm:px-6 lg:pt-28">
         <section className="overflow-hidden border border-[#253122] bg-[#ffb852]">
           <div className="grid border-b border-[#253122] bg-[linear-gradient(rgba(233,235,116,0.58)_1px,transparent_1px),linear-gradient(90deg,rgba(233,235,116,0.58)_1px,transparent_1px)] bg-[size:2.35rem_2.35rem] px-5 py-8 sm:px-8 md:px-12 md:py-12">
             <h1 className="heading-page text-[#1b3644]">
               I make complicated things interesting
-              <span className="hero-greeting mt-5 block text-[calc(0.55em+5pt)] font-normal not-italic normal-case leading-[0.9] tracking-normal text-[#ff616b] [font-stretch:normal] md:mt-8">
-                Hi, I&apos;m Polly<span className="text-[#e9eb74]">.</span>
+              <span className="hero-greeting mt-5 block text-[calc(0.55em+10pt)] font-normal not-italic normal-case leading-[0.9] tracking-normal text-[#ff616b] [font-stretch:normal] md:mt-8">
+                Hi, I&apos;m Polly<span className="text-[calc((1em-5pt)*1.5)] leading-none text-[#e9eb74]">.</span>
               </span>
             </h1>
           </div>
@@ -57,7 +31,6 @@ export default function Home() {
 
         <section id="work" className="py-16 md:py-20">
           <SectionHeader
-            eyebrow="Selected work"
             title="Brand stories, launches and moments"
           />
 
@@ -151,7 +124,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-16 md:py-20">
+        <section className="pb-16 md:pb-20">
           <div className="mint-gridlines grid border-x border-t border-[#253122] bg-[#fbf6f3] md:grid-cols-2">
             <div className="relative aspect-square overflow-hidden border-b border-[#253122] bg-[#b5d1cc] md:border-r">
               <Image
@@ -188,9 +161,6 @@ export default function Home() {
           className="grid overflow-hidden border border-[#253122] bg-[#fbf6f3] md:grid-cols-12"
         >
           <div className="border-b border-[#253122] bg-[linear-gradient(rgba(233,235,116,0.58)_1px,transparent_1px),linear-gradient(90deg,rgba(233,235,116,0.58)_1px,transparent_1px)] bg-[#ffb852] bg-[size:2.35rem_2.35rem] p-5 md:col-span-4 md:border-r md:border-b-0 md:p-8">
-            <p className="heading-label mb-5 text-[#1b3644]">
-              About me
-            </p>
             <div className="relative aspect-[4/5] overflow-hidden border border-[#253122] bg-[#fbf6f3]">
               <Image
                 src={`${basePath}/about-me-illustration-lines.png`}
@@ -242,9 +212,6 @@ export default function Home() {
         <section id="contact" className="py-16 md:py-20">
           <div className="grid overflow-hidden border border-[#253122] bg-[#1b3644] md:grid-cols-[1fr_auto]">
             <div className="p-6 md:p-10">
-              <p className="heading-label mb-5 text-[#96bfe6]">
-                Contact
-              </p>
               <h2 className="heading-subsection max-w-2xl text-[#bfabcc]">
                 Want to talk about brand or campaign strategy?
                 <span className="block whitespace-nowrap">Let&apos;s connect.</span>
@@ -276,20 +243,15 @@ export default function Home() {
 }
 
 function SectionHeader({
-  eyebrow,
   title,
   description,
 }: {
-  eyebrow: string;
   title: string;
   description?: string;
 }) {
   return (
     <div className="mb-8 grid gap-4 border border-[#253122] bg-[#1b3644] p-5 md:grid-cols-[auto_1fr] md:items-end md:p-8">
       <div>
-        <p className="heading-label mb-3 text-[#96bfe6]">
-          {eyebrow}
-        </p>
         <h2 className="heading-section text-[#bfabcc]">
           {title}
         </h2>
@@ -404,9 +366,6 @@ function VideoStorytellingBucket({
   return (
     <div className={`border-b border-[#253122] bg-[#1b3644] text-[#bfabcc] ${fullWidth ? "md:col-span-2" : ""}`}>
       <div className="border-b border-[#253122] p-5 md:p-8">
-        <p className="heading-label mb-4 text-[#96bfe6]">
-          Video storytelling
-        </p>
         <h3 className="heading-project ">
           Helping complex stories find their audience
         </h3>
@@ -447,7 +406,7 @@ function InfoList({ title, items }: { title: string; items: string[] }) {
           <li key={item} className="relative pl-5">
             <span
               aria-hidden="true"
-              className="absolute top-[-0.186em] left-0 font-['pd-everyday'] text-[39pt] leading-[1.5rem] text-[#e9eb74]"
+              className="absolute top-[-0.186em] left-0 font-['crayonize'] text-[39pt] font-bold leading-[1.5rem] text-[#e9eb74]"
             >
               .
             </span>
@@ -465,7 +424,7 @@ function SocialLink({ href, label }: { href: string; label: string }) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="heading-label flex items-center justify-between border-b border-[#253122] px-6 py-4 text-[#1b3644] transition-colors last:border-b-0 hover:bg-[#96bfe6] hover:text-[#1b3644]"
+      className="heading-label flex items-center justify-between border-b border-[#253122] px-6 py-4 text-[#1b3644] transition-colors last:border-b-0 hover:bg-[#6f7862] hover:text-[#e9eb74] focus-visible:bg-[#6f7862] focus-visible:text-[#e9eb74]"
     >
       {label}
       <ArrowUpRightIcon className="h-3.5 w-3.5" />
