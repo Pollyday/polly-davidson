@@ -1,7 +1,34 @@
 import SiteNav from "../site-nav";
+import type { Metadata } from "next";
 import Image from "next/image";
 
 const basePath = process.env.NODE_ENV === "production" ? "/polly-davidson" : "";
+
+export const metadata: Metadata = {
+  title: "Photos | Polly Davidson",
+  description: "Photography from work and play by Polly Davidson.",
+  openGraph: {
+    title: "Photos | Polly Davidson",
+    description: "Photography from work and play by Polly Davidson.",
+    url: "https://pollyday.github.io/polly-davidson/photos",
+    type: "website",
+    images: [{
+      url: "https://pollyday.github.io/polly-davidson/photos/play/lake-reflection.jpg",
+      width: 2000,
+      height: 1125,
+      alt: "Mountain reflected in a bright blue lake",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Photos | Polly Davidson",
+    description: "Photography from work and play by Polly Davidson.",
+    images: [{
+      url: "https://pollyday.github.io/polly-davidson/photos/play/lake-reflection.jpg",
+      alt: "Mountain reflected in a bright blue lake",
+    }],
+  },
+};
 
 type PhotoImage = {
   src: string;
