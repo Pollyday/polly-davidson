@@ -9,6 +9,29 @@ export const metadata: Metadata = {
   title: "Experiments with AI: Portfolio site | Polly Davidson",
   description:
     "A reflection on building a GitHub Pages portfolio with AI, finding a visual direction, and keeping the joy in creating.",
+  openGraph: {
+    title: "Experiments with AI: Portfolio site | Polly Davidson",
+    description:
+      "A reflection on building a GitHub Pages portfolio with AI, finding a visual direction, and keeping the joy in creating.",
+    url: "https://pollyday.github.io/polly-davidson/blog/experiments-with-ai-portfolio-site",
+    type: "article",
+    images: [{
+      url: "https://pollyday.github.io/polly-davidson/social-preview.png",
+      width: 1200,
+      height: 630,
+      alt: "Polly Davidson portfolio: I make complicated things interesting.",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Experiments with AI: Portfolio site | Polly Davidson",
+    description:
+      "A reflection on building a GitHub Pages portfolio with AI, finding a visual direction, and keeping the joy in creating.",
+    images: [{
+      url: "https://pollyday.github.io/polly-davidson/social-preview.png",
+      alt: "Polly Davidson portfolio: I make complicated things interesting.",
+    }],
+  },
 };
 
 export default function ExperimentsWithAiPortfolioSitePage() {
